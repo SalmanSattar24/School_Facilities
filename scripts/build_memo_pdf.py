@@ -14,7 +14,7 @@ from reportlab.platypus import BaseDocTemplate, Frame, PageTemplate, Paragraph, 
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "memo" / "draft_memo.md"
-OUTPUT = ROOT / "output" / "pdf" / "memo.pdf"
+OUTPUT = ROOT / "outputs" / "memo.pdf"
 
 
 def inline_markup(text: str) -> str:

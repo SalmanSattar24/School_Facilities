@@ -78,7 +78,7 @@ To inspect the current candidate:
 - `data/campus_resolutions/`: reproducible campus-resolution records.
 - `outputs/all25_v1_11_predictions_frozen.json`: prediction snapshot created before evaluation.
 - `outputs/full_pipeline_v1_11_evaluation.json`: detailed V1.11 evaluation.
-- `memo/draft_memo.md` and `output/pdf/memo.pdf`: editable and rendered one-page memo.
+- `memo/draft_memo.md` and `outputs/memo.pdf`: editable and rendered one-page memo.
 - `secrets.local.env.example`: credential template without real values.
 
 Downloaded imagery, raw provider responses, API request ledgers, review packets, local source PDFs, caches, and real secrets are deliberately excluded from Git. A fresh operator can regenerate them using the documented workflow.

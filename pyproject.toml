@@ -14,7 +14,10 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8,<10"]
+dev = [
+  "pytest>=8,<10",
+  "reportlab>=4,<5",
+]
 pilot = [
   "google-genai==2.20.0",
   "jsonschema==4.26.0",
