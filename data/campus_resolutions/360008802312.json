@@ -1,0 +1,72 @@
+{
+  "school_id": "360008802312",
+  "school_name": "PS 78 ANNE HUTCHINSON",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -73.851232,
+    40.8780145,
+    -73.8498892,
+    40.878932
+  ],
+  "geometry": [
+    [
+      40.8784493,
+      -73.851232
+    ],
+    [
+      40.878932,
+      -73.8502633
+    ],
+    [
+      40.8784996,
+      -73.8498892
+    ],
+    [
+      40.8780145,
+      -73.8508691
+    ],
+    [
+      40.8784493,
+      -73.851232
+    ]
+  ],
+  "matched_name": "P.S. 78 - The Anne Hutchinson School",
+  "source_element": "https://www.openstreetmap.org/way/1547003348",
+  "name_similarity": 0.8936170212765957,
+  "distance_from_ccd_m": 18.33022500020669,
+  "candidate_margin": 0.44059101795865074,
+  "recommended_detail_extent_m": 250,
+  "unclamped_detail_extent_m": 250,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "Matched 'P.S. 78 - The Anne Hutchinson School' from OSM way/1547003348; name similarity 0.894, CCD-to-center distance 18.3 m, candidate margin 0.441. Match passed the frozen automatic-resolution thresholds.",
+  "candidates_considered": 31,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 40.87847325,
+    "longitude": -73.8505606
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 40.8786,
+    "longitude": -73.8507
+  },
+  "boundary_notes": "Matched 'P.S. 78 - The Anne Hutchinson School' from OSM way/1547003348; name similarity 0.894, CCD-to-center distance 18.3 m, candidate margin 0.441. Match passed the frozen automatic-resolution thresholds.",
+  "scope_mode": "authoritative_polygon",
+  "scope_boundary_authority": "authoritative",
+  "measurement_search_scope": "inside_authoritative_polygon",
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "automatic provenance and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/360008802312/context.jpg",
+    "data/imagery/360008802312/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "35701b07f4a38c6faee408af3ae0ade0693a91eba493e9696e2a3b4d9fe79299",
+    "detail.jpg": "f709e6b31af0b74531b42f47e78825d5d5b946d37666617290e6ac9c2d890e75"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "202c5928ff4fffe410af9e95c31a0adfec021712843ddccc074e54145a2ffe71"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "configuration_id": "school-facilities-three-school-pilot-v1",
+  "frozen_at": "2026-08-29",
+  "selection_rule": "one high school likely to exercise athletic fields, one primary school, and one dense or boundary-ambiguous campus; all excluded from the six-school validation set",
+  "schools": [
+    {"school_id": "060483000471", "school_name": "Beverly Hills High", "role": "high-school and athletics workflow"},
+    {"school_id": "061734009378", "school_name": "Cerra Vista Elementary", "role": "primary-school workflow"},
+    {"school_id": "402277001928", "school_name": "EMERSON ALTERNATIVE ED. (HS)", "role": "dense or boundary-ambiguous workflow"}
+  ],
+  "excluded_validation_school_ids": [
+    "040963000996",
+    "421917006915",
+    "010282001124",
+    "060001909278",
+    "360008802312",
+    "401452000682"
+  ],
+  "validation_school_overlap_allowed": false,
+  "outcome_based_replacement_allowed": false
+}

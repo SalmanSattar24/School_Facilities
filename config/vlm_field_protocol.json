@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "protocol_id": "school-facilities-observable-feature-protocol-v1.9",
+  "rules": {
+    "allowed_answers": ["yes", "no", "unknown"],
+    "all_questions_required": true,
+    "unknown_answer_requires_review": true,
+    "conclusions_are_not_observations": true,
+    "positive_claim_requires_multiple_cue_families": true,
+    "negative_claim_requires_complete_relevant_search": true,
+    "auditor_may_not_invent_visual_facts": true,
+    "auditor_may_not_overwrite_primary_values": true
+  },
+  "features": {
+    "solar": {
+      "measurement_fields": ["solar_present", "solar_area_m2"],
+      "definition": "Only photovoltaic arrays on a permanent school-building roof or qualifying portable-classroom roof count. Parking/carport canopy and ground-mounted arrays are excluded. Area is the horizontal planimetric footprint of qualifying arrays only.",
+      "questions": [
+        {"id": "SOL-01", "question": "Is the candidate inside the resolved campus boundary?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "SOL-02", "question": "Is a repeated rectangular photovoltaic module or row pattern visible?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "SOL-03", "question": "Can a school-building or portable-classroom roof plane be traced under or around the panels?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "SOL-04", "question": "Are parking stalls, vehicles, drive aisles, canopy columns, or open ground visible beneath the candidate?", "expected_for_positive": "no", "expected_for_negative": null},
+        {"id": "SOL-05", "question": "Could the candidate instead be skylights, HVAC equipment, roof membrane, glare, windows, or shadow?", "expected_for_positive": "no", "expected_for_negative": null},
+        {"id": "SOL-06", "question": "Can every qualifying candidate footprint be traced without adding excluded gaps or support surfaces?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "SOL-07", "question": "Are all relevant campus roofs sufficiently visible to support a negative answer?", "expected_for_positive": null, "expected_for_negative": "yes"}
+      ]
+    },
+    "portable_classrooms": {
+      "measurement_fields": ["portable_classroom_count"],
+      "definition": "Count distinct detached modular or relocatable buildings most likely used as classrooms. Count physical buildings, not rooms, doors, roof seams, or factory modules; exclude permanent wings, storage, shipping containers, maintenance, athletic support, restrooms, concessions, and construction trailers.",
+      "questions": [
+        {"id": "PORT-01", "question": "Is every counted candidate inside the resolved campus boundary?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "PORT-02", "question": "Is every counted candidate detached from permanent academic buildings?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "PORT-03", "question": "Does every counted candidate have one distinct continuous physical building footprint?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "PORT-04", "question": "Are modular cues visible, such as repeated small rectangular units, roof seams, raised foundation or skirt, exterior stairs or ramp, walkway, or dedicated HVAC?", "expected_for_positive": null, "expected_for_negative": null},
+        {"id": "PORT-05", "question": "Does campus placement or access support classroom use rather than service or athletic use?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "PORT-06", "question": "Could any counted candidate instead be storage, a shipping container, maintenance, restroom, concession, ticket booth, athletic support, or construction trailer?", "expected_for_positive": "no", "expected_for_negative": null},
+        {"id": "PORT-07", "question": "Were continuous multi-module buildings counted once rather than by seams, doors, or rooms?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "PORT-08", "question": "Are all plausible campus locations sufficiently visible to support a zero count?", "expected_for_positive": null, "expected_for_negative": "yes"}
+      ]
+    },
+    "fencing": {
+      "measurement_fields": ["perimeter_fencing", "dominant_fence_type"],
+      "definition": "Assess only the outer school-controlled campus boundary. Designed gates count as continuation. Interior court, pool, playground, equipment, and building fences do not. Full is at least 80 percent, partial is 20 to less than 80 percent, and none is less than 20 percent.",
+      "questions": [
+        {"id": "FENCE-01", "question": "Is the outer campus boundary resolved in all north, east, south, and west sectors, with irregular edges subdivided?", "expected_for_positive": "yes", "expected_for_negative": "yes"},
+        {"id": "FENCE-02", "question": "Do the perimeter segments account for the complete boundary without overlap?", "expected_for_positive": "yes", "expected_for_negative": "yes"},
+        {"id": "FENCE-03", "question": "Is each claimed barrier on the outer boundary rather than an interior facility boundary?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "FENCE-04", "question": "Are periodic posts, rails, mesh, vertical pickets, an opaque wall top, or aligned gates visible where a barrier is claimed?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "FENCE-05", "question": "Does any claimed barrier cast a narrow aligned shadow consistent with nearby vertical-object shadows?", "expected_for_positive": null, "expected_for_negative": null},
+        {"id": "FENCE-06", "question": "Could any claimed barrier instead be a curb, paint, hedge, tree shadow, retaining edge, or roof edge?", "expected_for_positive": "no", "expected_for_negative": null},
+        {"id": "FENCE-07", "question": "Were designed entrances and gates distinguished from true unfenced gaps?", "expected_for_positive": "yes", "expected_for_negative": "yes"},
+        {"id": "FENCE-08", "question": "Is enough material evidence visible along the fenced length to support the dominant type?", "expected_for_positive": null, "expected_for_negative": null}
+      ]
+    },
+    "running_track": {
+      "measurement_fields": ["running_track"],
+      "definition": "A purpose-built running track recognizable from closed oval or near-oval geometry, lanes, track surface, or a clear relationship to a formal athletic field. Exclude roads, driveways, informal paths, sidewalks, cycling paths, and trails.",
+      "questions": [
+        {"id": "TRACK-01", "question": "Is there a closed oval or near-oval loop with two approximately parallel straights and two curved ends?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "TRACK-02", "question": "Is the loop width and surface reasonably consistent around the circuit?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "TRACK-03", "question": "Are lane, start, finish, stagger, or exchange-zone markings visible?", "expected_for_positive": null, "expected_for_negative": null},
+        {"id": "TRACK-04", "question": "Does the loop surround or directly adjoin a formal athletic field?", "expected_for_positive": null, "expected_for_negative": null},
+        {"id": "TRACK-05", "question": "Does the loop connect to roads, parking, or driveways in a way that makes a vehicle route more likely?", "expected_for_positive": "no", "expected_for_negative": null},
+        {"id": "TRACK-06", "question": "Do geometry, surface, width, and athletic association jointly rule out an informal walking or cycling path?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "TRACK-07", "question": "Is the candidate inside or credibly controlled by the school?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "TRACK-08", "question": "Are all plausible campus track locations sufficiently visible to support a negative answer?", "expected_for_positive": null, "expected_for_negative": "yes"}
+      ]
+    },
+    "sports_fields": {
+      "measurement_fields": ["full_size_sports_fields"],
+      "definition": "Count distinct formal outdoor field footprints large enough for organized full-field school competition or practice. Overlapping sport markings on one physical footprint count once; separate diamonds count separately.",
+      "questions": [
+        {"id": "FIELD-01", "question": "Does every counted candidate have a complete playable physical footprint?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "FIELD-02", "question": "Are formal sport markings or equipment visible, such as goals, uprights, yard lines, center or penalty markings, bases, foul lines, pitcher area, or backstop?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "FIELD-03", "question": "Does image scale support a full-size organized-play field rather than a small playground or practice patch?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "FIELD-04", "question": "Could any counted candidate instead be merely unmarked open lawn?", "expected_for_positive": "no", "expected_for_negative": null},
+        {"id": "FIELD-05", "question": "Were overlapping sport configurations on one footprint deduplicated?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "FIELD-06", "question": "Were separate simultaneously usable footprints or separate baseball or softball diamonds counted separately?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "FIELD-07", "question": "Is every counted footprint inside or credibly controlled by the school?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "FIELD-08", "question": "Are all plausible field locations sufficiently visible to support a zero count?", "expected_for_positive": null, "expected_for_negative": "yes"}
+      ]
+    },
+    "hard_courts": {
+      "measurement_fields": ["hard_courts"],
+      "definition": "Count the maximum number of non-overlapping complete independently playable full outdoor hard-court footprints. Multiple sports painted on one physical court count once; separately playable courts on one slab count separately; an isolated half basketball court is excluded.",
+      "questions": [
+        {"id": "COURT-01", "question": "Were all paved court complexes inventoried before counting individual courts?", "expected_for_positive": "yes", "expected_for_negative": "yes"},
+        {"id": "COURT-02", "question": "Does every counted unit have a complete playable boundary rather than only partial or remnant lines?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "COURT-03", "question": "Does every counted unit have sport-specific markings or equipment such as a tennis net and service boxes, two opposing basketball backstops and keys/arcs, or a volleyball net and attack lines?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "COURT-04", "question": "Can all counted units be used simultaneously without occupying the same playing footprint?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "COURT-05", "question": "Were multiple sport line sets on the same physical footprint counted only once?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "COURT-06", "question": "Were separately playable courts on one continuous paved slab counted separately?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "COURT-07", "question": "Were isolated half basketball courts with only one basket excluded?", "expected_for_positive": "yes", "expected_for_negative": "yes"},
+        {"id": "COURT-08", "question": "Is detail resolution sufficient to distinguish complete court lines and equipment?", "expected_for_positive": "yes", "expected_for_negative": "yes"},
+        {"id": "COURT-09", "question": "Is every counted unit inside or credibly controlled by the school?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "COURT-10", "question": "Are all plausible court locations sufficiently visible to support a zero count?", "expected_for_positive": null, "expected_for_negative": "yes"}
+      ]
+    },
+    "pool": {
+      "measurement_fields": ["pool"],
+      "definition": "A purpose-built swimming pool inside or credibly controlled by the school. Exclude residential, municipal, private, decorative, splash-water, pond, roof, tarp, and blue-court lookalikes.",
+      "questions": [
+        {"id": "POOL-01", "question": "Is there a bounded purpose-built basin with a continuous coping or deck?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "POOL-02", "question": "Are aquatic cues visible, such as water or pool floor, parallel lanes, starting blocks, ladders, diving equipment, or turn indicators?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "POOL-03", "question": "Could the candidate instead be a blue court, roof, tarp, pond, splash pad, fountain, or decorative feature?", "expected_for_positive": "no", "expected_for_negative": null},
+        {"id": "POOL-04", "question": "Is the candidate inside or credibly controlled by the school rather than a residence, municipality, hotel, or private club?", "expected_for_positive": "yes", "expected_for_negative": null},
+        {"id": "POOL-05", "question": "Are all plausible outdoor pool locations sufficiently visible to support a negative answer?", "expected_for_positive": null, "expected_for_negative": "yes"}
+      ]
+    }
+  }
+}

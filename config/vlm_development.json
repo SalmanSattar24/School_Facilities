@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.2",
+  "configuration_id": "school-facilities-vlm-development-v0.2",
+  "base_config": "config/vlm.json",
+  "purpose": "API, serialization, timeout, and review-workflow testing only; outputs are not final measurements",
+  "provider": "Google Gemini Developer API",
+  "model": "gemini-3.5-flash-lite",
+  "model_release_channel": "stable",
+  "model_documented_latest_update": "2026-07",
+  "generation": {
+    "thinking_level": "minimal",
+    "max_output_tokens": 4096,
+    "prompt_supplement_path": "config/vlm_prompt_development.txt",
+    "response_format": {
+      "type": "text",
+      "mime_type": "application/json",
+      "schema_path": "config/vlm_response_schema_development.json",
+      "provider_projection_omits_local_only_keywords": ["minLength", "uniqueItems"]
+    }
+  },
+  "inputs": {
+    "images_per_school": 4,
+    "image_order": ["context", "detail", "athletics_overview", "hard_courts_detail"],
+    "facility_crop_roles": ["athletics_overview", "hard_courts_detail"]
+  },
+  "request_limits": {
+    "provider_quota_observed_at": "2026-08-30",
+    "provider_quota_source": "Google AI Studio project quota screen supplied by user",
+    "requests_per_minute": 15,
+    "tokens_per_minute": 250000,
+    "requests_per_day": 500,
+    "minimum_seconds_between_requests": 4,
+    "one_primary_request_per_school": false,
+    "maximum_retries_per_school": 5,
+    "request_timeout_seconds": 300,
+    "pilot_hard_request_cap_including_retries": 12,
+    "production_hard_request_cap_including_retries": 0
+  },
+  "outputs": {
+    "raw_directory": "data/model_outputs/development/v0.2",
+    "reviewed_directory": "data/reviewed/development/v0.2",
+    "human_review_required": true
+  }
+}

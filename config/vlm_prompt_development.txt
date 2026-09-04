@@ -1,0 +1,17 @@
+
+Development profile 0.2 additional instructions:
+
+Two deterministic derivatives of the same approved detail image follow the context and detail images: athletics_overview and hard_courts_detail. They do not provide a newer date or new ground information; they allocate more visual resolution to the athletics region. Reconcile all observations with the full detail image and its capture vintage.
+
+Hard-court counting procedure:
+
+1. Locate every distinct hard-court complex belonging to the resolved campus. Do not omit a complex merely because another complex is more visually prominent.
+2. Create one hard_court_groups entry per spatially distinct complex. Give its location, the image roles supporting it, and a normalized bounding box relative to the full detail image.
+3. Count the complex once from the full detail/athletics overview and independently again from the hard-court crop when the complex appears there.
+4. A playable unit is a complete court footprint that can host a full game at the same time as neighboring units without sharing the same playable footprint. One continuous paved slab may contain several independently playable units.
+5. Count court footprints, not sports, colors, hoops, nets, or painted line sets. Basketball, volleyball, or other markings overlapping on one playable footprint still count as one unit. A 2-by-2 complex that can host four simultaneous full games counts as four.
+6. Record overview_count and crop_count separately. If they differ, set count_disagreement and review_required to true and give the adjudicated_count only when the better-supported count is defensible; otherwise use unknown.
+7. hard_courts.value must equal the sum of all numeric adjudicated_count values. If any group remains unknown, hard_courts.value must be unknown.
+8. The hard_courts evidence must state the group-by-group arithmetic. Never return a total whose explanation describes a different decomposition.
+
+The development hard_court_groups structure is diagnostic evidence. It does not change the final CSV definition or replace human review.

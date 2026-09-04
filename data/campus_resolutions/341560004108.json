@@ -1,0 +1,135 @@
+{
+  "school_id": "341560004108",
+  "school_name": "Spring Lake Heights Elementary School",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -74.03766702,
+    40.15284876,
+    -74.03471295,
+    40.1549446
+  ],
+  "geometry": [
+    [
+      40.1549446,
+      -74.03764095
+    ],
+    [
+      40.15493044,
+      -74.03593864
+    ],
+    [
+      40.15442472,
+      -74.03471295
+    ],
+    [
+      40.15284876,
+      -74.03479397
+    ],
+    [
+      40.15286342,
+      -74.03655493
+    ],
+    [
+      40.1530979,
+      -74.03766702
+    ],
+    [
+      40.1549446,
+      -74.03764095
+    ]
+  ],
+  "matched_name": "Spring Lake Heights Elementary School",
+  "source_element": "https://www.openstreetmap.org/node/357739462",
+  "name_similarity": 1.0,
+  "distance_from_ccd_m": 24.376205200601394,
+  "candidate_margin": 0.5650835943575578,
+  "recommended_detail_extent_m": 600,
+  "unclamped_detail_extent_m": 600,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "Matched 'Spring Lake Heights Elementary School' from OSM node/357739462; name similarity 1.000, CCD-to-center distance 24.4 m, candidate margin 0.565. Match did not meet the automatic polygon/name/distance thresholds. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+  "candidates_considered": 3,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 40.15389668,
+    "longitude": -74.036189985
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 40.154128,
+    "longitude": -74.036948
+  },
+  "boundary_notes": "Matched 'Spring Lake Heights Elementary School' from OSM node/357739462; name similarity 1.000, CCD-to-center distance 24.4 m, candidate margin 0.565. Match did not meet the automatic polygon/name/distance thresholds. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+  "confirmation_method": "automated_gemini_soft_scope",
+  "automatic_resolution_status_before_soft_scope": "unresolved",
+  "scope_mode": "soft_boundary",
+  "scope_boundary_authority": "soft_guidance",
+  "measurement_search_scope": "entire_detail_image",
+  "boundary_status": "approximate_non_authoritative",
+  "original_resolver_geometry": [
+    [
+      40.1543126,
+      -74.0367933
+    ]
+  ],
+  "original_resolver_bbox_wgs84": null,
+  "soft_boundary_geometry": [
+    [
+      40.1549446,
+      -74.03764095
+    ],
+    [
+      40.15493044,
+      -74.03593864
+    ],
+    [
+      40.15442472,
+      -74.03471295
+    ],
+    [
+      40.15284876,
+      -74.03479397
+    ],
+    [
+      40.15286342,
+      -74.03655493
+    ],
+    [
+      40.1530979,
+      -74.03766702
+    ],
+    [
+      40.1549446,
+      -74.03764095
+    ]
+  ],
+  "soft_boundary_bbox_wgs84": [
+    -74.03766702,
+    40.15284876,
+    -74.03471295,
+    40.1549446
+  ],
+  "soft_scope_safety_buffer_each_side_m": 150,
+  "soft_boundary_proposal": {
+    "path": "data/campus_boundary_proposals/v1.0/341560004108.json",
+    "sha256": "72e42e0d3ece0a05f75dd4db5539722b1c4a7e86dea0790492420973373647b0",
+    "configuration_id": "school-facilities-boundary-resolver-v1.0",
+    "model": "gemini-3.5-flash-lite",
+    "request_fingerprint_sha256": "7ce1ae7f3655649120e989e2cf1bcea468cefaaade77256f20eae09d0f6a23ef",
+    "candidate_quality_gate_passed": true
+  },
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "soft-boundary centering plus safety buffer, provenance, and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/341560004108/context.jpg",
+    "data/imagery/341560004108/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "b5654c08c0a5afb0b256c43ae06bdf1f4e5848fc75b986b8276029706b830424",
+    "detail.jpg": "f44138c64c31fd4137d0648a265c1391848f75a180939f3b7d18eeec5d1f957a"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "bc52fae19118c0399d97daaf753a4f1c93387e27e3846e2451c0dc14d9dee977"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

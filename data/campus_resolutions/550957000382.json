@@ -1,0 +1,133 @@
+{
+  "school_id": "550957000382",
+  "school_name": "Northside Intermediate",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -88.949561,
+    42.7805476,
+    -88.9460137,
+    42.7831403
+  ],
+  "geometry": [
+    [
+      42.780568,
+      -88.9494782
+    ],
+    [
+      42.7831403,
+      -88.949561
+    ],
+    [
+      42.7831141,
+      -88.946045
+    ],
+    [
+      42.7829061,
+      -88.9460412
+    ],
+    [
+      42.7821411,
+      -88.9460223
+    ],
+    [
+      42.7820145,
+      -88.9460137
+    ],
+    [
+      42.781854,
+      -88.946055
+    ],
+    [
+      42.781557,
+      -88.946263
+    ],
+    [
+      42.7814503,
+      -88.9464522
+    ],
+    [
+      42.7814059,
+      -88.9465567
+    ],
+    [
+      42.7813744,
+      -88.946631
+    ],
+    [
+      42.7811866,
+      -88.9470652
+    ],
+    [
+      42.7811285,
+      -88.9471998
+    ],
+    [
+      42.7811025,
+      -88.9472497
+    ],
+    [
+      42.781058,
+      -88.9473353
+    ],
+    [
+      42.7809528,
+      -88.9474706
+    ],
+    [
+      42.7808747,
+      -88.9475427
+    ],
+    [
+      42.780605,
+      -88.947653
+    ],
+    [
+      42.7805476,
+      -88.9476518
+    ],
+    [
+      42.7805484,
+      -88.9477269
+    ],
+    [
+      42.780568,
+      -88.9494782
+    ]
+  ],
+  "matched_name": "Northside Intermediate School",
+  "source_element": "https://www.openstreetmap.org/way/361979144",
+  "name_similarity": 1.0,
+  "distance_from_ccd_m": 77.49932974950646,
+  "candidate_margin": 0.6864798946896761,
+  "recommended_detail_extent_m": 450,
+  "unclamped_detail_extent_m": 450,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "Matched 'Northside Intermediate School' from OSM way/361979144; name similarity 1.000, CCD-to-center distance 77.5 m, candidate margin 0.686. Match passed the frozen automatic-resolution thresholds.",
+  "candidates_considered": 6,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 42.781843949999995,
+    "longitude": -88.94778735
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 42.78247,
+    "longitude": -88.94737
+  },
+  "boundary_notes": "Matched 'Northside Intermediate School' from OSM way/361979144; name similarity 1.000, CCD-to-center distance 77.5 m, candidate margin 0.686. Match passed the frozen automatic-resolution thresholds.",
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "automatic provenance and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/550957000382/context.jpg",
+    "data/imagery/550957000382/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "c54182eb57fba2d9f1bb0dd03162cd65630da52fa571ecb4404a45bd56502c66",
+    "detail.jpg": "b4098e88ca6ddeb33a5f6b54d71f141aed35fef05e2af0cbd3ab534b3cba54c8"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "16464721bf307bb79aeb385d03e58594798375ae92b86a9a35b2ebafe7ddac59"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

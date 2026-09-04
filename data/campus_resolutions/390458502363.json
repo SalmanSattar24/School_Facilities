@@ -1,0 +1,114 @@
+{
+  "school_id": "390458502363",
+  "school_name": "Ridgeview Elementary School",
+  "status": "confirmed",
+  "method": "ccd_fallback_no_public_match",
+  "bbox_wgs84": [
+    -80.76459665,
+    41.87231661,
+    -80.76279199,
+    41.87478816
+  ],
+  "geometry": [
+    [
+      41.87478816,
+      -80.7645876
+    ],
+    [
+      41.87478447,
+      -80.76279199
+    ],
+    [
+      41.87231661,
+      -80.76280112
+    ],
+    [
+      41.8723203,
+      -80.76459665
+    ],
+    [
+      41.87478816,
+      -80.7645876
+    ]
+  ],
+  "matched_name": null,
+  "source_element": null,
+  "name_similarity": null,
+  "distance_from_ccd_m": null,
+  "candidate_margin": null,
+  "recommended_detail_extent_m": 600,
+  "unclamped_detail_extent_m": 600,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "No named public school candidate was found within 1,500 metres. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+  "candidates_considered": 0,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 41.873552384999996,
+    "longitude": -80.76369432
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 41.874048,
+    "longitude": -80.763807
+  },
+  "boundary_notes": "No named public school candidate was found within 1,500 metres. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+  "confirmation_method": "automated_gemini_soft_scope",
+  "automatic_resolution_status_before_soft_scope": "unresolved",
+  "scope_mode": "soft_boundary",
+  "scope_boundary_authority": "soft_guidance",
+  "measurement_search_scope": "entire_detail_image",
+  "boundary_status": "approximate_non_authoritative",
+  "original_resolver_geometry": [],
+  "original_resolver_bbox_wgs84": null,
+  "soft_boundary_geometry": [
+    [
+      41.87478816,
+      -80.7645876
+    ],
+    [
+      41.87478447,
+      -80.76279199
+    ],
+    [
+      41.87231661,
+      -80.76280112
+    ],
+    [
+      41.8723203,
+      -80.76459665
+    ],
+    [
+      41.87478816,
+      -80.7645876
+    ]
+  ],
+  "soft_boundary_bbox_wgs84": [
+    -80.76459665,
+    41.87231661,
+    -80.76279199,
+    41.87478816
+  ],
+  "soft_scope_safety_buffer_each_side_m": 150,
+  "soft_boundary_proposal": {
+    "path": "data/campus_boundary_proposals/v1.0/390458502363.json",
+    "sha256": "f22781c114969bbd64dd840ee9843a4bbc870878def2373a9e3bc5d6bb2b1158",
+    "configuration_id": "school-facilities-boundary-resolver-v1.0",
+    "model": "gemini-3.5-flash-lite",
+    "request_fingerprint_sha256": "b320a79d4c35cccc049afbe5d181066d9ee988c31a100a729da6726fb698f1fa",
+    "candidate_quality_gate_passed": false
+  },
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "soft-boundary centering plus safety buffer, provenance, and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/390458502363/context.jpg",
+    "data/imagery/390458502363/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "f25378393a3afbf3c2ac0cf5688f1f7efcb72085798438e5681fda05f8d2c8e5",
+    "detail.jpg": "6be53c526367f4886c72c4782e0ccf7457612ea69c0762f593c43c354daeceaa"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "8b40137efe15ee12f62d2fc1984a662377c9c3393cff0c0c5c36a26c3e4aa82b"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

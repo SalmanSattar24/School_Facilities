@@ -1,0 +1,138 @@
+{
+  "school_id": "390494903613",
+  "school_name": "Adena Elementary School",
+  "status": "confirmed",
+  "method": "ccd_fallback_no_public_match",
+  "bbox_wgs84": [
+    -83.19682192,
+    39.4114966,
+    -83.19135596,
+    39.41801606
+  ],
+  "geometry": [
+    [
+      39.41798867,
+      -83.19531867
+    ],
+    [
+      39.41801606,
+      -83.1938676
+    ],
+    [
+      39.41755889,
+      -83.19135596
+    ],
+    [
+      39.41560879,
+      -83.19204985
+    ],
+    [
+      39.4114966,
+      -83.19273402
+    ],
+    [
+      39.41356548,
+      -83.19529602
+    ],
+    [
+      39.41592415,
+      -83.19682192
+    ],
+    [
+      39.41798867,
+      -83.19531867
+    ]
+  ],
+  "matched_name": null,
+  "source_element": null,
+  "name_similarity": null,
+  "distance_from_ccd_m": null,
+  "candidate_margin": null,
+  "recommended_detail_extent_m": 1050,
+  "unclamped_detail_extent_m": 1050,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "No named public school candidate was found within 1,500 metres. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+  "candidates_considered": 0,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 39.41475633,
+    "longitude": -83.19408894
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 39.41589,
+    "longitude": -83.193859
+  },
+  "boundary_notes": "No named public school candidate was found within 1,500 metres. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+  "confirmation_method": "automated_gemini_soft_scope",
+  "automatic_resolution_status_before_soft_scope": "unresolved",
+  "scope_mode": "soft_boundary",
+  "scope_boundary_authority": "soft_guidance",
+  "measurement_search_scope": "entire_detail_image",
+  "boundary_status": "approximate_non_authoritative",
+  "original_resolver_geometry": [],
+  "original_resolver_bbox_wgs84": null,
+  "soft_boundary_geometry": [
+    [
+      39.41798867,
+      -83.19531867
+    ],
+    [
+      39.41801606,
+      -83.1938676
+    ],
+    [
+      39.41755889,
+      -83.19135596
+    ],
+    [
+      39.41560879,
+      -83.19204985
+    ],
+    [
+      39.4114966,
+      -83.19273402
+    ],
+    [
+      39.41356548,
+      -83.19529602
+    ],
+    [
+      39.41592415,
+      -83.19682192
+    ],
+    [
+      39.41798867,
+      -83.19531867
+    ]
+  ],
+  "soft_boundary_bbox_wgs84": [
+    -83.19682192,
+    39.4114966,
+    -83.19135596,
+    39.41801606
+  ],
+  "soft_scope_safety_buffer_each_side_m": 150,
+  "soft_boundary_proposal": {
+    "path": "data/campus_boundary_proposals/v1.0/390494903613.json",
+    "sha256": "b9209d62c7e86143f45f1b2b18e431781164512658a312da31b476ed6bc1db5c",
+    "configuration_id": "school-facilities-boundary-resolver-v1.0",
+    "model": "gemini-3.5-flash-lite",
+    "request_fingerprint_sha256": "878345aaf26bc6f6075ffd25650de2954dc8f859ab0daaac923f869ce1cda0c5",
+    "candidate_quality_gate_passed": true
+  },
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "soft-boundary centering plus safety buffer, provenance, and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/390494903613/context.jpg",
+    "data/imagery/390494903613/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "0fd69808072300f2e19f5bc1503dbaa8e4b1b94b8269f181ec3093af78230e67",
+    "detail.jpg": "8a983b0794967ca7c199baa1541991a16a465522806dd2febdea775f5b6cb0dd"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "00dfde7566793a145a2d28571e244a548acd05c02c1e70f3b30174976d0c47c4"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

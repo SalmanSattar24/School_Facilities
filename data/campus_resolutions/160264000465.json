@@ -1,0 +1,130 @@
+{
+  "school_id": "160264000465",
+  "school_name": "CLAUDE A WILCOX ELEMENTARY SCHOOL",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -112.4752406,
+    42.897405,
+    -112.4715233,
+    42.898981
+  ],
+  "geometry": [
+    [
+      42.8974805,
+      -112.4716523
+    ],
+    [
+      42.8981224,
+      -112.4715233
+    ],
+    [
+      42.8985698,
+      -112.4715574
+    ],
+    [
+      42.8985587,
+      -112.4736968
+    ],
+    [
+      42.8988477,
+      -112.473712
+    ],
+    [
+      42.8988588,
+      -112.4738485
+    ],
+    [
+      42.8988171,
+      -112.4739092
+    ],
+    [
+      42.8988004,
+      -112.4746527
+    ],
+    [
+      42.8988004,
+      -112.4747665
+    ],
+    [
+      42.8988477,
+      -112.4748423
+    ],
+    [
+      42.898906,
+      -112.4748651
+    ],
+    [
+      42.8989588,
+      -112.4748348
+    ],
+    [
+      42.898981,
+      -112.4752406
+    ],
+    [
+      42.8987578,
+      -112.475113
+    ],
+    [
+      42.8974249,
+      -112.4750699
+    ],
+    [
+      42.897405,
+      -112.4749797
+    ],
+    [
+      42.8974611,
+      -112.4731961
+    ],
+    [
+      42.8974805,
+      -112.4716523
+    ]
+  ],
+  "matched_name": "Wilcox Elementary",
+  "source_element": "https://www.openstreetmap.org/way/546871116",
+  "name_similarity": 0.5714285714285714,
+  "distance_from_ccd_m": 87.09609924559602,
+  "candidate_margin": 0.29873201435346075,
+  "recommended_detail_extent_m": 450,
+  "unclamped_detail_extent_m": 450,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "Matched 'Wilcox Elementary' from OSM way/546871116; name similarity 0.571, CCD-to-center distance 87.1 m, candidate margin 0.299. Match did not meet the automatic polygon/name/distance thresholds. User manually approved the proposed OSM campus polygon on 2026-09-03. User approved the proposed campus polygon in the project review; no boundary correction or shared-facility exception was specified.",
+  "candidates_considered": 3,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 42.898193,
+    "longitude": -112.47338195
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 42.898474,
+    "longitude": -112.47438
+  },
+  "boundary_notes": "Matched 'Wilcox Elementary' from OSM way/546871116; name similarity 0.571, CCD-to-center distance 87.1 m, candidate margin 0.299. Match did not meet the automatic polygon/name/distance thresholds. User manually approved the proposed OSM campus polygon on 2026-09-03. User approved the proposed campus polygon in the project review; no boundary correction or shared-facility exception was specified.",
+  "confirmation_method": "user_manual_polygon_review",
+  "automatic_resolution_status_before_review": "unresolved",
+  "manual_review": {
+    "decision": "approved_proposed_polygon",
+    "reviewed_at": "2026-09-03",
+    "reviewer_role": "user manual campus review",
+    "review_note": "User approved the proposed campus polygon in the project review; no boundary correction or shared-facility exception was specified.",
+    "review_overlay": "data/campus_reviews/160264000465/context_overlay.jpg"
+  },
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "manual polygon approval plus provenance and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/160264000465/context.jpg",
+    "data/imagery/160264000465/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "8c711fd757e70c67d066827f2d8925bf512f4a5177274158c098ba56bca3d1e7",
+    "detail.jpg": "7e3806181b1a991c7f0f030a8a722233775977a02800ee12c0f5afe4174a1ac3"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "90c19a8f215c8b3a3ae39053902732f74cfc3c366805c0bbfe6756a355d96594"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

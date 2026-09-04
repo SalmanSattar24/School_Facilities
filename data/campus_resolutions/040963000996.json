@@ -1,0 +1,200 @@
+{
+  "school_id": "040963000996",
+  "school_name": "Kofa High School",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -114.6396316,
+    32.6695374,
+    -114.6341721,
+    32.6765661
+  ],
+  "geometry": [
+    [
+      32.6762247,
+      -114.6374
+    ],
+    [
+      32.6732535,
+      -114.639181
+    ],
+    [
+      32.6721878,
+      -114.6395458
+    ],
+    [
+      32.671366,
+      -114.6396316
+    ],
+    [
+      32.671399,
+      -114.6393218
+    ],
+    [
+      32.6706302,
+      -114.6393111
+    ],
+    [
+      32.6695814,
+      -114.6392869
+    ],
+    [
+      32.6695803,
+      -114.6391542
+    ],
+    [
+      32.6697135,
+      -114.6390388
+    ],
+    [
+      32.6697094,
+      -114.6389401
+    ],
+    [
+      32.6697026,
+      -114.6388069
+    ],
+    [
+      32.6696999,
+      -114.638729
+    ],
+    [
+      32.6695893,
+      -114.6385802
+    ],
+    [
+      32.6695859,
+      -114.6378023
+    ],
+    [
+      32.6695611,
+      -114.6376535
+    ],
+    [
+      32.6695509,
+      -114.6363446
+    ],
+    [
+      32.6695374,
+      -114.634569
+    ],
+    [
+      32.6696367,
+      -114.6344899
+    ],
+    [
+      32.6696853,
+      -114.6344859
+    ],
+    [
+      32.6699137,
+      -114.6344859
+    ],
+    [
+      32.670427,
+      -114.6344859
+    ],
+    [
+      32.6705389,
+      -114.6344853
+    ],
+    [
+      32.6709045,
+      -114.6344832
+    ],
+    [
+      32.6710423,
+      -114.6344807
+    ],
+    [
+      32.6712684,
+      -114.6345086
+    ],
+    [
+      32.6713272,
+      -114.63453
+    ],
+    [
+      32.6715088,
+      -114.6345512
+    ],
+    [
+      32.6715335,
+      -114.6344603
+    ],
+    [
+      32.6716882,
+      -114.6343817
+    ],
+    [
+      32.6719136,
+      -114.6346734
+    ],
+    [
+      32.6730216,
+      -114.6346795
+    ],
+    [
+      32.6730222,
+      -114.6341721
+    ],
+    [
+      32.6765661,
+      -114.6341937
+    ],
+    [
+      32.676557,
+      -114.6345139
+    ],
+    [
+      32.676399,
+      -114.6348546
+    ],
+    [
+      32.6762071,
+      -114.6348868
+    ],
+    [
+      32.6762247,
+      -114.6374
+    ]
+  ],
+  "matched_name": "Kofa High School",
+  "source_element": "https://www.openstreetmap.org/way/692830430",
+  "name_similarity": 1.0,
+  "distance_from_ccd_m": 162.45202064102355,
+  "candidate_margin": 0.5362214687190896,
+  "recommended_detail_extent_m": 950,
+  "unclamped_detail_extent_m": 950,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "Matched 'Kofa High School' from OSM way/692830430; name similarity 1.000, CCD-to-center distance 162.5 m, candidate margin 0.536. Match passed the frozen automatic-resolution thresholds.",
+  "candidates_considered": 6,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 32.67305175,
+    "longitude": -114.63690185
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 32.6743,
+    "longitude": -114.636
+  },
+  "boundary_notes": "Matched 'Kofa High School' from OSM way/692830430; name similarity 1.000, CCD-to-center distance 162.5 m, candidate margin 0.536. Match passed the frozen automatic-resolution thresholds.",
+  "scope_mode": "authoritative_polygon",
+  "scope_boundary_authority": "authoritative",
+  "measurement_search_scope": "inside_authoritative_polygon",
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "automatic provenance and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/040963000996/context.jpg",
+    "data/imagery/040963000996/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "d3b4a66a4efd4441b7fef5134e057ad2af61be1c8a342853bff26f310ca027cc",
+    "detail.jpg": "f11e9b82e66f0348018af2b4a85f9174867a4a0ff26b6786583692a8b0dd5e62"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "c4ceedbcf6052cf0221a0069c98a1c921f7ef6ebe12b396096d3260f3821f983"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

@@ -1,0 +1,77 @@
+{
+  "school_id": "061734009378",
+  "school_name": "Cerra Vista Elementary",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -121.3735033,
+    36.8282335,
+    -121.3707674,
+    36.8301477
+  ],
+  "geometry": [
+    [
+      36.8301477,
+      -121.373307
+    ],
+    [
+      36.8300392,
+      -121.3707674
+    ],
+    [
+      36.8282335,
+      -121.370807
+    ],
+    [
+      36.8282392,
+      -121.3708884
+    ],
+    [
+      36.8282666,
+      -121.3735033
+    ],
+    [
+      36.8287875,
+      -121.3734691
+    ],
+    [
+      36.8301477,
+      -121.373307
+    ]
+  ],
+  "matched_name": "Cerra Vista School",
+  "source_element": "https://www.openstreetmap.org/way/27420396",
+  "name_similarity": 1.0,
+  "distance_from_ccd_m": 30.06392976815548,
+  "candidate_margin": 0.5599914760309126,
+  "recommended_detail_extent_m": 400,
+  "requires_human_review": false,
+  "reason": "Matched 'Cerra Vista School' from OSM way/27420396; name similarity 1.000, CCD-to-center distance 30.1 m, candidate margin 0.560. Match passed the frozen automatic-resolution thresholds.",
+  "candidates_considered": 6,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 36.829190600000004,
+    "longitude": -121.37213535000001
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 36.829411,
+    "longitude": -121.372331
+  },
+  "boundary_notes": "Matched 'Cerra Vista School' from OSM way/27420396; name similarity 1.000, CCD-to-center distance 30.1 m, candidate margin 0.560. Match passed the frozen automatic-resolution thresholds.",
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "automatic provenance and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/061734009378/context.jpg",
+    "data/imagery/061734009378/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "5ce4d03b90e055fd4ae67982f154900c3bca79c940dd418ef11cd855895002c1",
+    "detail.jpg": "81cb204537d7d3f81b2d99701337f1718a028fab32b718749c115cbd582585e3"
+  },
+  "public_source_and_non_sensitive_confirmed": true,
+  "unclamped_detail_extent_m": 400,
+  "detail_extent_clipped_at_maximum": false,
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "d1039406278af0a11b519f0088ceab0aded15d0e73011fc7dc65c657b224a4e0"
+  }
+}

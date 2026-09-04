@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.10",
+  "configuration_id": "school-facilities-vlm-final-v1.10",
+  "frozen_at": "2026-09-03",
+  "provider": "Google Gemini Developer API",
+  "model": "gemini-3.5-flash-lite",
+  "model_release_channel": "stable",
+  "model_documented_latest_update": "2026-07",
+  "api_version": "v1beta",
+  "client": {
+    "package": "google-genai",
+    "version": "2.20.0",
+    "method": "interactions.create"
+  },
+  "credentials": {
+    "api_key_environment_variable": "GEMINI_API_KEY",
+    "lookup_order": ["environment", "local_secrets_file"],
+    "local_secrets_file": "secrets.local.env",
+    "user_supplied": true,
+    "key_must_not_be_written_to_config_or_logs": true,
+    "require_project_without_active_billing": true,
+    "require_user_free_tier_quota_check": true
+  },
+  "usage_mode": {
+    "standard_api": true,
+    "batch_api": false,
+    "priority_api": false,
+    "grounding_with_search": false,
+    "grounding_with_maps": false,
+    "context_caching": false,
+    "allow_paid_overage": false,
+    "allow_model_fallback": false,
+    "allow_latest_alias": false,
+    "require_exact_model_id": true
+  },
+  "generation": {
+    "thinking_level": "minimal",
+    "max_output_tokens": 8192,
+    "response_format": {
+      "type": "text",
+      "mime_type": "application/json",
+      "schema_path": "config/vlm_response_schema.json",
+      "provider_projection": "required_property_tree_basic_types",
+      "strict_validation_location": "local_after_response"
+    },
+    "prompt_path": "config/vlm_prompt.txt"
+  },
+  "inputs": {
+    "images_per_school": 2,
+    "image_order": ["context", "detail"],
+    "image_format": "JPEG",
+    "image_dimensions": [1600, 1600],
+    "per_image_media_resolution": "high",
+    "transport": "inline bytes",
+    "include_school_identity": true,
+    "include_imagery_source_and_vintage": true,
+    "include_resolved_campus_notes": true,
+    "include_metres_per_pixel": true,
+    "include_resolved_campus_boundary_when_authoritative": true,
+    "include_non_binding_boundary_guidance_when_available": true,
+    "scope_modes": ["authoritative_polygon", "soft_boundary", "center_only"],
+    "soft_and_center_only_measurement_search_scope": "entire_detail_image",
+    "campus_boundary_coordinate_system": "detail-image normalized coordinates with top-left (0,0) and bottom-right (1,1)"
+  },
+  "request_limits": {
+    "provider_quota_observed_at": "2026-08-30",
+    "provider_quota_source": "Google AI Studio project quota screen supplied by user",
+    "requests_per_minute": 15,
+    "tokens_per_minute": 250000,
+    "requests_per_day": 500,
+    "minimum_seconds_between_requests": 4,
+    "one_primary_request_per_school": true,
+    "maximum_retries_per_school": 1,
+    "retry_statuses": [429, 500, 502, 503, 504],
+    "retry_initial_backoff_seconds": 5,
+    "retry_maximum_backoff_seconds": 30,
+    "request_timeout_seconds": 300,
+    "pilot_hard_request_cap_including_retries": 6,
+    "production_hard_request_cap_including_retries": 30
+  },
+  "outputs": {
+    "raw_directory": "data/model_outputs/final/v1.10",
+    "rejected_directory": "data/model_outputs/rejected/v1.10",
+    "reviewed_directory": "data/reviewed/final/v1.10",
+    "preserve_raw_response": true,
+    "validate_json_before_review": true,
+    "model_must_not_assign_final_confidence": true,
+    "model_suggested_confidence": {
+      "enabled": true,
+      "allowed_scores": [0.8, 0.6, 0.4, 0.2],
+      "diagnostic_only": true,
+      "unknown_requires_score": 0.2,
+      "hidden_during_blind_reference_labeling": true
+    },
+    "human_review_required": true
+  },
+  "evaluation": {
+    "validation_predictions_hidden_until_reference_freeze": true,
+    "primary_outcomes": ["correct", "wrong", "abstained_unknown"],
+    "flag_rule": {
+      "review_required": true,
+      "unknown_is_flagged": true,
+      "confidence_at_or_below_is_flagged": 0.6
+    },
+    "auto_accept_candidate_rule": {
+      "minimum_suggested_confidence": 0.8,
+      "review_required": false,
+      "prediction_must_be_known": true
+    },
+    "stability_audit": {
+      "pilot_schools": 3,
+      "responses_per_school": 3,
+      "additional_calls_after_primary_responses": 6,
+      "same_frozen_inputs_and_configuration": true,
+      "must_not_be_used_for_prompt_tuning": true
+    }
+  },
+  "uncertainty_policy": {
+    "always_review_fields": [
+      "perimeter_fencing",
+      "dominant_fence_type",
+      "hard_courts"
+    ],
+    "review_when_nonzero_fields": [
+      "portable_classroom_count",
+      "full_size_sports_fields"
+    ],
+    "review_model_unknown": true,
+    "review_model_confidence_at_or_below": 0.6,
+    "respect_model_review_required": true,
+    "hard_conflict_action": "preserve_raw_and_force_guarded_unknown",
+    "soft_risk_action": "preserve_raw_and_require_review",
+    "semantic_conflict_action": "preserve_raw_and_force_guarded_unknown",
+    "raw_predictions_remain_available_for_blind_accuracy_evaluation": true
+  },
+  "evidence_policy": {
+    "field_protocol_path": "config/vlm_field_protocol.json",
+    "require_exact_feature_question_set": true,
+    "unknown_question_answer_requires_review": true,
+    "directional_question_conflict_action": "preserve_raw_and_force_guarded_unknown",
+    "require_packet_for_every_measurement": true,
+    "require_observable_facts_not_private_chain_of_thought": true,
+    "negative_answer_requires_adequate_visibility": true,
+    "positive_answer_requires_located_observation": true,
+    "count_fields_require_component_sum": [
+      "portable_classroom_count",
+      "full_size_sports_fields",
+      "hard_courts"
+    ],
+    "solar_area_consistency": {
+      "absolute_tolerance_m2": 25,
+      "relative_tolerance_fraction": 0.25
+    },
+    "auditor_may_overwrite_primary_value": false
+  },
+  "data_terms": {
+    "service_tier": "unpaid",
+    "provider_may_use_inputs_and_outputs_to_improve_products": true,
+    "provider_human_review_may_occur": true,
+    "sensitive_or_confidential_data_prohibited": true,
+    "personal_data_prohibited": true,
+    "project_input_class": "public-source school identity and overhead imagery plus non-sensitive project instructions and public-source-derived campus notes",
+    "operational_metadata_is_outside_project_content_allowlist": true,
+    "require_user_acknowledgement_before_first_call": true
+  }
+}

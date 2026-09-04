@@ -1,0 +1,5 @@
+{
+  "note": "The exact non-secret configuration is tracked in config/vlm.json. Store the real key only in ignored secrets.local.env or a temporary environment variable.",
+  "api_key_environment_variable": "GEMINI_API_KEY",
+  "secret_value": "DO_NOT_PUT_KEYS_IN_TRACKED_FILES"
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "configuration_id": "school-facilities-streetview-vlm-v1.11",
+  "model": "gemini-3.5-flash-lite",
+  "api_version": "v1beta",
+  "credentials": {
+    "api_key_environment_variable": "GEMINI_API_KEY",
+    "local_secrets_file": "secrets.local.env"
+  },
+  "generation": {
+    "thinking_level": "minimal",
+    "max_output_tokens": 8192,
+    "prompt_path": "config/streetview_vlm_prompt_v1_11.txt",
+    "response_schema_path": "config/streetview_vlm_response_schema_v1_11.json"
+  },
+  "request_limits": {
+    "minimum_seconds_between_requests": 4,
+    "maximum_requests_per_school": 1,
+    "maximum_retries": 0,
+    "request_timeout_seconds": 300
+  },
+  "inputs": {
+    "include_frozen_aerial_pair": true,
+    "maximum_street_images": 8,
+    "street_image_resolution": "high",
+    "aerial_image_resolution": "high"
+  },
+  "outputs": {
+    "preserve_raw_response": true,
+    "delete_street_images_after_valid_response": true,
+    "never_overwrite_v1_10": true
+  }
+}

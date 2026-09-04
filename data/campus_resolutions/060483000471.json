@@ -1,0 +1,185 @@
+{
+  "school_id": "060483000471",
+  "school_name": "Beverly Hills High",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -118.4140694,
+    34.0594245,
+    -118.4090239,
+    34.0631111
+  ],
+  "geometry": [
+    [
+      34.0631111,
+      -118.413483
+    ],
+    [
+      34.0628346,
+      -118.4140694
+    ],
+    [
+      34.0611231,
+      -118.4129509
+    ],
+    [
+      34.060171,
+      -118.4122689
+    ],
+    [
+      34.0604969,
+      -118.411617
+    ],
+    [
+      34.060548,
+      -118.4115158
+    ],
+    [
+      34.0594245,
+      -118.4107433
+    ],
+    [
+      34.0597815,
+      -118.4099164
+    ],
+    [
+      34.0598524,
+      -118.4095572
+    ],
+    [
+      34.0598703,
+      -118.4090436
+    ],
+    [
+      34.0604694,
+      -118.4090239
+    ],
+    [
+      34.0607793,
+      -118.4090359
+    ],
+    [
+      34.0608909,
+      -118.4090566
+    ],
+    [
+      34.0610177,
+      -118.409102
+    ],
+    [
+      34.0611516,
+      -118.4091852
+    ],
+    [
+      34.0612701,
+      -118.4093054
+    ],
+    [
+      34.0614505,
+      -118.4095212
+    ],
+    [
+      34.0615661,
+      -118.4096969
+    ],
+    [
+      34.0616971,
+      -118.4099003
+    ],
+    [
+      34.0619061,
+      -118.4103685
+    ],
+    [
+      34.0621253,
+      -118.4108244
+    ],
+    [
+      34.0624483,
+      -118.4113467
+    ],
+    [
+      34.0626468,
+      -118.4116557
+    ],
+    [
+      34.0627116,
+      -118.4117562
+    ],
+    [
+      34.0627713,
+      -118.4118783
+    ],
+    [
+      34.0628293,
+      -118.4120544
+    ],
+    [
+      34.0628542,
+      -118.4121726
+    ],
+    [
+      34.0629557,
+      -118.4127683
+    ],
+    [
+      34.0629867,
+      -118.4129638
+    ],
+    [
+      34.0630004,
+      -118.413031
+    ],
+    [
+      34.063014,
+      -118.4130992
+    ],
+    [
+      34.0630578,
+      -118.4132677
+    ],
+    [
+      34.0630902,
+      -118.4133916
+    ],
+    [
+      34.0631111,
+      -118.413483
+    ]
+  ],
+  "matched_name": "Beverly Hills High School",
+  "source_element": "https://www.openstreetmap.org/way/490406994",
+  "name_similarity": 1.0,
+  "distance_from_ccd_m": 75.09699962242354,
+  "candidate_margin": 0.5711312850002555,
+  "recommended_detail_extent_m": 600,
+  "requires_human_review": false,
+  "reason": "Matched 'Beverly Hills High School' from OSM way/490406994; name similarity 1.000, CCD-to-center distance 75.1 m, candidate margin 0.571. Match passed the frozen automatic-resolution thresholds.",
+  "candidates_considered": 4,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 34.061267799999996,
+    "longitude": -118.41154664999999
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 34.061692,
+    "longitude": -118.412181
+  },
+  "boundary_notes": "Matched 'Beverly Hills High School' from OSM way/490406994; name similarity 1.000, CCD-to-center distance 75.1 m, candidate margin 0.571. Match passed the frozen automatic-resolution thresholds.",
+  "unclamped_detail_extent_m": 600,
+  "detail_extent_clipped_at_maximum": false,
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "automatic provenance and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/060483000471/context.jpg",
+    "data/imagery/060483000471/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "e8aa57b5117796ce4bec026b8dc0261cb9fad3c9124f0bd45867d57716fd888b",
+    "detail.jpg": "08264cd49eb41e050617cfe8e217d7f1055a353e3bc57a86bd55d48aa36e8fe4"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "41c210b171ecf93bc9c70ceb7ba8102d6554386c3d39e42cbd425a5b4138c821"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

@@ -1,0 +1,2542 @@
+{
+  "configuration_id": "school-facilities-human-terminal-pipeline-v1",
+  "prediction_source_version": "v1.10",
+  "records": [
+    {
+      "blind_validation_quarantined": true,
+      "campus_resolution_notes": "Matched 'Wedowee High School' from OSM node/358947714; name similarity 1.000, CCD-to-center distance 2.1 m, candidate margin 0.900. Match did not meet the automatic polygon/name/distance thresholds. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+      "city": "Wedowee",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.2,
+          "raw_value": "unknown",
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "item_specific_question_unknown",
+            "model_abstained_unknown",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.2,
+          "raw_value": "unknown",
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "item_specific_question_unknown",
+            "model_abstained_unknown",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": true,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.6,
+          "raw_value": 0,
+          "review_reasons": [
+            "model_confidence_at_or_below_threshold",
+            "model_review_required"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2023-10-07",
+      "school_id": "010282001124",
+      "school_name": "Wedowee Middle School",
+      "source_record": "data/model_outputs/quarantine/v1.10/raw/010282001124.json",
+      "source_record_sha256": "d2e4e3a557c5e8dc4ab6c94d70da06a4857fb56667e5b8a15ce96dceb53bb511",
+      "state": "AL"
+    },
+    {
+      "blind_validation_quarantined": true,
+      "campus_resolution_notes": "Matched 'Kofa High School' from OSM way/692830430; name similarity 1.000, CCD-to-center distance 162.5 m, candidate margin 0.536. Match passed the frozen automatic-resolution thresholds.",
+      "city": "Yuma",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "none",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": true,
+          "guarded_value": 5,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 5,
+          "review_reasons": [
+            "nonzero_count_requires_object_review"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 6,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 6,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_coverage_interval_mismatch",
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "yes",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "yes",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": true,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [
+            "required_solar_review_flag_missing",
+            "solar_mount_classification_requires_human_verification"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "solar_present": {
+          "flagged_for_review": true,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [
+            "required_solar_review_flag_missing",
+            "solar_mount_classification_requires_human_verification"
+          ],
+          "risk_stratum": "flagged_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2023-06-17",
+      "school_id": "040963000996",
+      "school_name": "Kofa High School",
+      "source_record": "data/model_outputs/quarantine/v1.10/raw/040963000996.json",
+      "source_record_sha256": "e21429572ab85ec713213aa14e8e2d6cf47f6d54e502431b978e46dd0e2af61c",
+      "state": "AZ"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "Matched 'Beverly Hills High School' from OSM way/490406994; name similarity 1.000, CCD-to-center distance 75.1 m, candidate margin 0.571. Match passed the frozen automatic-resolution thresholds.",
+      "city": "Beverly Hills",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "negative_answer_without_adequate_visibility"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": true,
+          "guarded_value": 1,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 1,
+          "review_reasons": [
+            "nonzero_count_requires_object_review"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 5,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 5,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_coverage_interval_mismatch",
+            "frozen_high_risk_field_policy",
+            "negative_answer_without_adequate_visibility"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "yes",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "yes",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [
+            "required_solar_review_flag_missing",
+            "solar_area_polygon_mismatch",
+            "solar_presence_inventory_mismatch"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "solar_present": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [
+            "required_solar_review_flag_missing",
+            "solar_area_polygon_mismatch",
+            "solar_presence_inventory_mismatch"
+          ],
+          "risk_stratum": "abstained_unknown"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2022-05-11",
+      "school_id": "060483000471",
+      "school_name": "Beverly Hills High",
+      "source_record": "data/model_outputs/final/v1.10/060483000471.json",
+      "source_record_sha256": "91a156df35247ebacb3dccd5fd3cbb79fee5280d646d2d4ed67e024636794f75",
+      "state": "CA"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "Matched 'Cerra Vista School' from OSM way/27420396; name similarity 1.000, CCD-to-center distance 30.1 m, candidate margin 0.560. Match passed the frozen automatic-resolution thresholds.",
+      "city": "Hollister",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "negative_answer_without_adequate_visibility"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": true,
+          "guarded_value": 2,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 2,
+          "review_reasons": [
+            "nonzero_count_requires_object_review"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 2,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 2,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_coverage_classification_mismatch",
+            "fencing_coverage_interval_mismatch",
+            "frozen_high_risk_field_policy",
+            "negative_answer_without_adequate_visibility"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": 375,
+          "review_reasons": [
+            "mixed_solar_mount_context",
+            "required_solar_review_flag_missing",
+            "solar_area_polygon_mismatch",
+            "solar_mount_classification_requires_human_verification",
+            "solar_mount_support_structure_mismatch"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "solar_present": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "yes",
+          "review_reasons": [
+            "mixed_solar_mount_context",
+            "required_solar_review_flag_missing",
+            "solar_area_polygon_mismatch",
+            "solar_mount_classification_requires_human_verification",
+            "solar_mount_support_structure_mismatch"
+          ],
+          "risk_stratum": "abstained_unknown"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2022-05-14",
+      "school_id": "061734009378",
+      "school_name": "Cerra Vista Elementary",
+      "source_record": "data/model_outputs/final/v1.10/061734009378.json",
+      "source_record_sha256": "969a9ef396af5a8211a13d3af7144382c969ae2941753282badf79ace7224e48",
+      "state": "CA"
+    },
+    {
+      "blind_validation_quarantined": true,
+      "campus_resolution_notes": "Matched 'Wells Middle School' from OSM way/349649806; name similarity 1.000, CCD-to-center distance 61.2 m, candidate margin 0.570. Match passed the frozen automatic-resolution thresholds.",
+      "city": "Dublin",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.6,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required",
+            "negative_answer_without_adequate_visibility"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": true,
+          "guarded_value": 2,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 2,
+          "review_reasons": [
+            "nonzero_count_requires_object_review"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 6,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 6,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.6,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_coverage_classification_mismatch",
+            "frozen_high_risk_field_policy",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required",
+            "negative_answer_without_adequate_visibility"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "yes",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "yes",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2022-05-19",
+      "school_id": "060001909278",
+      "school_name": "Wells Middle",
+      "source_record": "data/model_outputs/quarantine/v1.10/raw/060001909278.json",
+      "source_record_sha256": "069f1be9635745487f05610bc893409236416f9c4e60585b85562ff4918fe697",
+      "state": "CA"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "Matched 'Lincoln County Elementary School' from OSM node/358723199; name similarity 1.000, CCD-to-center distance 28.6 m, candidate margin 0.896. Match did not meet the automatic polygon/name/distance thresholds. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+      "city": "Lincolnton",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.6,
+          "raw_value": "none",
+          "review_reasons": [
+            "directional_question_conflict",
+            "frozen_high_risk_field_policy",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required",
+            "negative_answer_without_adequate_visibility",
+            "non_authoritative_scope_cannot_support_fencing"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.6,
+          "raw_value": "none",
+          "review_reasons": [
+            "directional_question_conflict",
+            "fencing_coverage_classification_mismatch",
+            "fencing_coverage_interval_mismatch",
+            "frozen_high_risk_field_policy",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required",
+            "negative_answer_without_adequate_visibility",
+            "non_authoritative_scope_cannot_support_fencing"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2023-10-03",
+      "school_id": "130333001308",
+      "school_name": "Lincoln County Elementary School",
+      "source_record": "data/model_outputs/final/v1.10/130333001308.json",
+      "source_record_sha256": "369a1aae0ce58ac899f97e0aaf9b69a2face8b91f9cc052124d441e149ba707f",
+      "state": "GA"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "Matched 'Wilcox Elementary' from OSM way/546871116; name similarity 0.571, CCD-to-center distance 87.1 m, candidate margin 0.299. Match did not meet the automatic polygon/name/distance thresholds. User manually approved the proposed OSM campus polygon on 2026-09-03. User approved the proposed campus polygon in the project review; no boundary correction or shared-facility exception was specified.",
+      "city": "Pocatello",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "none",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_coverage_interval_mismatch",
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2023-07-14",
+      "school_id": "160264000465",
+      "school_name": "CLAUDE A WILCOX ELEMENTARY SCHOOL",
+      "source_record": "data/model_outputs/final/v1.10/160264000465.json",
+      "source_record_sha256": "4940e95a41cd7415fd3cce47efb4294f22734726fbb3478deee79871f110d07f",
+      "state": "ID"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "Matched 'Priest River High School' from OSM way/1463051126; name similarity 0.750, CCD-to-center distance 81.6 m, candidate margin 0.064. Match is usable for a provisional crop but requires human review. User manually approved the proposed OSM campus polygon on 2026-09-03. User approved the proposed campus polygon in the project review; no boundary correction or shared-facility exception was specified.",
+      "city": "Priest River",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "negative_answer_without_adequate_visibility"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": true,
+          "guarded_value": 2,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 2,
+          "review_reasons": [
+            "nonzero_count_requires_object_review"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.6,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_coverage_classification_mismatch",
+            "frozen_high_risk_field_policy",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required",
+            "negative_answer_without_adequate_visibility"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "yes",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "yes",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2023-10-30",
+      "school_id": "160000100084",
+      "school_name": "PRIEST RIVER LAMANNA HIGH",
+      "source_record": "data/model_outputs/final/v1.10/160000100084.json",
+      "source_record_sha256": "ded14ab5588e09a588ba76285cdbfcf1e2597bd1f5bc68d1fab885aa21abc00f",
+      "state": "ID"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "Matched 'Zionsville Community High School' from OSM way/1019893422; name similarity 1.000, CCD-to-center distance 214.0 m, candidate margin 0.324. Match passed the frozen automatic-resolution thresholds.",
+      "city": "Zionsville",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "negative_answer_without_adequate_visibility"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": true,
+          "guarded_value": 2,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 2,
+          "review_reasons": [
+            "nonzero_count_requires_object_review"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 6,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 6,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_coverage_classification_mismatch",
+            "frozen_high_risk_field_policy",
+            "negative_answer_without_adequate_visibility"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "yes",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "yes",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2022-06-21",
+      "school_id": "180283000341",
+      "school_name": "Zionsville Community High School",
+      "source_record": "data/model_outputs/final/v1.10/180283000341.json",
+      "source_record_sha256": "6eba4ed339c1c2c6d4b3a0ea480bab5569de5b0da32aeeb78117890178cbcf3c",
+      "state": "IN"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "Matched 'Bel Air High School' from OSM way/84503619; name similarity 1.000, CCD-to-center distance 188.1 m, candidate margin 0.043. Match is usable for a provisional crop but requires human review. User manually approved the proposed OSM campus polygon on 2026-09-03. User approved the proposed campus polygon in the project review; no boundary correction or shared-facility exception was specified.",
+      "city": "Bel Air",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "chain-link",
+          "review_reasons": [
+            "fencing_segment_fraction_sum_mismatch",
+            "frozen_high_risk_field_policy",
+            "item_specific_question_unknown"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": true,
+          "guarded_value": 4,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 4,
+          "review_reasons": [
+            "nonzero_count_requires_object_review"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 6,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 6,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.6,
+          "raw_value": "full",
+          "review_reasons": [
+            "fencing_coverage_classification_mismatch",
+            "fencing_coverage_interval_mismatch",
+            "fencing_segment_fraction_sum_mismatch",
+            "frozen_high_risk_field_policy",
+            "item_specific_question_unknown",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "yes",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "yes",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": 1150,
+          "review_reasons": [
+            "required_solar_review_flag_missing",
+            "solar_area_polygon_mismatch",
+            "solar_mount_classification_requires_human_verification",
+            "solar_mount_support_structure_mismatch"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "solar_present": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "yes",
+          "review_reasons": [
+            "required_solar_review_flag_missing",
+            "solar_area_polygon_mismatch",
+            "solar_mount_classification_requires_human_verification",
+            "solar_mount_support_structure_mismatch"
+          ],
+          "risk_stratum": "abstained_unknown"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2023-05-27",
+      "school_id": "240039000683",
+      "school_name": "Bel Air High",
+      "source_record": "data/model_outputs/final/v1.10/240039000683.json",
+      "source_record_sha256": "3c0bd50c098b9cf00848f73347bc41a17da1dd4f42d7ba21415d3d82059e0551",
+      "state": "MD"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "Matched 'Willie E. Thompson Middle School' from OSM way/632753597; name similarity 0.640, CCD-to-center distance 3.5 m, candidate margin 0.294. Match is usable for a provisional crop but requires human review. User manually approved the proposed OSM campus polygon on 2026-09-03. User approved the proposed campus polygon in the project review; no boundary correction or shared-facility exception was specified.",
+      "city": "Saginaw",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "none",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": true,
+          "guarded_value": 1,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 1,
+          "review_reasons": [
+            "nonzero_count_requires_object_review"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_coverage_classification_mismatch",
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2022-08-11",
+      "school_id": "263039006679",
+      "school_name": "Thompson Middle School",
+      "source_record": "data/model_outputs/final/v1.10/263039006679.json",
+      "source_record_sha256": "2da53c718aefbb267d91ffa88e5a0b9ba181e9e3321751381b79704cf5272e98",
+      "state": "MI"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "No named public school candidate was found within 1,500 metres. No trustworthy polygon was available. The stored public/CCD center controls an 800 m crop; the facility model must search the entire detail image and flag all ownership or perimeter ambiguity.",
+      "city": "Bertha",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.6,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required",
+            "negative_answer_without_adequate_visibility",
+            "non_authoritative_scope_cannot_support_fencing"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": true,
+          "guarded_value": 5,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 5,
+          "review_reasons": [
+            "nonzero_count_requires_object_review",
+            "positive_facility_has_ownership_or_boundary_risk"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.6,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_coverage_interval_mismatch",
+            "frozen_high_risk_field_policy",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required",
+            "negative_answer_without_adequate_visibility",
+            "non_authoritative_scope_cannot_support_fencing"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2023-07-26",
+      "school_id": "270543000204",
+      "school_name": "Bertha Secondary",
+      "source_record": "data/model_outputs/final/v1.10/270543000204.json",
+      "source_record_sha256": "b4209d44879b69201576450defe498ffee3c70738f0aa6e5512116ce36a0ef85",
+      "state": "MN"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "Matched 'Rundlett Middle School' from OSM way/741698495; name similarity 1.000, CCD-to-center distance 42.7 m, candidate margin 0.647. Match passed the frozen automatic-resolution thresholds.",
+      "city": "Concord",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "negative_answer_without_adequate_visibility"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": true,
+          "guarded_value": 2,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 2,
+          "review_reasons": [
+            "nonzero_count_requires_object_review"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 1,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 1,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_coverage_interval_mismatch",
+            "frozen_high_risk_field_policy",
+            "negative_answer_without_adequate_visibility"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2023-08-31",
+      "school_id": "330246000063",
+      "school_name": "Rundlett Middle School",
+      "source_record": "data/model_outputs/final/v1.10/330246000063.json",
+      "source_record_sha256": "514b1f6734395173999048d0e6ba549fd37ce263cdd72fe13c129d16876bb7fb",
+      "state": "NH"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "Matched 'Spring Lake Heights Elementary School' from OSM node/357739462; name similarity 1.000, CCD-to-center distance 24.4 m, candidate margin 0.565. Match did not meet the automatic polygon/name/distance thresholds. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+      "city": "Spring Lake Heights",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.6,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required",
+            "negative_answer_without_adequate_visibility",
+            "non_authoritative_scope_cannot_support_fencing"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": true,
+          "guarded_value": 3,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 3,
+          "review_reasons": [
+            "nonzero_count_requires_object_review"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 1,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 1,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.6,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_coverage_classification_mismatch",
+            "fencing_coverage_interval_mismatch",
+            "frozen_high_risk_field_policy",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required",
+            "negative_answer_without_adequate_visibility",
+            "non_authoritative_scope_cannot_support_fencing"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.6,
+          "raw_value": 3500,
+          "review_reasons": [
+            "model_confidence_at_or_below_threshold",
+            "model_review_required",
+            "solar_area_polygon_mismatch",
+            "solar_mount_classification_requires_human_verification",
+            "solar_mount_support_structure_mismatch"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "solar_present": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "yes",
+          "review_reasons": [
+            "required_solar_review_flag_missing",
+            "solar_area_polygon_mismatch",
+            "solar_mount_classification_requires_human_verification",
+            "solar_mount_support_structure_mismatch"
+          ],
+          "risk_stratum": "abstained_unknown"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2023-08-09",
+      "school_id": "341560004108",
+      "school_name": "Spring Lake Heights Elementary School",
+      "source_record": "data/model_outputs/final/v1.10/341560004108.json",
+      "source_record_sha256": "55f06737413cfe22896d5aaaae72999fe382d825cde9d0d9cd378d7912937410",
+      "state": "NJ"
+    },
+    {
+      "blind_validation_quarantined": true,
+      "campus_resolution_notes": "Matched 'P.S. 78 - The Anne Hutchinson School' from OSM way/1547003348; name similarity 0.894, CCD-to-center distance 18.3 m, candidate margin 0.441. Match passed the frozen automatic-resolution thresholds.",
+      "city": "Bronx",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.6,
+          "raw_value": "none",
+          "review_reasons": [
+            "directional_question_conflict",
+            "frozen_high_risk_field_policy",
+            "item_specific_question_unknown",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required",
+            "negative_answer_without_adequate_visibility"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.6,
+          "raw_value": "none",
+          "review_reasons": [
+            "directional_question_conflict",
+            "fencing_coverage_classification_mismatch",
+            "frozen_high_risk_field_policy",
+            "item_specific_question_unknown",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required",
+            "negative_answer_without_adequate_visibility"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2022-09-15",
+      "school_id": "360008802312",
+      "school_name": "PS 78 ANNE HUTCHINSON",
+      "source_record": "data/model_outputs/quarantine/v1.10/raw/360008802312.json",
+      "source_record_sha256": "742fc4a51280769acde5f661e847d60de2b4cbe4b68eb06446eb065e7864a924",
+      "state": "NY"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "No named public school candidate was found within 1,500 metres. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+      "city": "Frankfort",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.6,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required",
+            "negative_answer_without_adequate_visibility",
+            "non_authoritative_scope_cannot_support_fencing"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": true,
+          "guarded_value": 2,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 2,
+          "review_reasons": [
+            "nonzero_count_requires_object_review"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 1,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 1,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.6,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_coverage_classification_mismatch",
+            "frozen_high_risk_field_policy",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required",
+            "negative_answer_without_adequate_visibility",
+            "non_authoritative_scope_cannot_support_fencing"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2023-05-25",
+      "school_id": "390494903613",
+      "school_name": "Adena Elementary School",
+      "source_record": "data/model_outputs/final/v1.10/390494903613.json",
+      "source_record_sha256": "83c6415382bd54ba6e6352f3586a114ced0ac47081b7afb8ca763777c3712fad",
+      "state": "OH"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "No named public school candidate was found within 1,500 metres. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+      "city": "Ashtabula",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_segment_fraction_sum_mismatch",
+            "frozen_high_risk_field_policy",
+            "negative_answer_without_adequate_visibility",
+            "non_authoritative_scope_cannot_support_fencing"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.6,
+          "raw_value": 0,
+          "review_reasons": [
+            "directional_question_conflict",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 2,
+          "model_suggested_confidence": 0.6,
+          "raw_value": 2,
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.6,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_coverage_classification_mismatch",
+            "fencing_coverage_interval_mismatch",
+            "fencing_segment_fraction_sum_mismatch",
+            "frozen_high_risk_field_policy",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required",
+            "negative_answer_without_adequate_visibility",
+            "non_authoritative_scope_cannot_support_fencing"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2023-05-26",
+      "school_id": "390458502363",
+      "school_name": "Ridgeview Elementary School",
+      "source_record": "data/model_outputs/final/v1.10/390458502363.json",
+      "source_record_sha256": "e2188cd238b824815072aebd303ee10b6609a8c1c9f5ecb1a8860920bdc816a9",
+      "state": "OH"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "Matched 'Emerson Alternative High School' from OSM way/140026884; name similarity 1.000, CCD-to-center distance 5.3 m, candidate margin 0.647. Match passed the frozen automatic-resolution thresholds.",
+      "city": "Oklahoma City",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "none",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": 1,
+          "review_reasons": [
+            "directional_question_conflict",
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_coverage_interval_mismatch",
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2023-06-19",
+      "school_id": "402277001928",
+      "school_name": "EMERSON ALTERNATIVE ED. (HS)",
+      "source_record": "data/model_outputs/final/v1.10/402277001928.json",
+      "source_record_sha256": "b52aa54aa76ccbb48f9f214bc474a86b98848451e1474a15dbd6fa1aff64c594",
+      "state": "OK"
+    },
+    {
+      "blind_validation_quarantined": true,
+      "campus_resolution_notes": "Matched 'Hilldale Elementary School' from OSM way/1424666351; name similarity 0.727, CCD-to-center distance 205.4 m, candidate margin 0.304. Match is usable for a provisional crop but requires human review. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+      "city": "Muskogee",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.2,
+          "raw_value": "unknown",
+          "review_reasons": [
+            "fencing_inventory_type_mismatch",
+            "frozen_high_risk_field_policy",
+            "item_specific_question_unknown",
+            "model_abstained_unknown",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": true,
+          "guarded_value": 1,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 1,
+          "review_reasons": [
+            "nonzero_count_requires_object_review"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.2,
+          "raw_value": "unknown",
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "item_specific_question_unknown",
+            "model_abstained_unknown",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2023-10-01",
+      "school_id": "401452000682",
+      "school_name": "HILLDALE LOWER ES",
+      "source_record": "data/model_outputs/quarantine/v1.10/raw/401452000682.json",
+      "source_record_sha256": "d552fe7e32e80de96d98ef599ab22675351a1dd6c61c68d156c1d34bc7d81a19",
+      "state": "OK"
+    },
+    {
+      "blind_validation_quarantined": true,
+      "campus_resolution_notes": "Matched 'Brashear High School' from OSM way/217979330; name similarity 0.593, CCD-to-center distance 32.7 m, candidate margin 0.338. Match did not meet the automatic polygon/name/distance thresholds. No trustworthy polygon was available. The stored public/CCD center controls an 800 m crop; the facility model must search the entire detail image and flag all ownership or perimeter ambiguity.",
+      "city": "Pittsburgh",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.2,
+          "raw_value": "unknown",
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "item_specific_question_unknown",
+            "model_abstained_unknown",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": true,
+          "guarded_value": 3,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 3,
+          "review_reasons": [
+            "nonzero_count_requires_object_review",
+            "positive_facility_has_ownership_or_boundary_risk"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 6,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 6,
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "positive_facility_has_ownership_or_boundary_risk"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.2,
+          "raw_value": "unknown",
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "item_specific_question_unknown",
+            "model_abstained_unknown",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2022-05-09",
+      "school_id": "421917006915",
+      "school_name": "Pittsburgh Brashear HS",
+      "source_record": "data/model_outputs/quarantine/v1.10/raw/421917006915.json",
+      "source_record_sha256": "4305347b076338719aef62a2755106f6ae62a116c62d50d42eb6f7c591640e95",
+      "state": "PA"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "Matched 'Pleasant Valley Elementary School' from OSM way/570810008; name similarity 0.811, CCD-to-center distance 24.4 m, candidate margin 0.134. Match passed the frozen automatic-resolution thresholds.",
+      "city": "Kunkletown",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "none",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_coverage_interval_mismatch",
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2022-04-29",
+      "school_id": "421929000163",
+      "school_name": "Pleasant Valley El Sch",
+      "source_record": "data/model_outputs/final/v1.10/421929000163.json",
+      "source_record_sha256": "4024360459d4f6019eaae5d862fff102da770f9a021d076767a4c95afa36cbb6",
+      "state": "PA"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "Matched 'India Hook Elementary School' from OSM way/259797995; name similarity 1.000, CCD-to-center distance 57.9 m, candidate margin 0.992. Match passed the frozen automatic-resolution thresholds.",
+      "city": "Rock Hill",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "negative_answer_without_adequate_visibility"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": true,
+          "guarded_value": 1,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 1,
+          "review_reasons": [
+            "nonzero_count_requires_object_review"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_coverage_interval_mismatch",
+            "frozen_high_risk_field_policy",
+            "negative_answer_without_adequate_visibility"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2023-04-11",
+      "school_id": "450387001491",
+      "school_name": "India Hook Elementary",
+      "source_record": "data/model_outputs/final/v1.10/450387001491.json",
+      "source_record_sha256": "5092d8b4bf19643eae8f850dfa176b0cd67e6a75d2a579a388e334e90c87c857",
+      "state": "SC"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "Matched 'Coleman Elementary School' from OSM node/356796792; name similarity 0.778, CCD-to-center distance 328.9 m, candidate margin 0.060. Match did not meet the automatic polygon/name/distance thresholds. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+      "city": "Coleman",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "negative_answer_without_adequate_visibility",
+            "non_authoritative_scope_cannot_support_fencing"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": true,
+          "guarded_value": 3,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 3,
+          "review_reasons": [
+            "nonzero_count_requires_object_review"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 2,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 2,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_coverage_interval_mismatch",
+            "frozen_high_risk_field_policy",
+            "negative_answer_without_adequate_visibility",
+            "non_authoritative_scope_cannot_support_fencing"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "yes",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "yes",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2022-09-19",
+      "school_id": "481455000943",
+      "school_name": "COLEMAN H S",
+      "source_record": "data/model_outputs/final/v1.10/481455000943.json",
+      "source_record_sha256": "0f9e0766faa53b91d7226bddf488277431649bdf8612dacab1b3a13007c4cd39",
+      "state": "TX"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "Matched 'Paul L Dunbar Learning Center' from OSM way/449158563; name similarity 1.000, CCD-to-center distance 27.0 m, candidate margin 0.424. Match passed the frozen automatic-resolution thresholds.",
+      "city": "Dallas",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy",
+            "negative_answer_without_adequate_visibility"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 1,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 1,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "unknown",
+          "model_suggested_confidence": 0.6,
+          "raw_value": "none",
+          "review_reasons": [
+            "fencing_coverage_classification_mismatch",
+            "fencing_coverage_interval_mismatch",
+            "frozen_high_risk_field_policy",
+            "model_confidence_at_or_below_threshold",
+            "model_review_required",
+            "negative_answer_without_adequate_visibility"
+          ],
+          "risk_stratum": "abstained_unknown"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2022-07-04",
+      "school_id": "481623001325",
+      "school_name": "PAUL L DUNBAR LEARNING CENTER",
+      "source_record": "data/model_outputs/final/v1.10/481623001325.json",
+      "source_record_sha256": "bfa48c777442eb4cd20624c18d9783872f819c88c3cd428c15b9e192b57d6ff3",
+      "state": "TX"
+    },
+    {
+      "blind_validation_quarantined": false,
+      "campus_resolution_notes": "Matched 'Northside Intermediate School' from OSM way/361979144; name similarity 1.000, CCD-to-center distance 77.5 m, candidate margin 0.686. Match passed the frozen automatic-resolution thresholds.",
+      "city": "Milton",
+      "fields": {
+        "dominant_fence_type": {
+          "flagged_for_review": true,
+          "guarded_value": "none",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "full_size_sports_fields": {
+          "flagged_for_review": true,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.6,
+          "raw_value": 0,
+          "review_reasons": [
+            "model_confidence_at_or_below_threshold",
+            "model_review_required"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "hard_courts": {
+          "flagged_for_review": true,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "perimeter_fencing": {
+          "flagged_for_review": true,
+          "guarded_value": "none",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "none",
+          "review_reasons": [
+            "frozen_high_risk_field_policy"
+          ],
+          "risk_stratum": "flagged_known"
+        },
+        "pool": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "portable_classroom_count": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "running_track": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_area_m2": {
+          "flagged_for_review": false,
+          "guarded_value": 0,
+          "model_suggested_confidence": 0.8,
+          "raw_value": 0,
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        },
+        "solar_present": {
+          "flagged_for_review": false,
+          "guarded_value": "no",
+          "model_suggested_confidence": 0.8,
+          "raw_value": "no",
+          "review_reasons": [],
+          "risk_stratum": "auto_accept_known"
+        }
+      },
+      "imagery_source": "USDA National Agriculture Imagery Program (NAIP)",
+      "imagery_vintage": "2022-06-24",
+      "school_id": "550957000382",
+      "school_name": "Northside Intermediate",
+      "source_record": "data/model_outputs/final/v1.10/550957000382.json",
+      "source_record_sha256": "5a2089d2185b76c51cc97776760e71b9bdecddc567c52041af21237090957659",
+      "state": "WI"
+    }
+  ],
+  "reference_accessed": false,
+  "schema_version": "1.0",
+  "school_count": 25
+}

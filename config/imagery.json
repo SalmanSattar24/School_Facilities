@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.6",
+  "configuration_id": "school-facilities-imagery-pilot-v1.6",
+  "compatible_configuration_ids": ["school-facilities-imagery-pilot-v1.5"],
+  "frozen_at": "2026-09-02",
+  "primary": {
+    "provider": "Microsoft Planetary Computer",
+    "dataset": "USDA National Agriculture Imagery Program (NAIP)",
+    "stac_endpoint": "https://planetarycomputer.microsoft.com/api/stac/v1",
+    "data_api_bbox_endpoint": "https://planetarycomputer.microsoft.com/api/data/v1/item/bbox",
+    "collection": "naip",
+    "asset_key": "image",
+    "authentication": "anonymous STAC plus official Planetary Computer data API rendering; direct temporary SAS signing retained for offline/local tests",
+    "api_key_required": false,
+    "selection": {
+      "query_geometry": "resolved campus detail bounding box",
+      "sort": "capture datetime descending",
+      "rule": "newest item or same-date item set covering the resolved campus detail extent",
+      "do_not_mosaic_different_dates": true,
+      "same_date_timezone": "UTC",
+      "minimum_target_coverage_fraction": 0.995,
+      "capture_date_property": "datetime",
+      "minimum_capture_year": 2010
+    }
+  },
+  "products": {
+    "context": {
+      "center": "supplied CCD coordinate until campus is resolved",
+      "width_m": 1000,
+      "height_m": 1000,
+      "output_pixels": [1600, 1600],
+      "purpose": "campus identification and neighboring-facility context"
+    },
+    "detail": {
+      "center": "automatically resolved public campus-polygon center; flagged fallback cases require review",
+      "width_m": 600,
+      "height_m": 600,
+      "output_pixels": [1600, 1600],
+      "adaptive_from_campus_polygon": true,
+      "minimum_extent_m": 250,
+      "maximum_extent_m": 1200,
+      "buffer_each_side_m": 60,
+      "soft_boundary_minimum_extent_m": 600,
+      "soft_boundary_buffer_each_side_m": 150,
+      "rounding_increment_m": 50,
+      "fallback_extent_without_polygon_m": 800,
+      "flag_if_maximum_clips_buffered_campus": true,
+      "purpose": "facility classification and solar-area measurement"
+    },
+    "local_master_format": "GeoTIFF",
+    "local_master_bands": "RGB",
+    "target_crs": "local WGS 84 UTM zone selected from the product center",
+    "vlm_derivative_format": "JPEG",
+    "jpeg_quality": 92,
+    "resampling": "bilinear for RGB display derivative; native georeferenced raster retained for measurement",
+    "orientation": "north-up"
+  },
+  "fallback": {
+    "provider": "Esri World Imagery",
+    "export_url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export",
+    "api_key_required": false,
+    "allowed_when": [
+      "NAIP has no usable coverage",
+      "NAIP is materially older than an available contextual view",
+      "context is needed to resolve the campus"
+    ],
+    "capture_vintage_policy": "record the exposed local capture vintage; otherwise use unknown (retrieved YYYY-MM-DD)",
+    "never_substitute_retrieval_for_capture_date": true
+  },
+  "street_level": {
+    "enabled_for_pilot": false,
+    "provider": "none",
+    "reason": "avoid billing-enabled services during the free, reproducible pilot",
+    "consequence": "aerial-only fencing confidence remains capped by the frozen confidence protocol"
+  },
+  "manual_adjudication": {
+    "provider": "Google Earth Pro",
+    "allowed_only_when": "NAIP and the permitted Esri fallback do not support a defensible human decision",
+    "automated_extraction": false,
+    "bulk_download": false,
+    "may_be_sent_to_vlm": false,
+    "purpose": "human adjudication of exceptional ambiguous fields only",
+    "required_record": [
+      "imagery date or displayed date range when available",
+      "retrieval date",
+      "Google and third-party attribution",
+      "field reviewed",
+      "reason primary imagery was insufficient"
+    ],
+    "cross_vintage_rule": "never combine facility groups from different imagery states into one count without naming the chosen measurement source and documenting the discrepancy"
+  },
+  "campus_resolution": {
+    "statuses": ["confirmed", "probable", "unresolved"],
+    "primary_method": "automatic OpenStreetMap amenity=school polygon match within 1500 metres",
+    "automatic_confirmed_thresholds": {
+      "polygon_required": true,
+      "minimum_name_similarity": 0.8,
+      "maximum_ccd_to_center_distance_m": 800,
+      "minimum_candidate_score_margin": 0.12
+    },
+    "human_review_required": false,
+    "human_review_only_when_flagged": true,
+    "flag_conditions": [
+      "no named public school candidate",
+      "best match lacks polygon geometry",
+      "name similarity below threshold",
+      "CCD-to-center distance above threshold",
+      "competing candidate margin below threshold",
+      "public boundary query or provenance validation failure"
+    ],
+    "supporting_map_data": "OpenStreetMap for the assessment; downloadable OSM or Overture extracts at national scale",
+    "ccd_coordinate_is_not_assumed_to_be_campus_centroid": true,
+    "public_endpoint_is_not_national_scale_infrastructure": true,
+    "scope_modes": {
+      "authoritative_polygon": "trusted OSM or human-approved polygon is the measurement mask",
+      "soft_boundary": "Gemini polygon controls center and buffered crop size only; entire detail image is searched",
+      "center_only": "verified center with fixed crop; entire detail image is searched"
+    },
+    "gemini_boundary_proposals_are_never_hard_masks": true,
+    "soft_scope_requires_ownership_and_fencing_review": true
+  },
+  "provenance_required": [
+    "school_id",
+    "school_name",
+    "source",
+    "source_collection_or_service",
+    "stac_item_id_or_request_url",
+    "capture_datetime_or_vintage",
+    "retrieved_at_utc",
+    "native_resolution_m",
+    "output_resolution_m",
+    "bbox_wgs84",
+    "requested_ccd_coordinate",
+    "resolved_center",
+    "campus_resolution_status",
+    "campus_resolution_notes",
+    "asset_reference_without_expired_credentials",
+    "configuration_id"
+  ],
+  "storage": {
+    "root": "data/imagery",
+    "retain_bulk_locally": true,
+    "submit_bulk_imagery": false,
+    "sidecar_format": "JSON",
+    "atomic_writes": true
+  },
+  "network": {
+    "timeout_seconds": 60,
+    "max_attempts_per_request": 4,
+    "retry_statuses": [429, 500, 502, 503, 504],
+    "exponential_backoff_seconds": 0.5
+  }
+}

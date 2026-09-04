@@ -1,0 +1,178 @@
+{
+  "school_id": "160000100084",
+  "school_name": "PRIEST RIVER LAMANNA HIGH",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -116.9185303,
+    48.1883043,
+    -116.9144252,
+    48.1914718
+  ],
+  "geometry": [
+    [
+      48.189052,
+      -116.9161966
+    ],
+    [
+      48.1890398,
+      -116.9152514
+    ],
+    [
+      48.1894833,
+      -116.9151595
+    ],
+    [
+      48.1895293,
+      -116.9159592
+    ],
+    [
+      48.1905264,
+      -116.9159671
+    ],
+    [
+      48.1905306,
+      -116.9147839
+    ],
+    [
+      48.1913085,
+      -116.9144252
+    ],
+    [
+      48.1913273,
+      -116.9144279
+    ],
+    [
+      48.1913478,
+      -116.9144473
+    ],
+    [
+      48.1913621,
+      -116.9144695
+    ],
+    [
+      48.1913733,
+      -116.9145043
+    ],
+    [
+      48.1913832,
+      -116.9145452
+    ],
+    [
+      48.1913903,
+      -116.9145922
+    ],
+    [
+      48.1913952,
+      -116.9146458
+    ],
+    [
+      48.1914279,
+      -116.9152862
+    ],
+    [
+      48.1914272,
+      -116.9153143
+    ],
+    [
+      48.1914238,
+      -116.9153492
+    ],
+    [
+      48.1914151,
+      -116.9153858
+    ],
+    [
+      48.19137,
+      -116.9155427
+    ],
+    [
+      48.1912164,
+      -116.9155422
+    ],
+    [
+      48.1912098,
+      -116.9169162
+    ],
+    [
+      48.191468,
+      -116.916919
+    ],
+    [
+      48.1914718,
+      -116.9185303
+    ],
+    [
+      48.1883043,
+      -116.9185286
+    ],
+    [
+      48.1883043,
+      -116.9170265
+    ],
+    [
+      48.1885493,
+      -116.9170265
+    ],
+    [
+      48.1885731,
+      -116.9165447
+    ],
+    [
+      48.1886549,
+      -116.9165468
+    ],
+    [
+      48.1886504,
+      -116.9162085
+    ],
+    [
+      48.189052,
+      -116.9161966
+    ]
+  ],
+  "matched_name": "Priest River High School",
+  "source_element": "https://www.openstreetmap.org/way/1463051126",
+  "name_similarity": 0.75,
+  "distance_from_ccd_m": 81.62185257729492,
+  "candidate_margin": 0.06442335329518245,
+  "recommended_detail_extent_m": 500,
+  "unclamped_detail_extent_m": 500,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "Matched 'Priest River High School' from OSM way/1463051126; name similarity 0.750, CCD-to-center distance 81.6 m, candidate margin 0.064. Match is usable for a provisional crop but requires human review. User manually approved the proposed OSM campus polygon on 2026-09-03. User approved the proposed campus polygon in the project review; no boundary correction or shared-facility exception was specified.",
+  "candidates_considered": 3,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 48.18988805,
+    "longitude": -116.91647775
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 48.189478,
+    "longitude": -116.917391
+  },
+  "boundary_notes": "Matched 'Priest River High School' from OSM way/1463051126; name similarity 0.750, CCD-to-center distance 81.6 m, candidate margin 0.064. Match is usable for a provisional crop but requires human review. User manually approved the proposed OSM campus polygon on 2026-09-03. User approved the proposed campus polygon in the project review; no boundary correction or shared-facility exception was specified.",
+  "confirmation_method": "user_manual_polygon_review",
+  "automatic_resolution_status_before_review": "probable",
+  "manual_review": {
+    "decision": "approved_proposed_polygon",
+    "reviewed_at": "2026-09-03",
+    "reviewer_role": "user manual campus review",
+    "review_note": "User approved the proposed campus polygon in the project review; no boundary correction or shared-facility exception was specified.",
+    "review_overlay": "data/campus_reviews/160000100084/context_overlay.jpg"
+  },
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "manual polygon approval plus provenance and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/160000100084/context.jpg",
+    "data/imagery/160000100084/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "9ffebabfcf32f5cb4d89deee76d324dbce1bf9f08358813fedd72f94baea0462",
+    "detail.jpg": "2df388d5c9a9515fc0d5a5900ee82153b0573bec4a504b3e1e08029e9ecd0a3d"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "3de763af62c8b8f496d7cda6901b3d966f90c7600b441ac25d7131f0fe96e3f3"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

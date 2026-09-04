@@ -1,0 +1,266 @@
+{
+  "school_id": "240039000683",
+  "school_name": "Bel Air High",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -76.349864,
+    39.5267772,
+    -76.3440739,
+    39.5323976
+  ],
+  "geometry": [
+    [
+      39.5323976,
+      -76.3477385
+    ],
+    [
+      39.5304172,
+      -76.349738
+    ],
+    [
+      39.5303596,
+      -76.349864
+    ],
+    [
+      39.5294608,
+      -76.3489269
+    ],
+    [
+      39.5293611,
+      -76.3488536
+    ],
+    [
+      39.5293051,
+      -76.3487439
+    ],
+    [
+      39.5292355,
+      -76.3486515
+    ],
+    [
+      39.5290545,
+      -76.3485481
+    ],
+    [
+      39.5288364,
+      -76.3484113
+    ],
+    [
+      39.5286899,
+      -76.3483222
+    ],
+    [
+      39.528477,
+      -76.3481945
+    ],
+    [
+      39.5283773,
+      -76.3481265
+    ],
+    [
+      39.5282956,
+      -76.3480514
+    ],
+    [
+      39.5282354,
+      -76.3479374
+    ],
+    [
+      39.5281954,
+      -76.3478246
+    ],
+    [
+      39.5281529,
+      -76.3477711
+    ],
+    [
+      39.5280554,
+      -76.347699
+    ],
+    [
+      39.5280207,
+      -76.3476947
+    ],
+    [
+      39.5278748,
+      -76.3475593
+    ],
+    [
+      39.5277289,
+      -76.3474391
+    ],
+    [
+      39.5276241,
+      -76.3473407
+    ],
+    [
+      39.5275072,
+      -76.3471641
+    ],
+    [
+      39.527382,
+      -76.3470358
+    ],
+    [
+      39.5273071,
+      -76.3469603
+    ],
+    [
+      39.5271699,
+      -76.3468102
+    ],
+    [
+      39.5270307,
+      -76.3467073
+    ],
+    [
+      39.526917,
+      -76.3466376
+    ],
+    [
+      39.5268074,
+      -76.3465407
+    ],
+    [
+      39.5267772,
+      -76.3464742
+    ],
+    [
+      39.5268872,
+      -76.3459336
+    ],
+    [
+      39.5272226,
+      -76.3457271
+    ],
+    [
+      39.527818,
+      -76.3449144
+    ],
+    [
+      39.5281281,
+      -76.3451619
+    ],
+    [
+      39.5285363,
+      -76.3446614
+    ],
+    [
+      39.5288637,
+      -76.3440739
+    ],
+    [
+      39.5295999,
+      -76.3448478
+    ],
+    [
+      39.5302317,
+      -76.3455036
+    ],
+    [
+      39.5303914,
+      -76.3456375
+    ],
+    [
+      39.5305295,
+      -76.345737
+    ],
+    [
+      39.5306862,
+      -76.3458498
+    ],
+    [
+      39.5308495,
+      -76.3455749
+    ],
+    [
+      39.5309179,
+      -76.3454789
+    ],
+    [
+      39.5309751,
+      -76.3454401
+    ],
+    [
+      39.5310531,
+      -76.345398
+    ],
+    [
+      39.5311214,
+      -76.3454077
+    ],
+    [
+      39.5311764,
+      -76.345531
+    ],
+    [
+      39.5313606,
+      -76.345818
+    ],
+    [
+      39.5320529,
+      -76.3467021
+    ],
+    [
+      39.5322429,
+      -76.3469123
+    ],
+    [
+      39.5320985,
+      -76.347052
+    ],
+    [
+      39.5323917,
+      -76.3474669
+    ],
+    [
+      39.5323976,
+      -76.3477385
+    ]
+  ],
+  "matched_name": "Bel Air High School",
+  "source_element": "https://www.openstreetmap.org/way/84503619",
+  "name_similarity": 1.0,
+  "distance_from_ccd_m": 188.08583471249625,
+  "candidate_margin": 0.04304630666937015,
+  "recommended_detail_extent_m": 750,
+  "unclamped_detail_extent_m": 750,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "Matched 'Bel Air High School' from OSM way/84503619; name similarity 1.000, CCD-to-center distance 188.1 m, candidate margin 0.043. Match is usable for a provisional crop but requires human review. User manually approved the proposed OSM campus polygon on 2026-09-03. User approved the proposed campus polygon in the project review; no boundary correction or shared-facility exception was specified.",
+  "candidates_considered": 5,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 39.5295874,
+    "longitude": -76.34696894999999
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 39.531077,
+    "longitude": -76.348008
+  },
+  "boundary_notes": "Matched 'Bel Air High School' from OSM way/84503619; name similarity 1.000, CCD-to-center distance 188.1 m, candidate margin 0.043. Match is usable for a provisional crop but requires human review. User manually approved the proposed OSM campus polygon on 2026-09-03. User approved the proposed campus polygon in the project review; no boundary correction or shared-facility exception was specified.",
+  "confirmation_method": "user_manual_polygon_review",
+  "automatic_resolution_status_before_review": "probable",
+  "manual_review": {
+    "decision": "approved_proposed_polygon",
+    "reviewed_at": "2026-09-03",
+    "reviewer_role": "user manual campus review",
+    "review_note": "User approved the proposed campus polygon in the project review; no boundary correction or shared-facility exception was specified.",
+    "review_overlay": "data/campus_reviews/240039000683/context_overlay.jpg"
+  },
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "manual polygon approval plus provenance and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/240039000683/context.jpg",
+    "data/imagery/240039000683/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "8f7e3bd1003e1d6b66ccc34a2c59c4f18862950c376d36653a970322ff5d46f4",
+    "detail.jpg": "9d90158d8f310dd299efe332926177c5959a346e7ab6c009cc0d46340fe27d8e"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "12d3138326aa8c0341f8684751a865eaf3b0f3b1262eb741976d92a26097825d"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

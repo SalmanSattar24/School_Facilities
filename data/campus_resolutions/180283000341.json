@@ -1,0 +1,149 @@
+{
+  "school_id": "180283000341",
+  "school_name": "Zionsville Community High School",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -86.2755084,
+    39.9567997,
+    -86.2693011,
+    39.9624281
+  ],
+  "geometry": [
+    [
+      39.9614828,
+      -86.2693719
+    ],
+    [
+      39.9594103,
+      -86.2693011
+    ],
+    [
+      39.9593886,
+      -86.2697116
+    ],
+    [
+      39.9593777,
+      -86.2704124
+    ],
+    [
+      39.9592638,
+      -86.2711202
+    ],
+    [
+      39.9591932,
+      -86.271184
+    ],
+    [
+      39.9567997,
+      -86.2712166
+    ],
+    [
+      39.9568928,
+      -86.2725476
+    ],
+    [
+      39.9569501,
+      -86.2739579
+    ],
+    [
+      39.9569608,
+      -86.2754617
+    ],
+    [
+      39.9570968,
+      -86.2754944
+    ],
+    [
+      39.9604724,
+      -86.275499
+    ],
+    [
+      39.9606979,
+      -86.2755084
+    ],
+    [
+      39.9617717,
+      -86.2753262
+    ],
+    [
+      39.9623397,
+      -86.275217
+    ],
+    [
+      39.962422,
+      -86.2751848
+    ],
+    [
+      39.9624281,
+      -86.2751419
+    ],
+    [
+      39.9621979,
+      -86.2744124
+    ],
+    [
+      39.9620787,
+      -86.2738572
+    ],
+    [
+      39.9619656,
+      -86.2730498
+    ],
+    [
+      39.9619039,
+      -86.2724973
+    ],
+    [
+      39.9617744,
+      -86.2715183
+    ],
+    [
+      39.9616572,
+      -86.2703649
+    ],
+    [
+      39.9615359,
+      -86.269512
+    ],
+    [
+      39.9614828,
+      -86.2693719
+    ]
+  ],
+  "matched_name": "Zionsville Community High School",
+  "source_element": "https://www.openstreetmap.org/way/1019893422",
+  "name_similarity": 1.0,
+  "distance_from_ccd_m": 213.99145692798774,
+  "candidate_margin": 0.3239036116055286,
+  "recommended_detail_extent_m": 750,
+  "unclamped_detail_extent_m": 750,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "Matched 'Zionsville Community High School' from OSM way/1019893422; name similarity 1.000, CCD-to-center distance 214.0 m, candidate margin 0.324. Match passed the frozen automatic-resolution thresholds.",
+  "candidates_considered": 3,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 39.959613899999994,
+    "longitude": -86.27240475
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 39.9611,
+    "longitude": -86.274
+  },
+  "boundary_notes": "Matched 'Zionsville Community High School' from OSM way/1019893422; name similarity 1.000, CCD-to-center distance 214.0 m, candidate margin 0.324. Match passed the frozen automatic-resolution thresholds.",
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "automatic provenance and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/180283000341/context.jpg",
+    "data/imagery/180283000341/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "473d4aa58f858b7f4a76abd8756ffded6f3dfc437fec111b8713b6c0689c7386",
+    "detail.jpg": "e121a7c1a05443b5b873d9fe30a4fc319e7dc1318b8ec207b5ea50790c341199"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "bf8b6fa176a3af3b08da33b132d4c6c5005e86711714f84d28400bad4a73aa6c"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

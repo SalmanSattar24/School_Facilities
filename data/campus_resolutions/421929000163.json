@@ -1,0 +1,189 @@
+{
+  "school_id": "421929000163",
+  "school_name": "Pleasant Valley El Sch",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -75.4728679,
+    40.9120478,
+    -75.4712124,
+    40.9135763
+  ],
+  "geometry": [
+    [
+      40.9126992,
+      -75.4728642
+    ],
+    [
+      40.9127706,
+      -75.4727238
+    ],
+    [
+      40.9128042,
+      -75.4727691
+    ],
+    [
+      40.9129132,
+      -75.4725954
+    ],
+    [
+      40.9128893,
+      -75.4725708
+    ],
+    [
+      40.9130695,
+      -75.4722703
+    ],
+    [
+      40.9131535,
+      -75.4723628
+    ],
+    [
+      40.9133491,
+      -75.4720217
+    ],
+    [
+      40.9132728,
+      -75.4719464
+    ],
+    [
+      40.9135763,
+      -75.4713947
+    ],
+    [
+      40.9133909,
+      -75.4712124
+    ],
+    [
+      40.9130772,
+      -75.4717629
+    ],
+    [
+      40.9129608,
+      -75.4716469
+    ],
+    [
+      40.9131097,
+      -75.4713661
+    ],
+    [
+      40.9129482,
+      -75.471214
+    ],
+    [
+      40.9128022,
+      -75.4714592
+    ],
+    [
+      40.9125895,
+      -75.4712562
+    ],
+    [
+      40.9124759,
+      -75.4714744
+    ],
+    [
+      40.9126805,
+      -75.471672
+    ],
+    [
+      40.9125876,
+      -75.471848
+    ],
+    [
+      40.912379,
+      -75.4716441
+    ],
+    [
+      40.9122685,
+      -75.4718532
+    ],
+    [
+      40.9124598,
+      -75.4720593
+    ],
+    [
+      40.9123647,
+      -75.4722368
+    ],
+    [
+      40.9121595,
+      -75.4720353
+    ],
+    [
+      40.9120478,
+      -75.472236
+    ],
+    [
+      40.9123383,
+      -75.4725217
+    ],
+    [
+      40.912313,
+      -75.4725932
+    ],
+    [
+      40.9123704,
+      -75.4726514
+    ],
+    [
+      40.9123493,
+      -75.4726854
+    ],
+    [
+      40.9124763,
+      -75.4728158
+    ],
+    [
+      40.9124833,
+      -75.4727709
+    ],
+    [
+      40.9125909,
+      -75.4728679
+    ],
+    [
+      40.9126272,
+      -75.4727897
+    ],
+    [
+      40.9126992,
+      -75.4728642
+    ]
+  ],
+  "matched_name": "Pleasant Valley Elementary School",
+  "source_element": "https://www.openstreetmap.org/way/570810008",
+  "name_similarity": 0.8108108108108109,
+  "distance_from_ccd_m": 24.39862496318266,
+  "candidate_margin": 0.1343840276216317,
+  "recommended_detail_extent_m": 300,
+  "unclamped_detail_extent_m": 300,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "Matched 'Pleasant Valley Elementary School' from OSM way/570810008; name similarity 0.811, CCD-to-center distance 24.4 m, candidate margin 0.134. Match passed the frozen automatic-resolution thresholds.",
+  "candidates_considered": 2,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 40.91281205,
+    "longitude": -75.47204015
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 40.912699,
+    "longitude": -75.472289
+  },
+  "boundary_notes": "Matched 'Pleasant Valley Elementary School' from OSM way/570810008; name similarity 0.811, CCD-to-center distance 24.4 m, candidate margin 0.134. Match passed the frozen automatic-resolution thresholds.",
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "automatic provenance and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/421929000163/context.jpg",
+    "data/imagery/421929000163/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "221716a527ecb4599697aa7a6b373f8679dff86df6887d1205e41592bee7062f",
+    "detail.jpg": "afc5320b4326c308991b9efe65f845253ffcd5902606a31f22e5724fc4662938"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "a45041ce6d420d2a6b8cfb87acffa6206ae7b354c4508a1c50518ed72eb871d3"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

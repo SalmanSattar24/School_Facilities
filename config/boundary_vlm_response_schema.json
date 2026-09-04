@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "school_id",
+    "campus_visibility",
+    "school_anchor",
+    "boundary_polygon_normalized",
+    "included_regions",
+    "excluded_adjacent_regions",
+    "shared_or_ambiguous_regions",
+    "boundary_cues",
+    "suggested_confidence",
+    "review_required",
+    "review_reasons",
+    "summary"
+  ],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0.0"},
+    "school_id": {"type": "string", "minLength": 1},
+    "campus_visibility": {"type": "string", "enum": ["complete", "partial", "not_locatable"]},
+    "school_anchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x", "y", "observable_evidence"],
+      "properties": {
+        "x": {"type": "number", "minimum": 0, "maximum": 1},
+        "y": {"type": "number", "minimum": 0, "maximum": 1},
+        "observable_evidence": {"type": "string", "minLength": 1}
+      }
+    },
+    "boundary_polygon_normalized": {
+      "type": "array",
+      "maxItems": 41,
+      "items": {"$ref": "#/$defs/point"}
+    },
+    "included_regions": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/region"}
+    },
+    "excluded_adjacent_regions": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/region"}
+    },
+    "shared_or_ambiguous_regions": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/region"}
+    },
+    "boundary_cues": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["north", "east", "south", "west"],
+      "properties": {
+        "north": {"$ref": "#/$defs/cue"},
+        "east": {"$ref": "#/$defs/cue"},
+        "south": {"$ref": "#/$defs/cue"},
+        "west": {"$ref": "#/$defs/cue"}
+      }
+    },
+    "suggested_confidence": {"type": "number", "enum": [0.8, 0.6, 0.4, 0.2]},
+    "review_required": {"type": "boolean"},
+    "review_reasons": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "summary": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "point": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x", "y"],
+      "properties": {
+        "x": {"type": "number", "minimum": 0, "maximum": 1},
+        "y": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    },
+    "region": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "region_type", "bbox", "observable_evidence"],
+      "properties": {
+        "label": {"type": "string", "minLength": 1},
+        "region_type": {"type": "string", "enum": ["school_building", "parking", "playground", "athletic_ground", "adjacent_school", "residential", "commercial", "road", "other"]},
+        "bbox": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["x_min", "y_min", "x_max", "y_max"],
+          "properties": {
+            "x_min": {"type": "number", "minimum": 0, "maximum": 1},
+            "y_min": {"type": "number", "minimum": 0, "maximum": 1},
+            "x_max": {"type": "number", "minimum": 0, "maximum": 1},
+            "y_max": {"type": "number", "minimum": 0, "maximum": 1}
+          }
+        },
+        "observable_evidence": {"type": "string", "minLength": 1}
+      }
+    },
+    "cue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["visibility", "cue_types", "observable_evidence"],
+      "properties": {
+        "visibility": {"type": "string", "enum": ["clear", "weak", "unknown", "outside_image"]},
+        "cue_types": {
+          "type": "array",
+          "items": {"type": "string", "enum": ["road", "sidewalk", "fence_or_wall", "tree_line", "parking_edge", "land_cover_change", "internal_circulation", "building_edge", "none"]}
+        },
+        "observable_evidence": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

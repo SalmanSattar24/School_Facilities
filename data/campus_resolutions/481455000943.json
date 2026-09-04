@@ -1,0 +1,127 @@
+{
+  "school_id": "481455000943",
+  "school_name": "COLEMAN H S",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -99.42851895,
+    31.80838692,
+    -99.42315708,
+    31.81188723
+  ],
+  "geometry": [
+    [
+      31.81186935,
+      -99.42851895
+    ],
+    [
+      31.81188375,
+      -99.42421891
+    ],
+    [
+      31.81188723,
+      -99.42317295
+    ],
+    [
+      31.80840481,
+      -99.42315708
+    ],
+    [
+      31.80838692,
+      -99.42850287
+    ],
+    [
+      31.81186935,
+      -99.42851895
+    ]
+  ],
+  "matched_name": "Coleman Elementary School",
+  "source_element": "https://www.openstreetmap.org/node/356796792",
+  "name_similarity": 0.7777777777777778,
+  "distance_from_ccd_m": 328.91263634303726,
+  "candidate_margin": 0.06003701856501742,
+  "recommended_detail_extent_m": 850,
+  "unclamped_detail_extent_m": 850,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "Matched 'Coleman Elementary School' from OSM node/356796792; name similarity 0.778, CCD-to-center distance 328.9 m, candidate margin 0.060. Match did not meet the automatic polygon/name/distance thresholds. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+  "candidates_considered": 3,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 31.810137075,
+    "longitude": -99.425838015
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 31.809203,
+    "longitude": -99.424587
+  },
+  "boundary_notes": "Matched 'Coleman Elementary School' from OSM node/356796792; name similarity 0.778, CCD-to-center distance 328.9 m, candidate margin 0.060. Match did not meet the automatic polygon/name/distance thresholds. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+  "confirmation_method": "automated_gemini_soft_scope",
+  "automatic_resolution_status_before_soft_scope": "unresolved",
+  "scope_mode": "soft_boundary",
+  "scope_boundary_authority": "soft_guidance",
+  "measurement_search_scope": "entire_detail_image",
+  "boundary_status": "approximate_non_authoritative",
+  "original_resolver_geometry": [
+    [
+      31.8120906,
+      -99.4253418
+    ]
+  ],
+  "original_resolver_bbox_wgs84": null,
+  "soft_boundary_geometry": [
+    [
+      31.81186935,
+      -99.42851895
+    ],
+    [
+      31.81188375,
+      -99.42421891
+    ],
+    [
+      31.81188723,
+      -99.42317295
+    ],
+    [
+      31.80840481,
+      -99.42315708
+    ],
+    [
+      31.80838692,
+      -99.42850287
+    ],
+    [
+      31.81186935,
+      -99.42851895
+    ]
+  ],
+  "soft_boundary_bbox_wgs84": [
+    -99.42851895,
+    31.80838692,
+    -99.42315708,
+    31.81188723
+  ],
+  "soft_scope_safety_buffer_each_side_m": 150,
+  "soft_boundary_proposal": {
+    "path": "data/campus_boundary_proposals/v1.0/481455000943.json",
+    "sha256": "92975c5a3bdc52c23ed1748e1b347fbc872df3607933affdb04e1d16cf76f14b",
+    "configuration_id": "school-facilities-boundary-resolver-v1.0",
+    "model": "gemini-3.5-flash-lite",
+    "request_fingerprint_sha256": "2efccd072462ac5039bd88258188200460c8095e0e2f8dec906aa8d0b69c177e",
+    "candidate_quality_gate_passed": false
+  },
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "soft-boundary centering plus safety buffer, provenance, and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/481455000943/context.jpg",
+    "data/imagery/481455000943/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "63f8a5ebf9802370cdfed4e93bdd102521826ad04d8e1c3a426d1df30e25b045",
+    "detail.jpg": "21cb1b2f51e710217c0d7b3ffed1388483d59f11268506a54ff10ad475b54ef6"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "fa21a83372fab7f2e94213c75f036b0a4fbbfdf06e9a1894114ffa11d3dbee2f"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

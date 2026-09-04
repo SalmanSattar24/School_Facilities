@@ -1,0 +1,4216 @@
+{
+  "abstained_unknown_n": 14,
+  "answered_accuracy": 0.8038277511961722,
+  "answered_coverage": 0.9372197309417041,
+  "auto_accept_n": 118,
+  "auto_accept_precision": 0.9576271186440678,
+  "blind_reference_path": "data/validation/ground_truth.csv",
+  "blind_reference_sha256": "b3c7a4078e1861c7584a120e3dde21ab4e4e65b6f1671d0868af7f19a753b05e",
+  "comparison_to_v1_10": {
+    "answered_accuracy": {
+      "delta": -0.04911342527441598,
+      "v1_10": 0.8529411764705882,
+      "v1_11": 0.8038277511961722
+    },
+    "answered_coverage": {
+      "delta": 0.17488789237668168,
+      "v1_10": 0.7623318385650224,
+      "v1_11": 0.9372197309417041
+    },
+    "baseline": "V1.10 aerial-only",
+    "baseline_report": "outputs/full_pipeline_evaluation.json",
+    "baseline_report_sha256": "0f7641dd5546dee5d02cd9b1c78244f7d2f0d119d7508edb8b5a850263520ddf",
+    "interpretation": "Street View changed the coverage-accuracy tradeoff; this is a version comparison, not same-configuration repeatability.",
+    "problem_flag_capture": {
+      "v1_10": 0.9358974358974359,
+      "v1_11": 0.9090909090909091
+    },
+    "silent_wrong_n": {
+      "v1_10": 5,
+      "v1_11": 5
+    }
+  },
+  "confidence_bands": {
+    "0.20": {
+      "correct_n": 0,
+      "n": 14,
+      "observed_accuracy": 0.0
+    },
+    "0.60": {
+      "correct_n": 55,
+      "n": 91,
+      "observed_accuracy": 0.6043956043956044
+    },
+    "0.96": {
+      "correct_n": 113,
+      "n": 118,
+      "observed_accuracy": 0.9576271186440678
+    }
+  },
+  "confidence_method": {
+    "definition": "estimated probability that the recorded field value is correct",
+    "estimator": "observed answered accuracy pooled within each frozen pipeline risk stratum and rounded to two decimals",
+    "risk_stratum_reliability": {
+      "auto_accept_known": {
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "flagged_known": {
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      }
+    },
+    "same_sample_limitation": "Confidence is descriptive in-sample reliability from these 25 schools, not externally validated calibration.",
+    "unknown_convention": 0.2,
+    "values_frozen_before_reference_access": true
+  },
+  "configuration_id": "school-facilities-human-terminal-pipeline-v1",
+  "correct_n": 168,
+  "evaluable_n": 223,
+  "field_school_n": 225,
+  "flagged_n": 105,
+  "limitations": [
+    "This is an in-project descriptive check against prior reviewed measurements, not an independent external validation set.",
+    "The 225 field-school cells are clustered within 25 schools and are not independent.",
+    "Confidence uses the same small 25-school project sample and therefore is descriptive, not an independent calibration guarantee.",
+    "Rows remain unreviewed or needs-review; model outputs do not become human-reviewed labels automatically."
+  ],
+  "observations": [
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "010282001124"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "010282001124"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "010282001124"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "none",
+      "reference": "partial",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "010282001124"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "none",
+      "reference": "chain-link",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "010282001124"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "010282001124"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "010282001124"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 0,
+      "reference": "1",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "010282001124"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "010282001124"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "040963000996"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "040963000996"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "040963000996"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "040963000996"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "040963000996"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "yes",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "040963000996"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "3",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "040963000996"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "4",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "040963000996"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "040963000996"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "060483000471"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "060483000471"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "060483000471"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "full",
+      "reference": "partial",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "060483000471"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "chain-link",
+      "reference": "chain-link",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "060483000471"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "yes",
+      "reference": "yes",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "060483000471"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 1,
+      "reference": "1",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "060483000471"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 3,
+      "reference": "6",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "060483000471"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "060483000471"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "061734009378"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "061734009378"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "061734009378"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "partial",
+      "reference": "partial",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "061734009378"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "chain-link",
+      "reference": "chain-link",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "061734009378"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "061734009378"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 1,
+      "reference": "2",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "061734009378"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 4,
+      "reference": "4",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "061734009378"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "061734009378"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "060001909278"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "060001909278"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "060001909278"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "060001909278"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "060001909278"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "yes",
+      "reference": "yes",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "060001909278"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 2,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "060001909278"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 1,
+      "reference": "7",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "060001909278"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "060001909278"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "130333001308"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "130333001308"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "130333001308"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "partial",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "130333001308"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "chain-link",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "130333001308"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "130333001308"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "130333001308"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": false,
+      "field": "hard_courts",
+      "flagged": false,
+      "outcome": "excluded_unknown_reference",
+      "prediction": 0,
+      "reference": "unknown",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "130333001308"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "130333001308"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160264000465"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160264000465"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160264000465"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "partial",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "160264000465"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "chain-link",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "160264000465"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160264000465"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 1,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "160264000465"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160264000465"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160264000465"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160000100084"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160000100084"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "160000100084"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "160000100084"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "160000100084"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "yes",
+      "reference": "yes",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160000100084"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 2,
+      "reference": "2",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160000100084"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "160000100084"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160000100084"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "180283000341"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "180283000341"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "180283000341"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "180283000341"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "180283000341"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "yes",
+      "reference": "yes",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "180283000341"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 2,
+      "reference": "2",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "180283000341"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "180283000341"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "180283000341"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "yes",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "240039000683"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "1150",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "240039000683"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "240039000683"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "full",
+      "reference": "full",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "240039000683"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "chain-link",
+      "reference": "chain-link",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "240039000683"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "yes",
+      "reference": "yes",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "240039000683"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 1,
+      "reference": "7",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "240039000683"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 1,
+      "reference": "6",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "240039000683"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "240039000683"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "263039006679"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "263039006679"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "263039006679"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "full",
+      "reference": "full",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "263039006679"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "chain-link",
+      "reference": "chain-link",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "263039006679"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "263039006679"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": false,
+      "outcome": "wrong",
+      "prediction": 1,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "263039006679"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "263039006679"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "263039006679"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "270543000204"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "270543000204"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "270543000204"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "partial",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "270543000204"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "chain-link",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "270543000204"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "270543000204"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 2,
+      "reference": "5",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "270543000204"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "270543000204"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "270543000204"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "330246000063"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "330246000063"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "330246000063"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "partial",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "330246000063"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "chain-link",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "330246000063"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "330246000063"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": false,
+      "outcome": "wrong",
+      "prediction": 2,
+      "reference": "3",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "330246000063"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "330246000063"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "330246000063"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "yes",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "341560004108"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "3500",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "341560004108"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "341560004108"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "partial",
+      "reference": "full",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "341560004108"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "wrought-iron",
+      "reference": "wrought-iron",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "341560004108"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "341560004108"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 2,
+      "reference": "2",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "341560004108"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": false,
+      "outcome": "wrong",
+      "prediction": 1,
+      "reference": "4",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "341560004108"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "341560004108"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "360008802312"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "360008802312"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "360008802312"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "full",
+      "reference": "full",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "360008802312"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "chain-link",
+      "reference": "chain-link",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "360008802312"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "360008802312"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 0,
+      "reference": "2",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "360008802312"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 1,
+      "reference": "1",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "360008802312"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "360008802312"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390494903613"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390494903613"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390494903613"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "390494903613"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390494903613"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390494903613"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 1,
+      "reference": "2",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "390494903613"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 0,
+      "reference": "2",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "390494903613"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390494903613"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390458502363"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390458502363"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "390458502363"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "390458502363"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "390458502363"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390458502363"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390458502363"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": false,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "excluded_unknown_reference",
+      "prediction": 1,
+      "reference": "unknown",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "390458502363"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390458502363"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "402277001928"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "402277001928"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "402277001928"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "402277001928"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "402277001928"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "402277001928"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "402277001928"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 1,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "402277001928"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "402277001928"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "401452000682"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "401452000682"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "401452000682"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "none",
+      "reference": "partial",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "401452000682"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "none",
+      "reference": "chain-link",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "401452000682"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "401452000682"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 1,
+      "reference": "1",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "401452000682"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "401452000682"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "401452000682"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "421917006915"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "421917006915"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "421917006915"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "421917006915"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "421917006915"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "421917006915"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 2,
+      "reference": "3",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "421917006915"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 1,
+      "reference": "3",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "421917006915"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "421917006915"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "421929000163"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "421929000163"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "421929000163"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "full",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "421929000163"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "none",
+      "reference": "chain-link",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "421929000163"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "no",
+      "reference": "yes",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "421929000163"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 0,
+      "reference": "2",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "421929000163"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "421929000163"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "421929000163"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "450387001491"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "450387001491"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "450387001491"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "450387001491"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "450387001491"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "wrong",
+      "prediction": "no",
+      "reference": "yes",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "450387001491"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 1,
+      "reference": "1",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "450387001491"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 1,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "450387001491"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "450387001491"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481455000943"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481455000943"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481455000943"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481455000943"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481455000943"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "yes",
+      "reference": "yes",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481455000943"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 2,
+      "reference": "3",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "481455000943"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 1,
+      "reference": "2",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "481455000943"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481455000943"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481623001325"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481623001325"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481623001325"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "partial",
+      "reference": "partial",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "481623001325"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.6,
+        "correct_n": 55,
+        "estimate": 0.6043956043956044,
+        "evaluation_n": 91
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "chain-link",
+      "reference": "chain-link",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "481623001325"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481623001325"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481623001325"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 1,
+      "reference": "1",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481623001325"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481623001325"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "550957000382"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "550957000382"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "550957000382"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "550957000382"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "550957000382"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "550957000382"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": false,
+      "outcome": "wrong",
+      "prediction": 0,
+      "reference": "1",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "550957000382"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "550957000382"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "post-freeze empirical accuracy pooled within pipeline risk stratum",
+        "confidence": 0.96,
+        "correct_n": 113,
+        "estimate": 0.9576271186440678,
+        "evaluation_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "550957000382"
+    }
+  ],
+  "per_field": {
+    "dominant_fence_type": {
+      "abstained_unknown_n": 1,
+      "answered_accuracy": 0.7083333333333334,
+      "correct_n": 17,
+      "evaluable_n": 25,
+      "wrong_n": 7
+    },
+    "full_size_sports_fields": {
+      "abstained_unknown_n": 1,
+      "answered_accuracy": 0.4583333333333333,
+      "correct_n": 11,
+      "evaluable_n": 25,
+      "wrong_n": 13
+    },
+    "hard_courts": {
+      "abstained_unknown_n": 1,
+      "answered_accuracy": 0.5454545454545454,
+      "correct_n": 12,
+      "evaluable_n": 23,
+      "wrong_n": 10
+    },
+    "perimeter_fencing": {
+      "abstained_unknown_n": 3,
+      "answered_accuracy": 0.6363636363636364,
+      "correct_n": 14,
+      "evaluable_n": 25,
+      "wrong_n": 8
+    },
+    "pool": {
+      "abstained_unknown_n": 0,
+      "answered_accuracy": 1.0,
+      "correct_n": 25,
+      "evaluable_n": 25,
+      "wrong_n": 0
+    },
+    "portable_classroom_count": {
+      "abstained_unknown_n": 0,
+      "answered_accuracy": 1.0,
+      "correct_n": 25,
+      "evaluable_n": 25,
+      "wrong_n": 0
+    },
+    "running_track": {
+      "abstained_unknown_n": 0,
+      "answered_accuracy": 0.88,
+      "correct_n": 22,
+      "evaluable_n": 25,
+      "wrong_n": 3
+    },
+    "solar_area_m2": {
+      "abstained_unknown_n": 4,
+      "answered_accuracy": 1.0,
+      "correct_n": 21,
+      "evaluable_n": 25,
+      "wrong_n": 0
+    },
+    "solar_present": {
+      "abstained_unknown_n": 4,
+      "answered_accuracy": 1.0,
+      "correct_n": 21,
+      "evaluable_n": 25,
+      "wrong_n": 0
+    }
+  },
+  "prediction_snapshot": "outputs/all25_v1_11_predictions_frozen.json",
+  "prediction_snapshot_sha256": "a99440167b065f0303910dd9e51f3f2f2cb52a5f8f49ad7c1712a6de31b316b6",
+  "problem_flag_capture": 0.9090909090909091,
+  "problem_n": 55,
+  "reference_opened_only_after_prediction_freeze": true,
+  "reference_path": "measurements_old.csv",
+  "reference_sha256": "c88ebd0d7c04a0ec78ae73cbc9db1cbcb97dcd1a799af15ad17a51940336640e",
+  "reference_used_to_change_values": false,
+  "schema_version": "1.0",
+  "school_n": 25,
+  "silent_wrong_n": 5,
+  "stability": {
+    "artifact_completion": "25/25 fused records; each field records its V1.10 or V1.11 source version",
+    "reason": "One frozen response per school does not measure run-to-run repeatability; additional identical-input calls were not made in this run.",
+    "repeatability_measured": false
+  },
+  "wrong_n": 41
+}

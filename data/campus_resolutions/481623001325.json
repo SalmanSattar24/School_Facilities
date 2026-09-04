@@ -1,0 +1,69 @@
+{
+  "school_id": "481623001325",
+  "school_name": "PAUL L DUNBAR LEARNING CENTER",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -96.7498699,
+    32.7740368,
+    -96.7479601,
+    32.7756967
+  ],
+  "geometry": [
+    [
+      32.7740368,
+      -96.7489284
+    ],
+    [
+      32.7748284,
+      -96.7498699
+    ],
+    [
+      32.7756967,
+      -96.7488908
+    ],
+    [
+      32.7748983,
+      -96.7479601
+    ],
+    [
+      32.7740368,
+      -96.7489284
+    ]
+  ],
+  "matched_name": "Paul L Dunbar Learning Center",
+  "source_element": "https://www.openstreetmap.org/way/449158563",
+  "name_similarity": 1.0,
+  "distance_from_ccd_m": 26.966305405026855,
+  "candidate_margin": 0.4235836296842549,
+  "recommended_detail_extent_m": 350,
+  "unclamped_detail_extent_m": 350,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "Matched 'Paul L Dunbar Learning Center' from OSM way/449158563; name similarity 1.000, CCD-to-center distance 27.0 m, candidate margin 0.424. Match passed the frozen automatic-resolution thresholds.",
+  "candidates_considered": 8,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 32.77486675,
+    "longitude": -96.748915
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 32.77488,
+    "longitude": -96.749203
+  },
+  "boundary_notes": "Matched 'Paul L Dunbar Learning Center' from OSM way/449158563; name similarity 1.000, CCD-to-center distance 27.0 m, candidate margin 0.424. Match passed the frozen automatic-resolution thresholds.",
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "automatic provenance and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/481623001325/context.jpg",
+    "data/imagery/481623001325/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "e71802fca9895c6bd7a35aa8994172dbdc80ca5ddfb2705635d0441d156f9890",
+    "detail.jpg": "ac9567ebb9f3f30e819a9929e4200a9c9b39d1128279396db6aee2c4794f8446"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "bfd7007ca893b757a96ce5937a851179cfbdafd53b095c381160dc659eec1cfd"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

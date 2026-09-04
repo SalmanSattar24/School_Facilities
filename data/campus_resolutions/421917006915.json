@@ -1,0 +1,56 @@
+{
+  "school_id": "421917006915",
+  "school_name": "Pittsburgh Brashear HS",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": null,
+  "geometry": [],
+  "matched_name": "Brashear High School",
+  "source_element": "https://www.openstreetmap.org/way/217979330",
+  "name_similarity": 0.5925925925925926,
+  "distance_from_ccd_m": 32.71876528775804,
+  "candidate_margin": 0.3380605289954379,
+  "recommended_detail_extent_m": 800,
+  "unclamped_detail_extent_m": 800,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "Matched 'Brashear High School' from OSM way/217979330; name similarity 0.593, CCD-to-center distance 32.7 m, candidate margin 0.338. Match did not meet the automatic polygon/name/distance thresholds. No trustworthy polygon was available. The stored public/CCD center controls an 800 m crop; the facility model must search the entire detail image and flag all ownership or perimeter ambiguity.",
+  "candidates_considered": 6,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 40.418891349999996,
+    "longitude": -80.0181541
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 40.4186,
+    "longitude": -80.0181
+  },
+  "boundary_notes": "Matched 'Brashear High School' from OSM way/217979330; name similarity 0.593, CCD-to-center distance 32.7 m, candidate margin 0.338. Match did not meet the automatic polygon/name/distance thresholds. No trustworthy polygon was available. The stored public/CCD center controls an 800 m crop; the facility model must search the entire detail image and flag all ownership or perimeter ambiguity.",
+  "scope_mode": "center_only",
+  "scope_boundary_authority": "none",
+  "measurement_search_scope": "entire_detail_image",
+  "confirmation_method": "automatic_center_only_fallback",
+  "automatic_resolution_status_before_center_only": "unresolved",
+  "boundary_status": "unavailable_non_authoritative",
+  "failed_boundary_attempt": {
+    "path": "data/campus_boundary_proposals/rejected/v1.0/421917006915.json",
+    "sha256": "feb0ff9807325899dc7c56acd72460785140a7e27908cccef281d97f2be65088",
+    "configuration_id": "school-facilities-boundary-resolver-v1.0",
+    "model": "gemini-3.5-flash-lite",
+    "validation_error": "boundary output failed schema validation at excluded_adjacent_regions.0.bbox.y_max: 800.0 is greater than the maximum of 1"
+  },
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "automatic provenance and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/421917006915/context.jpg",
+    "data/imagery/421917006915/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "d3169ba646b856d6061f53814a659cdc77cb449992e4d00e88efd9d0f2206899",
+    "detail.jpg": "1c4f4585adc969c8162993151110c979f5adba38598364f1fefb8fde3b2b9520"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "fc89d553457baa14f8fd5a707c1c4fd8682a6757781e8602cdf458511280b76a"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

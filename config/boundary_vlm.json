@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "configuration_id": "school-facilities-boundary-resolver-v1.0",
+  "frozen_at": "2026-09-03",
+  "provider": "Google Gemini Developer API",
+  "model": "gemini-3.5-flash-lite",
+  "api_version": "v1beta",
+  "client": {
+    "package": "google-genai",
+    "version": "2.20.0",
+    "method": "interactions.create"
+  },
+  "credentials": {
+    "api_key_environment_variable": "GEMINI_API_KEY",
+    "local_secrets_file": "secrets.local.env",
+    "require_project_without_active_billing": true
+  },
+  "generation": {
+    "thinking_level": "minimal",
+    "max_output_tokens": 4096,
+    "prompt_path": "config/boundary_vlm_prompt.txt",
+    "response_schema_path": "config/boundary_vlm_response_schema.json"
+  },
+  "inputs": {
+    "images_per_school": 1,
+    "image_role": "context",
+    "image_format": "JPEG",
+    "image_dimensions": [1600, 1600],
+    "media_resolution": "high",
+    "coordinate_system": "normalized context-image coordinates with top-left (0,0) and bottom-right (1,1)",
+    "include_school_identity": true,
+    "include_supplied_coordinate": true,
+    "include_public_match_metadata": true
+  },
+  "geometry_guards": {
+    "minimum_unique_vertices": 3,
+    "maximum_vertices": 40,
+    "minimum_area_fraction": 0.005,
+    "maximum_area_fraction": 0.85,
+    "require_school_anchor_inside_polygon": true,
+    "reject_self_intersection": true,
+    "complete_visibility_minimum_edge_clearance_fraction": 0.01
+  },
+  "decision_policy": {
+    "auto_confirmation_enabled": false,
+    "reason": "V1.0 proposals require human approval until boundary precision and review-flag capture are measured.",
+    "model_unknown_or_partial_visibility_requires_review": true,
+    "shared_or_ambiguous_regions_require_review": true,
+    "confidence_at_or_below_requires_review": 0.6
+  },
+  "request_limits": {
+    "requests_per_minute": 15,
+    "tokens_per_minute": 250000,
+    "requests_per_day": 500,
+    "minimum_seconds_between_requests": 4,
+    "maximum_retries_per_school": 0,
+    "retry_statuses": [429, 500, 502, 503, 504],
+    "retry_initial_backoff_seconds": 5,
+    "request_timeout_seconds": 300,
+    "production_hard_request_cap_including_retries": 10
+  },
+  "outputs": {
+    "raw_directory": "data/campus_boundary_proposals/v1.0",
+    "rejected_directory": "data/campus_boundary_proposals/rejected/v1.0",
+    "request_ledger": "data/model_outputs/boundary_request_ledger.json",
+    "preserve_raw_response": true,
+    "never_overwrite_campus_resolution_automatically": true
+  },
+  "data_terms": {
+    "input_class": "public school identity, public coordinates, and public overhead imagery",
+    "sensitive_or_confidential_data_prohibited": true
+  }
+}

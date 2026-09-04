@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "school_id", "image_observations", "candidate_fields", "pipeline_review_required", "review_reasons"],
+  "properties": {
+    "schema_version": {"const": "1.11.0"},
+    "school_id": {"type": "string", "minLength": 1},
+    "image_observations": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 8,
+      "items": {"$ref": "#/$defs/imageObservation"}
+    },
+    "candidate_fields": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["portable_classroom_count", "perimeter_fencing", "dominant_fence_type", "running_track", "full_size_sports_fields", "hard_courts", "pool"],
+      "properties": {
+        "portable_classroom_count": {"$ref": "#/$defs/countField"},
+        "perimeter_fencing": {"$ref": "#/$defs/fenceExtentField"},
+        "dominant_fence_type": {"$ref": "#/$defs/fenceTypeField"},
+        "running_track": {"$ref": "#/$defs/binaryField"},
+        "full_size_sports_fields": {"$ref": "#/$defs/countField"},
+        "hard_courts": {"$ref": "#/$defs/countField"},
+        "pool": {"$ref": "#/$defs/binaryField"}
+      }
+    },
+    "pipeline_review_required": {"type": "boolean"},
+    "review_reasons": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+  },
+  "$defs": {
+    "confidence": {"type": "number", "enum": [0.8, 0.6, 0.4, 0.2]},
+    "observationValue": {"type": "string", "enum": ["positive", "negative_visible_segment", "unknown"]},
+    "featureObservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["result", "observable_evidence", "limitations"],
+      "properties": {
+        "result": {"$ref": "#/$defs/observationValue"},
+        "observable_evidence": {"type": "string"},
+        "limitations": {"type": "string"}
+      }
+    },
+    "imageObservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["image_id", "school_visible", "campus_sector", "boundary_segment", "adequately_visible_boundary_fraction", "occlusion", "resolution", "fence_cues", "portable_cues", "athletic_cues", "fencing", "portable_classrooms", "athletics"],
+      "properties": {
+        "image_id": {"type": "string", "minLength": 1},
+        "school_visible": {"type": "boolean"},
+        "campus_sector": {"type": "string"},
+        "boundary_segment": {"type": "string"},
+        "adequately_visible_boundary_fraction": {"type": "number", "minimum": 0, "maximum": 1},
+        "occlusion": {"type": "string"},
+        "resolution": {"type": "string"},
+        "fence_cues": {"type": "string"},
+        "portable_cues": {"type": "string"},
+        "athletic_cues": {"type": "string"},
+        "fencing": {"$ref": "#/$defs/featureObservation"},
+        "portable_classrooms": {"$ref": "#/$defs/featureObservation"},
+        "athletics": {"$ref": "#/$defs/featureObservation"}
+      }
+    },
+    "fieldBase": {
+      "type": "object",
+      "required": ["suggested_confidence", "evidence", "review_required"],
+      "properties": {
+        "suggested_confidence": {"$ref": "#/$defs/confidence"},
+        "evidence": {"type": "string"},
+        "review_required": {"type": "boolean"}
+      }
+    },
+    "binaryField": {
+      "allOf": [
+        {"$ref": "#/$defs/fieldBase"},
+        {"type": "object", "additionalProperties": false, "required": ["value", "suggested_confidence", "evidence", "review_required"], "properties": {"value": {"type": "string", "enum": ["yes", "no", "unknown"]}, "suggested_confidence": {"$ref": "#/$defs/confidence"}, "evidence": {"type": "string"}, "review_required": {"type": "boolean"}}}
+      ]
+    },
+    "countField": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "suggested_confidence", "evidence", "review_required"],
+      "properties": {"value": {"oneOf": [{"type": "integer", "minimum": 0}, {"const": "unknown"}]}, "suggested_confidence": {"$ref": "#/$defs/confidence"}, "evidence": {"type": "string"}, "review_required": {"type": "boolean"}}
+    },
+    "fenceExtentField": {
+      "type": "object", "additionalProperties": false,
+      "required": ["value", "minimum_supported_coverage", "maximum_supported_coverage", "suggested_confidence", "evidence", "review_required"],
+      "properties": {"value": {"type": "string", "enum": ["full", "partial", "none", "unknown"]}, "minimum_supported_coverage": {"type": "number", "minimum": 0, "maximum": 1}, "maximum_supported_coverage": {"type": "number", "minimum": 0, "maximum": 1}, "suggested_confidence": {"$ref": "#/$defs/confidence"}, "evidence": {"type": "string"}, "review_required": {"type": "boolean"}}
+    },
+    "fenceTypeField": {
+      "type": "object", "additionalProperties": false,
+      "required": ["value", "suggested_confidence", "evidence", "review_required"],
+      "properties": {"value": {"type": "string", "enum": ["chain-link", "wrought-iron", "wall", "other", "mixed", "none", "unknown"]}, "suggested_confidence": {"$ref": "#/$defs/confidence"}, "evidence": {"type": "string"}, "review_required": {"type": "boolean"}}
+    }
+  }
+}

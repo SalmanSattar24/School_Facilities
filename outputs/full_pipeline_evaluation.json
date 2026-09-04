@@ -1,0 +1,4188 @@
+{
+  "abstained_unknown_n": 53,
+  "answered_accuracy": 0.8529411764705882,
+  "answered_coverage": 0.7623318385650224,
+  "auto_accept_n": 121,
+  "auto_accept_precision": 0.9586776859504132,
+  "blind_reference_path": "data/validation/ground_truth.csv",
+  "blind_reference_sha256": "b3c7a4078e1861c7584a120e3dde21ab4e4e65b6f1671d0868af7f19a753b05e",
+  "confidence_bands": {
+    "0.20": {
+      "correct_n": 0,
+      "n": 53,
+      "observed_accuracy": 0.0
+    },
+    "0.40": {
+      "correct_n": 28,
+      "n": 39,
+      "observed_accuracy": 0.717948717948718
+    },
+    "0.60": {
+      "correct_n": 1,
+      "n": 10,
+      "observed_accuracy": 0.1
+    },
+    "0.80": {
+      "correct_n": 89,
+      "n": 89,
+      "observed_accuracy": 1.0
+    },
+    "0.95": {
+      "correct_n": 27,
+      "n": 32,
+      "observed_accuracy": 0.84375
+    }
+  },
+  "confidence_method": {
+    "anchor_rule": "largest frozen anchor not greater than posterior mean",
+    "beta_prior": "Beta(1,1)",
+    "definition": "estimated probability that the recorded field value is correct",
+    "leave_one_school_out": true,
+    "same_sample_limitation": "Values are not changed from the frozen snapshot, but confidence is estimated descriptively from this 25-school reference set."
+  },
+  "configuration_id": "school-facilities-human-terminal-pipeline-v1",
+  "correct_n": 145,
+  "evaluable_n": 223,
+  "field_school_n": 225,
+  "flagged_n": 102,
+  "limitations": [
+    "This is an in-project descriptive check against prior reviewed measurements, not an independent external validation set.",
+    "The 225 field-school cells are clustered within 25 schools and are not independent.",
+    "Leave-one-school-out confidence avoids using a school's own correctness but still uses the same small 25-school project sample.",
+    "Rows remain unreviewed or needs-review; model outputs do not become human-reviewed labels automatically."
+  ],
+  "observations": [
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "010282001124"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "010282001124"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5918367346938775,
+        "training_correct_n": 28,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "010282001124"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "partial",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "010282001124"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "chain-link",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "010282001124"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "010282001124"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "010282001124"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5918367346938775,
+        "training_correct_n": 28,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 0,
+      "reference": "1",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "010282001124"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "010282001124"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5869565217391305,
+        "training_correct_n": 26,
+        "training_n": 44
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "040963000996"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5869565217391305,
+        "training_correct_n": 26,
+        "training_n": 44
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "040963000996"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9583333333333334,
+        "training_correct_n": 114,
+        "training_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "040963000996"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "040963000996"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5869565217391305,
+        "training_correct_n": 26,
+        "training_n": 44
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "040963000996"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9583333333333334,
+        "training_correct_n": 114,
+        "training_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "wrong",
+      "prediction": "yes",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "040963000996"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5869565217391305,
+        "training_correct_n": 26,
+        "training_n": 44
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 5,
+      "reference": "3",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "040963000996"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5869565217391305,
+        "training_correct_n": 26,
+        "training_n": 44
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 6,
+      "reference": "4",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "040963000996"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9583333333333334,
+        "training_correct_n": 114,
+        "training_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "040963000996"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "060483000471"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "060483000471"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.95,
+        "training_correct_n": 113,
+        "training_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "060483000471"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "partial",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "060483000471"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "chain-link",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "060483000471"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.95,
+        "training_correct_n": 113,
+        "training_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "yes",
+      "reference": "yes",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "060483000471"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5918367346938775,
+        "training_correct_n": 28,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 1,
+      "reference": "1",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "060483000471"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5918367346938775,
+        "training_correct_n": 28,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 5,
+      "reference": "6",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "060483000471"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.95,
+        "training_correct_n": 113,
+        "training_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "060483000471"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "061734009378"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "061734009378"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.95,
+        "training_correct_n": 113,
+        "training_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "061734009378"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "partial",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "061734009378"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "chain-link",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "061734009378"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.95,
+        "training_correct_n": 113,
+        "training_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "061734009378"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5918367346938775,
+        "training_correct_n": 28,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 2,
+      "reference": "2",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "061734009378"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5918367346938775,
+        "training_correct_n": 28,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 2,
+      "reference": "4",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "061734009378"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.95,
+        "training_correct_n": 113,
+        "training_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "061734009378"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "060001909278"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "060001909278"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "060001909278"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "060001909278"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "060001909278"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "yes",
+      "reference": "yes",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "060001909278"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.6,
+        "estimate": 0.6122448979591837,
+        "training_correct_n": 29,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 2,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "060001909278"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.6,
+        "estimate": 0.6122448979591837,
+        "training_correct_n": 29,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 6,
+      "reference": "7",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "060001909278"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "060001909278"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "130333001308"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "130333001308"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "130333001308"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "130333001308"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "130333001308"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "130333001308"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "130333001308"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5882352941176471,
+        "training_correct_n": 29,
+        "training_n": 49
+      },
+      "evaluable": false,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "excluded_unknown_reference",
+      "prediction": 0,
+      "reference": "unknown",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "130333001308"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "130333001308"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160264000465"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160264000465"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160264000465"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "160264000465"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5714285714285714,
+        "training_correct_n": 27,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "160264000465"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160264000465"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160264000465"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5714285714285714,
+        "training_correct_n": 27,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "160264000465"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160264000465"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160000100084"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160000100084"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160000100084"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "160000100084"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "160000100084"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "yes",
+      "reference": "yes",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160000100084"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5714285714285714,
+        "training_correct_n": 27,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 2,
+      "reference": "2",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "160000100084"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5714285714285714,
+        "training_correct_n": 27,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "160000100084"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "160000100084"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "180283000341"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "180283000341"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "180283000341"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "180283000341"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "180283000341"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "yes",
+      "reference": "yes",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "180283000341"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5918367346938775,
+        "training_correct_n": 28,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 2,
+      "reference": "2",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "180283000341"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5918367346938775,
+        "training_correct_n": 28,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 6,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "180283000341"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "180283000341"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "yes",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "240039000683"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "1150",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "240039000683"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.95,
+        "training_correct_n": 113,
+        "training_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "240039000683"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "full",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "240039000683"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "chain-link",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "240039000683"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.95,
+        "training_correct_n": 113,
+        "training_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "yes",
+      "reference": "yes",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "240039000683"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5918367346938775,
+        "training_correct_n": 28,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 4,
+      "reference": "7",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "240039000683"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5918367346938775,
+        "training_correct_n": 28,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 6,
+      "reference": "6",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "240039000683"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.95,
+        "training_correct_n": 113,
+        "training_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "240039000683"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "263039006679"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "263039006679"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "263039006679"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "full",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "263039006679"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.6,
+        "estimate": 0.6041666666666666,
+        "training_correct_n": 28,
+        "training_n": 46
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "none",
+      "reference": "chain-link",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "263039006679"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "263039006679"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.6,
+        "estimate": 0.6041666666666666,
+        "training_correct_n": 28,
+        "training_n": 46
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 1,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "263039006679"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.6,
+        "estimate": 0.6041666666666666,
+        "training_correct_n": 28,
+        "training_n": 46
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "263039006679"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "263039006679"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "270543000204"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "270543000204"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "270543000204"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "270543000204"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "270543000204"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "270543000204"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5714285714285714,
+        "training_correct_n": 27,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 5,
+      "reference": "5",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "270543000204"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5714285714285714,
+        "training_correct_n": 27,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "270543000204"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "270543000204"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "330246000063"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "330246000063"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "330246000063"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "330246000063"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "330246000063"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "330246000063"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.6,
+        "estimate": 0.6122448979591837,
+        "training_correct_n": 29,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 2,
+      "reference": "3",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "330246000063"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.6,
+        "estimate": 0.6122448979591837,
+        "training_correct_n": 29,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 1,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "330246000063"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "330246000063"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "yes",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "341560004108"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "3500",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "341560004108"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.95,
+        "training_correct_n": 113,
+        "training_n": 118
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "341560004108"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "full",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "341560004108"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "wrought-iron",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "341560004108"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.95,
+        "training_correct_n": 113,
+        "training_n": 118
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "341560004108"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.6,
+        "estimate": 0.6122448979591837,
+        "training_correct_n": 29,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 3,
+      "reference": "2",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "341560004108"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.6,
+        "estimate": 0.6122448979591837,
+        "training_correct_n": 29,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 1,
+      "reference": "4",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "341560004108"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.95,
+        "training_correct_n": 113,
+        "training_n": 118
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "341560004108"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9572649572649573,
+        "training_correct_n": 111,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "360008802312"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9572649572649573,
+        "training_correct_n": 111,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "360008802312"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9572649572649573,
+        "training_correct_n": 111,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "360008802312"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "full",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "360008802312"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "chain-link",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "360008802312"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9572649572649573,
+        "training_correct_n": 111,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "360008802312"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9572649572649573,
+        "training_correct_n": 111,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": false,
+      "outcome": "wrong",
+      "prediction": 0,
+      "reference": "2",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "360008802312"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.6,
+        "estimate": 0.6,
+        "training_correct_n": 29,
+        "training_n": 48
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 0,
+      "reference": "1",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "360008802312"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9572649572649573,
+        "training_correct_n": 111,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "360008802312"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390494903613"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390494903613"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390494903613"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "390494903613"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "390494903613"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390494903613"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5918367346938775,
+        "training_correct_n": 28,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 2,
+      "reference": "2",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "390494903613"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5918367346938775,
+        "training_correct_n": 28,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 1,
+      "reference": "2",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "390494903613"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390494903613"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390458502363"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390458502363"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390458502363"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "390458502363"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "390458502363"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390458502363"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "390458502363"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5882352941176471,
+        "training_correct_n": 29,
+        "training_n": 49
+      },
+      "evaluable": false,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "excluded_unknown_reference",
+      "prediction": 2,
+      "reference": "unknown",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "390458502363"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "390458502363"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "402277001928"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "402277001928"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "402277001928"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "402277001928"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.58,
+        "training_correct_n": 28,
+        "training_n": 48
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "402277001928"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "402277001928"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "402277001928"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "402277001928"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "402277001928"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "401452000682"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "401452000682"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "401452000682"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "partial",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "401452000682"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "chain-link",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "401452000682"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "401452000682"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5714285714285714,
+        "training_correct_n": 27,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 1,
+      "reference": "1",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "401452000682"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5714285714285714,
+        "training_correct_n": 27,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "401452000682"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "401452000682"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "421917006915"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "421917006915"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "421917006915"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "421917006915"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "421917006915"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "421917006915"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5918367346938775,
+        "training_correct_n": 28,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 3,
+      "reference": "3",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "421917006915"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5918367346938775,
+        "training_correct_n": 28,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 6,
+      "reference": "3",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "421917006915"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "data/validation/ground_truth.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "421917006915"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9658119658119658,
+        "training_correct_n": 112,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "421929000163"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9658119658119658,
+        "training_correct_n": 112,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "421929000163"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9658119658119658,
+        "training_correct_n": 112,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "421929000163"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "full",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "421929000163"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5918367346938775,
+        "training_correct_n": 28,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": "none",
+      "reference": "chain-link",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "421929000163"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9658119658119658,
+        "training_correct_n": 112,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "wrong",
+      "prediction": "no",
+      "reference": "yes",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "421929000163"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9658119658119658,
+        "training_correct_n": 112,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": false,
+      "outcome": "wrong",
+      "prediction": 0,
+      "reference": "2",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "421929000163"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5918367346938775,
+        "training_correct_n": 28,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "421929000163"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9658119658119658,
+        "training_correct_n": 112,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "421929000163"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9576271186440678,
+        "training_correct_n": 112,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "450387001491"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9576271186440678,
+        "training_correct_n": 112,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "450387001491"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9576271186440678,
+        "training_correct_n": 112,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "450387001491"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "450387001491"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "450387001491"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9576271186440678,
+        "training_correct_n": 112,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "wrong",
+      "prediction": "no",
+      "reference": "yes",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "450387001491"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5714285714285714,
+        "training_correct_n": 27,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 1,
+      "reference": "1",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "450387001491"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5714285714285714,
+        "training_correct_n": 27,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "450387001491"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.95,
+        "estimate": 0.9576271186440678,
+        "training_correct_n": 112,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "450387001491"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481455000943"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481455000943"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481455000943"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "481455000943"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "481455000943"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "yes",
+      "reference": "yes",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481455000943"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5714285714285714,
+        "training_correct_n": 27,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 3,
+      "reference": "3",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "481455000943"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.5714285714285714,
+        "training_correct_n": 27,
+        "training_n": 47
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 2,
+      "reference": "2",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "481455000943"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481455000943"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481623001325"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481623001325"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481623001325"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "partial",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "481623001325"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "explicit unknown",
+        "confidence": 0.2,
+        "estimate": null,
+        "training_correct_n": 0,
+        "training_n": 0
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "abstained_unknown",
+      "prediction": "unknown",
+      "reference": "chain-link",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "abstained_unknown",
+      "school_id": "481623001325"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481623001325"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481623001325"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.58,
+        "training_correct_n": 28,
+        "training_n": 48
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 1,
+      "reference": "1",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "481623001325"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9487179487179487,
+        "training_correct_n": 110,
+        "training_n": 115
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "481623001325"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_present",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "550957000382"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "solar_area_m2",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "550957000382"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "portable_classroom_count",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "550957000382"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.574468085106383,
+        "training_correct_n": 26,
+        "training_n": 45
+      },
+      "evaluable": true,
+      "field": "perimeter_fencing",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "550957000382"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.574468085106383,
+        "training_correct_n": 26,
+        "training_n": 45
+      },
+      "evaluable": true,
+      "field": "dominant_fence_type",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": "none",
+      "reference": "none",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "550957000382"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "running_track",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "550957000382"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.574468085106383,
+        "training_correct_n": 26,
+        "training_n": 45
+      },
+      "evaluable": true,
+      "field": "full_size_sports_fields",
+      "flagged": true,
+      "outcome": "wrong",
+      "prediction": 0,
+      "reference": "1",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "550957000382"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.4,
+        "estimate": 0.574468085106383,
+        "training_correct_n": 26,
+        "training_n": 45
+      },
+      "evaluable": true,
+      "field": "hard_courts",
+      "flagged": true,
+      "outcome": "correct",
+      "prediction": 0,
+      "reference": "0",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "flagged_known",
+      "school_id": "550957000382"
+    },
+    {
+      "assigned_confidence": {
+        "basis": "pooled fields within risk stratum",
+        "confidence": 0.8,
+        "estimate": 0.9491525423728814,
+        "training_correct_n": 111,
+        "training_n": 116
+      },
+      "evaluable": true,
+      "field": "pool",
+      "flagged": false,
+      "outcome": "correct",
+      "prediction": "no",
+      "reference": "no",
+      "reference_source": "measurements_old.csv",
+      "risk_stratum": "auto_accept_known",
+      "school_id": "550957000382"
+    }
+  ],
+  "per_field": {
+    "dominant_fence_type": {
+      "abstained_unknown_n": 19,
+      "answered_accuracy": 0.6666666666666666,
+      "correct_n": 4,
+      "evaluable_n": 25,
+      "wrong_n": 2
+    },
+    "full_size_sports_fields": {
+      "abstained_unknown_n": 1,
+      "answered_accuracy": 0.625,
+      "correct_n": 15,
+      "evaluable_n": 25,
+      "wrong_n": 9
+    },
+    "hard_courts": {
+      "abstained_unknown_n": 1,
+      "answered_accuracy": 0.5,
+      "correct_n": 11,
+      "evaluable_n": 23,
+      "wrong_n": 11
+    },
+    "perimeter_fencing": {
+      "abstained_unknown_n": 24,
+      "answered_accuracy": 1.0,
+      "correct_n": 1,
+      "evaluable_n": 25,
+      "wrong_n": 0
+    },
+    "pool": {
+      "abstained_unknown_n": 0,
+      "answered_accuracy": 1.0,
+      "correct_n": 25,
+      "evaluable_n": 25,
+      "wrong_n": 0
+    },
+    "portable_classroom_count": {
+      "abstained_unknown_n": 0,
+      "answered_accuracy": 1.0,
+      "correct_n": 25,
+      "evaluable_n": 25,
+      "wrong_n": 0
+    },
+    "running_track": {
+      "abstained_unknown_n": 0,
+      "answered_accuracy": 0.88,
+      "correct_n": 22,
+      "evaluable_n": 25,
+      "wrong_n": 3
+    },
+    "solar_area_m2": {
+      "abstained_unknown_n": 4,
+      "answered_accuracy": 1.0,
+      "correct_n": 21,
+      "evaluable_n": 25,
+      "wrong_n": 0
+    },
+    "solar_present": {
+      "abstained_unknown_n": 4,
+      "answered_accuracy": 1.0,
+      "correct_n": 21,
+      "evaluable_n": 25,
+      "wrong_n": 0
+    }
+  },
+  "prediction_snapshot": "outputs/all25_predictions_frozen.json",
+  "prediction_snapshot_sha256": "85d0ef224434bea9d33d6bb08b1845e22ed2d4d6224cc9b4a0e49918b8625eb7",
+  "problem_flag_capture": 0.9358974358974359,
+  "problem_n": 78,
+  "reference_opened_only_after_prediction_freeze": true,
+  "reference_path": "measurements_old.csv",
+  "reference_sha256": "c88ebd0d7c04a0ec78ae73cbc9db1cbcb97dcd1a799af15ad17a51940336640e",
+  "reference_used_to_change_values": false,
+  "schema_version": "1.0",
+  "school_n": 25,
+  "silent_wrong_n": 5,
+  "stability": {
+    "artifact_completion": "25/25 schema-valid preserved V1.10 records",
+    "reason": "One frozen response per school does not measure run-to-run repeatability; additional identical-input calls were not made in this run.",
+    "repeatability_measured": false
+  },
+  "wrong_n": 25
+}

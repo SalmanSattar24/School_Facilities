@@ -1,0 +1,112 @@
+{
+  "school_id": "060001909278",
+  "school_name": "Wells Middle",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -121.9207231,
+    37.7102361,
+    -121.9183524,
+    37.7128436
+  ],
+  "geometry": [
+    [
+      37.7112359,
+      -121.9207231
+    ],
+    [
+      37.7124906,
+      -121.9195778
+    ],
+    [
+      37.7128436,
+      -121.9189569
+    ],
+    [
+      37.7123046,
+      -121.9185347
+    ],
+    [
+      37.7118618,
+      -121.9183748
+    ],
+    [
+      37.7115835,
+      -121.9183524
+    ],
+    [
+      37.711252,
+      -121.9183875
+    ],
+    [
+      37.7106992,
+      -121.9186346
+    ],
+    [
+      37.7102361,
+      -121.9188569
+    ],
+    [
+      37.7102727,
+      -121.9189358
+    ],
+    [
+      37.71098,
+      -121.9202359
+    ],
+    [
+      37.7110567,
+      -121.9203798
+    ],
+    [
+      37.7110643,
+      -121.9203866
+    ],
+    [
+      37.7111404,
+      -121.9205323
+    ],
+    [
+      37.7112359,
+      -121.9207231
+    ]
+  ],
+  "matched_name": "Wells Middle School",
+  "source_element": "https://www.openstreetmap.org/way/349649806",
+  "name_similarity": 1.0,
+  "distance_from_ccd_m": 61.18283593467302,
+  "candidate_margin": 0.5702659406383819,
+  "recommended_detail_extent_m": 450,
+  "unclamped_detail_extent_m": 450,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "Matched 'Wells Middle School' from OSM way/349649806; name similarity 1.000, CCD-to-center distance 61.2 m, candidate margin 0.570. Match passed the frozen automatic-resolution thresholds.",
+  "candidates_considered": 7,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 37.71153985,
+    "longitude": -121.91953775
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 37.711839,
+    "longitude": -121.918954
+  },
+  "boundary_notes": "Matched 'Wells Middle School' from OSM way/349649806; name similarity 1.000, CCD-to-center distance 61.2 m, candidate margin 0.570. Match passed the frozen automatic-resolution thresholds.",
+  "scope_mode": "authoritative_polygon",
+  "scope_boundary_authority": "authoritative",
+  "measurement_search_scope": "inside_authoritative_polygon",
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "automatic provenance and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/060001909278/context.jpg",
+    "data/imagery/060001909278/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "f3e1eb46d70e0f6a165805ca5b007291f16e1b052117e548cbc09d05e171ddac",
+    "detail.jpg": "c215b18fd6ffc9e12146fccd18558a627e36b74cc630b2993368958868938da5"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "16177bdf33f64d2e376fa68abb17711288ebd2a3fcadcee3c89b2fc2bec2c861"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

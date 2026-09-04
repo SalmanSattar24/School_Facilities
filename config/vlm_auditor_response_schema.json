@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "school_id", "field_audits", "overall_issue_codes"],
+  "properties": {
+    "schema_version": {"type": "string", "enum": ["1.2"]},
+    "school_id": {"type": "string"},
+    "field_audits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["solar_present", "solar_area_m2", "portable_classroom_count", "perimeter_fencing", "dominant_fence_type", "running_track", "full_size_sports_fields", "hard_courts", "pool"],
+      "properties": {
+        "solar_present": {"$ref": "#/$defs/fieldAudit"},
+        "solar_area_m2": {"$ref": "#/$defs/fieldAudit"},
+        "portable_classroom_count": {"$ref": "#/$defs/fieldAudit"},
+        "perimeter_fencing": {"$ref": "#/$defs/fieldAudit"},
+        "dominant_fence_type": {"$ref": "#/$defs/fieldAudit"},
+        "running_track": {"$ref": "#/$defs/fieldAudit"},
+        "full_size_sports_fields": {"$ref": "#/$defs/fieldAudit"},
+        "hard_courts": {"$ref": "#/$defs/fieldAudit"},
+        "pool": {"$ref": "#/$defs/fieldAudit"}
+      }
+    },
+    "overall_issue_codes": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    }
+  },
+  "$defs": {
+    "fieldAudit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "issue_codes", "question_ids_requiring_review", "evidence_assessment", "recommended_action"],
+      "properties": {
+        "status": {"type": "string", "enum": ["consistent", "contradictory", "insufficient_evidence"]},
+        "issue_codes": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "question_ids_requiring_review": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "evidence_assessment": {"type": "string", "minLength": 1},
+        "recommended_action": {"type": "string", "enum": ["accept_candidate", "review", "targeted_visual_recheck"]}
+      }
+    }
+  }
+}

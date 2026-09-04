@@ -1,0 +1,133 @@
+{
+  "school_id": "330246000063",
+  "school_name": "Rundlett Middle School",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -71.5469728,
+    43.1882726,
+    -71.5408348,
+    43.1906242
+  ],
+  "geometry": [
+    [
+      43.1903829,
+      -71.5469303
+    ],
+    [
+      43.1906242,
+      -71.5454664
+    ],
+    [
+      43.1904072,
+      -71.5452325
+    ],
+    [
+      43.1905644,
+      -71.5441969
+    ],
+    [
+      43.1901349,
+      -71.5440359
+    ],
+    [
+      43.1903496,
+      -71.5425143
+    ],
+    [
+      43.1902589,
+      -71.5417732
+    ],
+    [
+      43.1890543,
+      -71.5416761
+    ],
+    [
+      43.1887797,
+      -71.5408348
+    ],
+    [
+      43.1887642,
+      -71.5408803
+    ],
+    [
+      43.1889214,
+      -71.5415151
+    ],
+    [
+      43.189041,
+      -71.5420466
+    ],
+    [
+      43.1890631,
+      -71.5424293
+    ],
+    [
+      43.1890144,
+      -71.5427694
+    ],
+    [
+      43.1886424,
+      -71.5441179
+    ],
+    [
+      43.1885782,
+      -71.5443821
+    ],
+    [
+      43.1883169,
+      -71.5447496
+    ],
+    [
+      43.1884254,
+      -71.5450169
+    ],
+    [
+      43.1882726,
+      -71.545764
+    ],
+    [
+      43.19025,
+      -71.5469728
+    ],
+    [
+      43.1903829,
+      -71.5469303
+    ]
+  ],
+  "matched_name": "Rundlett Middle School",
+  "source_element": "https://www.openstreetmap.org/way/741698495",
+  "name_similarity": 1.0,
+  "distance_from_ccd_m": 42.67350048185618,
+  "candidate_margin": 0.6466414087685518,
+  "recommended_detail_extent_m": 650,
+  "unclamped_detail_extent_m": 650,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "Matched 'Rundlett Middle School' from OSM way/741698495; name similarity 1.000, CCD-to-center distance 42.7 m, candidate margin 0.647. Match passed the frozen automatic-resolution thresholds.",
+  "candidates_considered": 6,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 43.1894484,
+    "longitude": -71.54390380000001
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 43.189478,
+    "longitude": -71.543379
+  },
+  "boundary_notes": "Matched 'Rundlett Middle School' from OSM way/741698495; name similarity 1.000, CCD-to-center distance 42.7 m, candidate margin 0.647. Match passed the frozen automatic-resolution thresholds.",
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "automatic provenance and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/330246000063/context.jpg",
+    "data/imagery/330246000063/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "b6c2a3929806007d960e39dfdbf0c5cf97dd9447caca2210c03c3ee105160492",
+    "detail.jpg": "2588a05e15a0d323ec71be2d4ceff391e238828b2dd2a714c5fe49720b0b7b77"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "637b0bb02d381038d990353e33557b4c17ccbfeb2477c11a1048e8c6b294ba87"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

@@ -1,0 +1,26 @@
+school_id,school_name,city,state,solar_present,solar_area_m2,portable_classroom_count,perimeter_fencing,dominant_fence_type,running_track,full_size_sports_fields,hard_courts,pool,verification_notes
+010282001124,Wedowee Middle School,Wedowee,AL,no,0,0,partial,chain-link,no,0,1,no,Blind imagery-only review completed before prediction exposure.
+040963000996,Kofa High School,Yuma,AZ,no,0,0,none,none,no,3,4,no,Blind imagery-only review completed before prediction exposure.
+060483000471,Beverly Hills High,Beverly Hills,CA,,,,,,,,,,
+061734009378,Cerra Vista Elementary,Hollister,CA,,,,,,,,,,
+060001909278,Wells Middle,Dublin,CA,no,0,0,none,none,yes,0,7,no,Blind imagery-only review completed before prediction exposure.
+130333001308,Lincoln County Elementary School,Lincolnton,GA,,,,,,,,,,
+160264000465,CLAUDE A WILCOX ELEMENTARY SCHOOL,Pocatello,ID,,,,,,,,,,
+160000100084,PRIEST RIVER LAMANNA HIGH,Priest River,ID,,,,,,,,,,
+180283000341,Zionsville Community High School,Zionsville,IN,,,,,,,,,,
+240039000683,Bel Air High,Bel Air,MD,,,,,,,,,,
+263039006679,Thompson Middle School,Saginaw,MI,,,,,,,,,,
+270543000204,Bertha Secondary,Bertha,MN,,,,,,,,,,
+330246000063,Rundlett Middle School,Concord,NH,,,,,,,,,,
+341560004108,Spring Lake Heights Elementary School,Spring Lake Heights,NJ,,,,,,,,,,
+360008802312,PS 78 ANNE HUTCHINSON,Bronx,NY,no,0,0,full,chain-link,no,2,1,no,Blind imagery-only review completed before prediction exposure.
+390494903613,Adena Elementary School,Frankfort,OH,,,,,,,,,,
+390458502363,Ridgeview Elementary School,Ashtabula,OH,,,,,,,,,,
+402277001928,EMERSON ALTERNATIVE ED. (HS),Oklahoma City,OK,,,,,,,,,,
+401452000682,HILLDALE LOWER ES,Muskogee,OK,no,0,0,partial,chain-link,no,1,0,no,Blind imagery-only review completed before prediction exposure.
+421917006915,Pittsburgh Brashear HS,Pittsburgh,PA,no,0,0,none,none,no,3,3,no,Blind imagery-only review completed without consulting quarantined predictions.
+421929000163,Pleasant Valley El Sch,Kunkletown,PA,,,,,,,,,,
+450387001491,India Hook Elementary,Rock Hill,SC,,,,,,,,,,
+481455000943,COLEMAN H S,Coleman,TX,,,,,,,,,,
+481623001325,PAUL L DUNBAR LEARNING CENTER,Dallas,TX,,,,,,,,,,
+550957000382,Northside Intermediate,Milton,WI,,,,,,,,,,

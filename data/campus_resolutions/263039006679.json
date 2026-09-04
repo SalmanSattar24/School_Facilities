@@ -1,0 +1,138 @@
+{
+  "school_id": "263039006679",
+  "school_name": "Thompson Middle School",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -83.988272,
+    43.4314948,
+    -83.9846152,
+    43.4333199
+  ],
+  "geometry": [
+    [
+      43.4324629,
+      -83.9846152
+    ],
+    [
+      43.4314948,
+      -83.9858034
+    ],
+    [
+      43.4319021,
+      -83.9864207
+    ],
+    [
+      43.4317198,
+      -83.9866791
+    ],
+    [
+      43.4315275,
+      -83.9869517
+    ],
+    [
+      43.4318516,
+      -83.9874162
+    ],
+    [
+      43.4318636,
+      -83.9874335
+    ],
+    [
+      43.4320233,
+      -83.9876268
+    ],
+    [
+      43.4322327,
+      -83.9877254
+    ],
+    [
+      43.4322506,
+      -83.9881459
+    ],
+    [
+      43.4322547,
+      -83.9882413
+    ],
+    [
+      43.433045,
+      -83.988272
+    ],
+    [
+      43.4330439,
+      -83.9881578
+    ],
+    [
+      43.4330345,
+      -83.9871639
+    ],
+    [
+      43.433026,
+      -83.9862574
+    ],
+    [
+      43.4331173,
+      -83.9860904
+    ],
+    [
+      43.4333199,
+      -83.9858061
+    ],
+    [
+      43.432944,
+      -83.9852938
+    ],
+    [
+      43.4329381,
+      -83.9852589
+    ],
+    [
+      43.4324629,
+      -83.9846152
+    ]
+  ],
+  "matched_name": "Willie E. Thompson Middle School",
+  "source_element": "https://www.openstreetmap.org/way/632753597",
+  "name_similarity": 0.64,
+  "distance_from_ccd_m": 3.5356298277768046,
+  "candidate_margin": 0.2936168589761506,
+  "recommended_detail_extent_m": 450,
+  "unclamped_detail_extent_m": 450,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "Matched 'Willie E. Thompson Middle School' from OSM way/632753597; name similarity 0.640, CCD-to-center distance 3.5 m, candidate margin 0.294. Match is usable for a provisional crop but requires human review. User manually approved the proposed OSM campus polygon on 2026-09-03. User approved the proposed campus polygon in the project review; no boundary correction or shared-facility exception was specified.",
+  "candidates_considered": 12,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 43.432407350000005,
+    "longitude": -83.9864436
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 43.4324,
+    "longitude": -83.986401
+  },
+  "boundary_notes": "Matched 'Willie E. Thompson Middle School' from OSM way/632753597; name similarity 0.640, CCD-to-center distance 3.5 m, candidate margin 0.294. Match is usable for a provisional crop but requires human review. User manually approved the proposed OSM campus polygon on 2026-09-03. User approved the proposed campus polygon in the project review; no boundary correction or shared-facility exception was specified.",
+  "confirmation_method": "user_manual_polygon_review",
+  "automatic_resolution_status_before_review": "probable",
+  "manual_review": {
+    "decision": "approved_proposed_polygon",
+    "reviewed_at": "2026-09-03",
+    "reviewer_role": "user manual campus review",
+    "review_note": "User approved the proposed campus polygon in the project review; no boundary correction or shared-facility exception was specified.",
+    "review_overlay": "data/campus_reviews/263039006679/context_overlay.jpg"
+  },
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "manual polygon approval plus provenance and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/263039006679/context.jpg",
+    "data/imagery/263039006679/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "083a9996d21d75ad49c03c50111511dab673aaf3a8a8f6df8bc3e3e81578586f",
+    "detail.jpg": "58b080e029c7d49fb9abdcf9f7e498f2c3682d83f3b9476ac4c63004f26b98de"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "077b95bacfcdd213e87b89921ed68028ef407e0fb803d083b17337d0197ba143"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

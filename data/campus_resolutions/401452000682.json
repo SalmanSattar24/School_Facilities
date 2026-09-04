@@ -1,0 +1,220 @@
+{
+  "school_id": "401452000682",
+  "school_name": "HILLDALE LOWER ES",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -95.37348644,
+    35.70853321,
+    -95.36920525,
+    35.71108738
+  ],
+  "geometry": [
+    [
+      35.71100398,
+      -95.37348644
+    ],
+    [
+      35.7110678,
+      -95.37025005
+    ],
+    [
+      35.71108738,
+      -95.36925594
+    ],
+    [
+      35.70937574,
+      -95.36920525
+    ],
+    [
+      35.70935986,
+      -95.37001157
+    ],
+    [
+      35.7085761,
+      -95.36998836
+    ],
+    [
+      35.70853321,
+      -95.37216429
+    ],
+    [
+      35.70931696,
+      -95.37218753
+    ],
+    [
+      35.70929234,
+      -95.37343566
+    ],
+    [
+      35.71100398,
+      -95.37348644
+    ]
+  ],
+  "matched_name": "Hilldale Elementary School",
+  "source_element": "https://www.openstreetmap.org/way/1424666351",
+  "name_similarity": 0.7272727272727273,
+  "distance_from_ccd_m": 205.43254460884634,
+  "candidate_margin": 0.30397603891323965,
+  "recommended_detail_extent_m": 700,
+  "unclamped_detail_extent_m": 700,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "Matched 'Hilldale Elementary School' from OSM way/1424666351; name similarity 0.727, CCD-to-center distance 205.4 m, candidate margin 0.304. Match is usable for a provisional crop but requires human review. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+  "candidates_considered": 2,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 35.709810295,
+    "longitude": -95.371345845
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 35.710378,
+    "longitude": -95.370948
+  },
+  "boundary_notes": "Matched 'Hilldale Elementary School' from OSM way/1424666351; name similarity 0.727, CCD-to-center distance 205.4 m, candidate margin 0.304. Match is usable for a provisional crop but requires human review. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+  "scope_mode": "soft_boundary",
+  "scope_boundary_authority": "soft_guidance",
+  "measurement_search_scope": "entire_detail_image",
+  "confirmation_method": "automated_gemini_soft_scope",
+  "automatic_resolution_status_before_soft_scope": "probable",
+  "boundary_status": "approximate_non_authoritative",
+  "original_resolver_geometry": [
+    [
+      35.7090791,
+      -95.3759395
+    ],
+    [
+      35.7098644,
+      -95.3759521
+    ],
+    [
+      35.7102253,
+      -95.3758805
+    ],
+    [
+      35.7105946,
+      -95.3756557
+    ],
+    [
+      35.7106319,
+      -95.3749966
+    ],
+    [
+      35.710968,
+      -95.3745214
+    ],
+    [
+      35.710997,
+      -95.3704337
+    ],
+    [
+      35.7103581,
+      -95.3703877
+    ],
+    [
+      35.7095117,
+      -95.3700454
+    ],
+    [
+      35.7080866,
+      -95.3699842
+    ],
+    [
+      35.7080589,
+      -95.372706
+    ],
+    [
+      35.7083551,
+      -95.3727703
+    ],
+    [
+      35.7083551,
+      -95.3739666
+    ],
+    [
+      35.709052,
+      -95.3751465
+    ],
+    [
+      35.7090791,
+      -95.3759395
+    ]
+  ],
+  "original_resolver_bbox_wgs84": [
+    -95.3759521,
+    35.7080589,
+    -95.3699842,
+    35.710997
+  ],
+  "soft_boundary_geometry": [
+    [
+      35.71100398,
+      -95.37348644
+    ],
+    [
+      35.7110678,
+      -95.37025005
+    ],
+    [
+      35.71108738,
+      -95.36925594
+    ],
+    [
+      35.70937574,
+      -95.36920525
+    ],
+    [
+      35.70935986,
+      -95.37001157
+    ],
+    [
+      35.7085761,
+      -95.36998836
+    ],
+    [
+      35.70853321,
+      -95.37216429
+    ],
+    [
+      35.70931696,
+      -95.37218753
+    ],
+    [
+      35.70929234,
+      -95.37343566
+    ],
+    [
+      35.71100398,
+      -95.37348644
+    ]
+  ],
+  "soft_boundary_bbox_wgs84": [
+    -95.37348644,
+    35.70853321,
+    -95.36920525,
+    35.71108738
+  ],
+  "soft_scope_safety_buffer_each_side_m": 150,
+  "soft_boundary_proposal": {
+    "path": "data/campus_boundary_proposals/v1.0/401452000682.json",
+    "sha256": "fc63ddfbf78ea2ab8566bbb59337337e4f716de37479372f089d5a118f7a20c1",
+    "configuration_id": "school-facilities-boundary-resolver-v1.0",
+    "model": "gemini-3.5-flash-lite",
+    "request_fingerprint_sha256": "2a9c75cdf769fdf70259acd5affa3b1dc4a93359d56b3717fb7d7264ac3b98ef",
+    "candidate_quality_gate_passed": true
+  },
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "soft-boundary centering plus safety buffer, provenance, and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/401452000682/context.jpg",
+    "data/imagery/401452000682/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "f9e05f3008764985afad3f4b7c51aed82cebadc00ed6c83e66a70fdc91eeaafe",
+    "detail.jpg": "7dd7d5214b1e1488b967856b31ae051c15281fb6fe746c1822fcf2998553b92e"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "342d955c371c5b5619857fdc190315aa9cc62dbd0caece7adb3f78c5503b1fd2"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

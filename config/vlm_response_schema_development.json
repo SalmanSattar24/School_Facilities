@@ -1,0 +1,101 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "school_id", "campus_assessment", "measurements", "hard_court_groups", "visibility_flags", "ownership_flags", "review_fields"],
+  "properties": {
+    "schema_version": {"type": "string", "enum": ["1.1"]},
+    "school_id": {"type": "string"},
+    "campus_assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "evidence"],
+      "properties": {
+        "status": {"type": "string", "enum": ["confirmed", "probable", "unresolved"]},
+        "evidence": {"type": "string", "minLength": 1}
+      }
+    },
+    "measurements": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["solar_present", "solar_area_m2", "portable_classroom_count", "perimeter_fencing", "dominant_fence_type", "running_track", "full_size_sports_fields", "hard_courts", "pool"],
+      "properties": {
+        "solar_present": {"$ref": "#/$defs/yesNoUnknownSuggestion"},
+        "solar_area_m2": {"$ref": "#/$defs/nonnegativeNumberOrUnknownSuggestion"},
+        "portable_classroom_count": {"$ref": "#/$defs/nonnegativeIntegerOrUnknownSuggestion"},
+        "perimeter_fencing": {"$ref": "#/$defs/fencingSuggestion"},
+        "dominant_fence_type": {"$ref": "#/$defs/fenceTypeSuggestion"},
+        "running_track": {"$ref": "#/$defs/yesNoUnknownSuggestion"},
+        "full_size_sports_fields": {"$ref": "#/$defs/nonnegativeIntegerOrUnknownSuggestion"},
+        "hard_courts": {"$ref": "#/$defs/nonnegativeIntegerOrUnknownSuggestion"},
+        "pool": {"$ref": "#/$defs/yesNoUnknownSuggestion"}
+      }
+    },
+    "hard_court_groups": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/hardCourtGroup"}
+    },
+    "visibility_flags": {"type": "array", "items": {"type": "string"}},
+    "ownership_flags": {"type": "array", "items": {"type": "string"}},
+    "review_fields": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "enum": ["solar_present", "solar_area_m2", "portable_classroom_count", "perimeter_fencing", "dominant_fence_type", "running_track", "full_size_sports_fields", "hard_courts", "pool"]}
+    }
+  },
+  "$defs": {
+    "yesNoUnknownSuggestion": {
+      "type": "object", "additionalProperties": false, "required": ["value", "evidence", "review_required"],
+      "properties": {"value": {"type": "string", "enum": ["yes", "no", "unknown"]}, "evidence": {"type": "string", "minLength": 1}, "review_required": {"type": "boolean"}}
+    },
+    "nonnegativeNumberOrUnknownSuggestion": {
+      "type": "object", "additionalProperties": false, "required": ["value", "evidence", "review_required"],
+      "properties": {"value": {"anyOf": [{"type": "number", "minimum": 0}, {"type": "string", "enum": ["unknown"]}]}, "evidence": {"type": "string", "minLength": 1}, "review_required": {"type": "boolean"}}
+    },
+    "nonnegativeIntegerOrUnknownSuggestion": {
+      "type": "object", "additionalProperties": false, "required": ["value", "evidence", "review_required"],
+      "properties": {"value": {"anyOf": [{"type": "integer", "minimum": 0}, {"type": "string", "enum": ["unknown"]}]}, "evidence": {"type": "string", "minLength": 1}, "review_required": {"type": "boolean"}}
+    },
+    "fencingSuggestion": {
+      "type": "object", "additionalProperties": false, "required": ["value", "evidence", "review_required"],
+      "properties": {"value": {"type": "string", "enum": ["full", "partial", "none", "unknown"]}, "evidence": {"type": "string", "minLength": 1}, "review_required": {"type": "boolean"}}
+    },
+    "fenceTypeSuggestion": {
+      "type": "object", "additionalProperties": false, "required": ["value", "evidence", "review_required"],
+      "properties": {"value": {"type": "string", "enum": ["chain-link", "wrought-iron", "wall", "mixed", "other", "none", "unknown"]}, "evidence": {"type": "string", "minLength": 1}, "review_required": {"type": "boolean"}}
+    },
+    "countOrUnknown": {
+      "anyOf": [{"type": "integer", "minimum": 0}, {"type": "string", "enum": ["unknown"]}]
+    },
+    "hardCourtGroup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["group_id", "location", "detail_bbox", "supporting_image_roles", "sports_markings", "overview_count", "crop_count", "adjudicated_count", "count_disagreement", "simultaneous_use_evidence", "review_required"],
+      "properties": {
+        "group_id": {"type": "string", "minLength": 1},
+        "location": {"type": "string", "minLength": 1},
+        "detail_bbox": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["x_min", "y_min", "x_max", "y_max"],
+          "properties": {
+            "x_min": {"type": "number", "minimum": 0, "maximum": 1},
+            "y_min": {"type": "number", "minimum": 0, "maximum": 1},
+            "x_max": {"type": "number", "minimum": 0, "maximum": 1},
+            "y_max": {"type": "number", "minimum": 0, "maximum": 1}
+          }
+        },
+        "supporting_image_roles": {
+          "type": "array",
+          "items": {"type": "string", "enum": ["context", "detail", "athletics_overview", "hard_courts_detail"]}
+        },
+        "sports_markings": {"type": "array", "items": {"type": "string"}},
+        "overview_count": {"$ref": "#/$defs/countOrUnknown"},
+        "crop_count": {"$ref": "#/$defs/countOrUnknown"},
+        "adjudicated_count": {"$ref": "#/$defs/countOrUnknown"},
+        "count_disagreement": {"type": "boolean"},
+        "simultaneous_use_evidence": {"type": "string", "minLength": 1},
+        "review_required": {"type": "boolean"}
+      }
+    }
+  }
+}

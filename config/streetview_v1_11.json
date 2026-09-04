@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "configuration_id": "school-facilities-streetview-v1.11",
+  "provider": "Google Maps Platform Static Street View API",
+  "metadata_endpoint": "https://maps.googleapis.com/maps/api/streetview/metadata",
+  "image_endpoint": "https://maps.googleapis.com/maps/api/streetview",
+  "osm_overpass_endpoint": "https://overpass-api.de/api/interpreter",
+  "credentials": {
+    "api_key_environment_variable": "GOOGLE_STREET_VIEW_API_KEY",
+    "local_secrets_file": "secrets.local.env"
+  },
+  "budget": {
+    "paid_budget_usd": 0,
+    "monthly_free_cap": 10000,
+    "free_cap_reserve": 1000,
+    "project_run_cap": 250,
+    "per_school_image_cap": 8,
+    "per_panorama_view_cap": 2,
+    "maximum_usage_snapshot_age_hours": 24,
+    "billable_image_retries": 0,
+    "allow_sku_fallback": false
+  },
+  "pricing_snapshot": {
+    "observed_at": "2026-09-03",
+    "currency": "USD",
+    "unit": "per_1000_monthly_image_events",
+    "sku": "Static Street View",
+    "official_source": "https://developers.google.com/maps/billing-and-pricing/pricing",
+    "tiers": [
+      {"through_events": 10000, "price_per_1000": 0.0},
+      {"through_events": 100000, "price_per_1000": 7.0},
+      {"through_events": 500000, "price_per_1000": 5.6},
+      {"through_events": 1000000, "price_per_1000": 4.2},
+      {"through_events": 5000000, "price_per_1000": 2.1},
+      {"through_events": null, "price_per_1000": 0.53}
+    ]
+  },
+  "discovery": {
+    "metadata_first": true,
+    "road_search_buffer_m": 180,
+    "metadata_radius_m": 80,
+    "maximum_panorama_distance_from_campus_bbox_m": 80,
+    "maximum_road_probe_points_per_school": 20,
+    "maximum_selected_panoramas_per_school": 4,
+    "minimum_metadata_probes_before_early_stop": 8,
+    "require_google_owned_panorama": true,
+    "source": "outdoor"
+  },
+  "images": {
+    "size": [640, 640],
+    "format": "JPEG",
+    "field_of_view_degrees": 75,
+    "pitch_degrees": 5,
+    "heading_offsets_degrees": [-18, 18],
+    "return_error_code": true
+  },
+  "network": {
+    "requests_per_minute": 10,
+    "minimum_seconds_between_metadata_requests": 6,
+    "minimum_seconds_between_image_requests": 6,
+    "timeout_seconds": 60,
+    "metadata_retries": 1,
+    "image_retries": 0
+  },
+  "storage": {
+    "temporary_directory": "data/streetview/temporary/v1.11",
+    "manifest_directory": "data/streetview/manifests/v1.11",
+    "ledger_path": "data/streetview/control/request_ledger_v1.11.jsonl",
+    "usage_snapshot_path": "data/streetview/control/provider_usage.json",
+    "derived_output_directory": "data/model_outputs/streetview/v1.11",
+    "validation_quarantine_directory": "data/model_outputs/quarantine/v1.11/streetview",
+    "delete_images_after_inference": false
+  },
+  "safeguards": {
+    "dry_run_by_default": true,
+    "require_live_flag": true,
+    "require_zero_paid_budget_argument": true,
+    "require_provider_quota_confirmation": true,
+    "require_current_provider_usage_snapshot": true,
+    "deduplicate_by_panorama_and_view": true,
+    "stop_on_first_image_failure": true,
+    "street_negative_scope": "visible_segment_only",
+    "never_overwrite_v1_10": true
+  }
+}

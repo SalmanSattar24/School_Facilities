@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.2",
+  "configuration_id": "school-facilities-evidence-auditor-v1.2",
+  "frozen_at": "2026-09-03",
+  "provider": "Google Gemini Developer API",
+  "model": "gemini-3.1-flash-lite",
+  "model_release_channel": "stable",
+  "api_version": "v1beta",
+  "client": {
+    "package": "google-genai",
+    "version": "2.20.0",
+    "method": "interactions.create"
+  },
+  "credentials": {
+    "api_key_environment_variable": "GEMINI_API_KEY",
+    "lookup_order": ["environment", "local_secrets_file"],
+    "local_secrets_file": "secrets.local.env"
+  },
+  "usage_mode": {
+    "text_only": true,
+    "allow_paid_overage": false,
+    "allow_model_fallback": false,
+    "allow_latest_alias": false,
+    "store_interaction": false
+  },
+  "generation": {
+    "thinking_level": "minimal",
+    "max_output_tokens": 4096,
+    "prompt_path": "config/vlm_auditor_prompt.txt",
+    "response_schema_path": "config/vlm_auditor_response_schema.json"
+  },
+  "request_limits": {
+    "requests_per_minute": 15,
+    "tokens_per_minute": 250000,
+    "requests_per_day": 500,
+    "minimum_seconds_between_requests": 4,
+    "maximum_retries_per_school": 1,
+    "retry_statuses": [429, 500, 502, 503, 504],
+    "retry_initial_backoff_seconds": 5,
+    "request_timeout_seconds": 300,
+    "auditor_hard_request_cap_including_retries": 60
+  },
+  "inputs": {
+    "primary_configuration_id": "school-facilities-vlm-final-v1.10",
+    "include_authoritative_field_protocol": true,
+    "include_images": false,
+    "include_primary_parsed_output": true,
+    "include_deterministic_findings": true,
+    "include_raw_output_text": false,
+    "include_human_reviewed_values": false,
+    "include_blind_reference_values": false
+  },
+  "outputs": {
+    "directory": "data/model_outputs/audits/v1.10",
+    "rejected_directory": "data/model_outputs/audits/rejected/v1.10",
+    "preserve_raw_response": true,
+    "auditor_may_overwrite_primary_value": false
+  }
+}

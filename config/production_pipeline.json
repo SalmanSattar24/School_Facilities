@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "configuration_id": "school-facilities-human-terminal-pipeline-v1",
+  "prediction_source_version": "v1.11 fused: V1.10 solar plus V1.11 supplemental fields, with flagged V1.10 fallback when Street View is unavailable",
+  "model": "gemini-3.5-flash-lite",
+  "reuse_verified_existing_outputs": true,
+  "reference_access_after_prediction_freeze_only": true,
+  "retain_aerial_imagery": true,
+  "street_view_production_enabled": true,
+  "street_view_image_lifecycle": "transient provider content; delete after preserved inference response",
+  "street_view_maximum_new_image_requests": 200,
+  "street_view_provider_requests_per_minute": 10,
+  "confidence": {
+    "meaning": "estimated probability that the recorded field value is correct under the frozen definition",
+    "method": "post-freeze observed answered accuracy by pipeline risk stratum, rounded to two decimals",
+    "risk_strata": ["auto_accept_known", "flagged_known", "abstained_unknown"],
+    "unknown_confidence": 0.20
+  },
+  "evaluation": {
+    "solar_area_absolute_tolerance_m2": 25,
+    "solar_area_relative_tolerance": 0.25,
+    "reference_is_not_used_to_change_prediction_values": true,
+    "same_25_school_evaluation_is_descriptive": true
+  }
+}

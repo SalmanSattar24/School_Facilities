@@ -1,0 +1,225 @@
+{
+  "school_id": "450387001491",
+  "school_name": "India Hook Elementary",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -81.0238896,
+    35.0023489,
+    -81.0213877,
+    35.0048662
+  ],
+  "geometry": [
+    [
+      35.0024413,
+      -81.0231825
+    ],
+    [
+      35.0024727,
+      -81.0232396
+    ],
+    [
+      35.0025081,
+      -81.0232818
+    ],
+    [
+      35.0025483,
+      -81.0233128
+    ],
+    [
+      35.0026478,
+      -81.0233789
+    ],
+    [
+      35.0027143,
+      -81.0234211
+    ],
+    [
+      35.0027832,
+      -81.0234374
+    ],
+    [
+      35.0028434,
+      -81.0234438
+    ],
+    [
+      35.0029002,
+      -81.0234305
+    ],
+    [
+      35.0030806,
+      -81.023359
+    ],
+    [
+      35.0031302,
+      -81.023496
+    ],
+    [
+      35.0031815,
+      -81.0236235
+    ],
+    [
+      35.0032734,
+      -81.0237656
+    ],
+    [
+      35.0033869,
+      -81.0238429
+    ],
+    [
+      35.0035216,
+      -81.0238896
+    ],
+    [
+      35.0036631,
+      -81.0238854
+    ],
+    [
+      35.0037492,
+      -81.0238547
+    ],
+    [
+      35.0036893,
+      -81.0236326
+    ],
+    [
+      35.003776,
+      -81.0235991
+    ],
+    [
+      35.0038046,
+      -81.0235559
+    ],
+    [
+      35.004455,
+      -81.0232899
+    ],
+    [
+      35.0044755,
+      -81.0232306
+    ],
+    [
+      35.0043594,
+      -81.022829
+    ],
+    [
+      35.0043413,
+      -81.0227667
+    ],
+    [
+      35.0048202,
+      -81.0225781
+    ],
+    [
+      35.0048662,
+      -81.0224195
+    ],
+    [
+      35.0048621,
+      -81.0223348
+    ],
+    [
+      35.004846,
+      -81.0222688
+    ],
+    [
+      35.0048105,
+      -81.0221998
+    ],
+    [
+      35.004783,
+      -81.0221683
+    ],
+    [
+      35.0045692,
+      -81.02199
+    ],
+    [
+      35.0045329,
+      -81.0219664
+    ],
+    [
+      35.0044732,
+      -81.0219388
+    ],
+    [
+      35.0040762,
+      -81.021791
+    ],
+    [
+      35.0031187,
+      -81.0213995
+    ],
+    [
+      35.0030457,
+      -81.0213877
+    ],
+    [
+      35.0029585,
+      -81.0213961
+    ],
+    [
+      35.0028714,
+      -81.0214384
+    ],
+    [
+      35.0028145,
+      -81.0215034
+    ],
+    [
+      35.0027584,
+      -81.0215921
+    ],
+    [
+      35.0023648,
+      -81.0225074
+    ],
+    [
+      35.0023489,
+      -81.0225922
+    ],
+    [
+      35.002399,
+      -81.0229375
+    ],
+    [
+      35.0024413,
+      -81.0231825
+    ]
+  ],
+  "matched_name": "India Hook Elementary School",
+  "source_element": "https://www.openstreetmap.org/way/259797995",
+  "name_similarity": 1.0,
+  "distance_from_ccd_m": 57.931522161527006,
+  "candidate_margin": 0.9922757970451297,
+  "recommended_detail_extent_m": 400,
+  "unclamped_detail_extent_m": 400,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "Matched 'India Hook Elementary School' from OSM way/259797995; name similarity 1.000, CCD-to-center distance 57.9 m, candidate margin 0.992. Match passed the frozen automatic-resolution thresholds.",
+  "candidates_considered": 1,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 35.00360755,
+    "longitude": -81.02263865
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 35.003148,
+    "longitude": -81.022339
+  },
+  "boundary_notes": "Matched 'India Hook Elementary School' from OSM way/259797995; name similarity 1.000, CCD-to-center distance 57.9 m, candidate margin 0.992. Match passed the frozen automatic-resolution thresholds.",
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "automatic provenance and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/450387001491/context.jpg",
+    "data/imagery/450387001491/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "75bc65b6db734ebc8e8179816ed55b8d42b64ec6e2815ce82deeb01cf9eb55fc",
+    "detail.jpg": "61d5a21609fe6cf6d9674681cae5206fc5b8a0cd04b37021faa1328bcece8ac8"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "467d8ec95a1c43a6c621693c38fd81d389aabe2f7367d6571ecf71d58ce09efb"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

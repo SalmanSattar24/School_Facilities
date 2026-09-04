@@ -1,0 +1,43 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.env
+secrets.local.env
+
+# Generated imagery and sidecars
+data/imagery/*
+!data/imagery/.gitkeep
+data/model_outputs/*
+!data/model_outputs/.gitkeep
+data/campus_boundary_proposals/*
+!data/campus_boundary_proposals/.gitkeep
+data/campus_reviews/
+data/reviewed/*
+!data/reviewed/.gitkeep
+data/review_packets/
+data/blind_review_packets/
+data/streetview/temporary/
+data/streetview/control/
+data/streetview/manifests/
+measurements.csv.bak
+
+# Local scratch files
+tmp/
+
+# Local source documents and working-status notes
+take_home_task.pdf
+[[]MS_PhD[]]*.pdf
+PROJECT_STATUS.md
+USER_ACTIONS.md
+
+# Historical development diagnostics; final frozen reports remain tracked
+outputs/boundary_batch2_dry_run.json
+outputs/cerra_v1_8_3_regression.md
+outputs/pilot_*.json
+outputs/soft_scope_regression_*.json
+outputs/v1_10_execution_status_*.json
+
+# Submission artifacts are tracked deliberately when complete.

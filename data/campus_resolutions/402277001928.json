@@ -1,0 +1,69 @@
+{
+  "school_id": "402277001928",
+  "school_name": "EMERSON ALTERNATIVE ED. (HS)",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -97.5227312,
+    35.4742409,
+    -97.5213673,
+    35.4751124
+  ],
+  "geometry": [
+    [
+      35.4750944,
+      -97.5213673
+    ],
+    [
+      35.4742409,
+      -97.5213734
+    ],
+    [
+      35.4742692,
+      -97.5227312
+    ],
+    [
+      35.4751124,
+      -97.5227238
+    ],
+    [
+      35.4750944,
+      -97.5213673
+    ]
+  ],
+  "matched_name": "Emerson Alternative High School",
+  "source_element": "https://www.openstreetmap.org/way/140026884",
+  "name_similarity": 1.0,
+  "distance_from_ccd_m": 5.278351808919178,
+  "candidate_margin": 0.6469969767540423,
+  "recommended_detail_extent_m": 250,
+  "requires_human_review": false,
+  "reason": "Matched 'Emerson Alternative High School' from OSM way/140026884; name similarity 1.000, CCD-to-center distance 5.3 m, candidate margin 0.647. Match passed the frozen automatic-resolution thresholds.",
+  "candidates_considered": 6,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 35.47467665,
+    "longitude": -97.52204925
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 35.4747,
+    "longitude": -97.5221
+  },
+  "boundary_notes": "Matched 'Emerson Alternative High School' from OSM way/140026884; name similarity 1.000, CCD-to-center distance 5.3 m, candidate margin 0.647. Match passed the frozen automatic-resolution thresholds.",
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "automatic provenance and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/402277001928/context.jpg",
+    "data/imagery/402277001928/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "be01d769379b21680fe44850ed1d67735b85e3c3b2e76a5500359dc51ae1236a",
+    "detail.jpg": "77a482bacdeaacfa72970420338179a0d8b7b8d45a4c8392c0b6588896b8ffe0"
+  },
+  "public_source_and_non_sensitive_confirmed": true,
+  "unclamped_detail_extent_m": 250,
+  "detail_extent_clipped_at_maximum": false,
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "d363c838dea878f9385e92998167727d44b7a2997af4e1b52bef993ba95bca08"
+  }
+}

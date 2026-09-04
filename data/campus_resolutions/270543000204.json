@@ -1,0 +1,56 @@
+{
+  "school_id": "270543000204",
+  "school_name": "Bertha Secondary",
+  "status": "confirmed",
+  "method": "ccd_fallback_no_public_match",
+  "bbox_wgs84": null,
+  "geometry": [],
+  "matched_name": null,
+  "source_element": null,
+  "name_similarity": null,
+  "distance_from_ccd_m": null,
+  "candidate_margin": null,
+  "recommended_detail_extent_m": 800,
+  "unclamped_detail_extent_m": 800,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "No named public school candidate was found within 1,500 metres. No trustworthy polygon was available. The stored public/CCD center controls an 800 m crop; the facility model must search the entire detail image and flag all ownership or perimeter ambiguity.",
+  "candidates_considered": 0,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 46.263877,
+    "longitude": -95.062093
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 46.263877,
+    "longitude": -95.062093
+  },
+  "boundary_notes": "No named public school candidate was found within 1,500 metres. No trustworthy polygon was available. The stored public/CCD center controls an 800 m crop; the facility model must search the entire detail image and flag all ownership or perimeter ambiguity.",
+  "confirmation_method": "automatic_center_only_fallback",
+  "automatic_resolution_status_before_center_only": "unresolved",
+  "scope_mode": "center_only",
+  "scope_boundary_authority": "none",
+  "measurement_search_scope": "entire_detail_image",
+  "boundary_status": "unavailable_non_authoritative",
+  "failed_boundary_attempt": {
+    "path": "data/campus_boundary_proposals/rejected/v1.0/270543000204.json",
+    "sha256": "704cb4783a8b811837145ca8bf2d81927cad9b02164f44a283085a8817663131",
+    "configuration_id": "school-facilities-boundary-resolver-v1.0",
+    "model": "gemini-3.5-flash-lite",
+    "validation_error": "boundary output failed schema validation at boundary_cues.east.cue_types.0: 'tree_lines' is not one of ['road', 'sidewalk', 'fence_or_wall', 'tree_line', 'parking_edge', 'land_cover_change', 'internal_circulation', 'building_edge', 'none']"
+  },
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "automatic provenance and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/270543000204/context.jpg",
+    "data/imagery/270543000204/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "b93743fa214f3d6d15de2de8deee011a5f548c7f9bac99d9f48136ddaae33998",
+    "detail.jpg": "0d4c31100357ad944c779424dff0b5365122d5e98d7dcad1c23cf3cdfbf8432e"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "147d3b08d7902671b01d90921f1329eef80014f85ee229bfc1280c7ae3dc14c1"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}

@@ -1,0 +1,167 @@
+{
+  "school_id": "130333001308",
+  "school_name": "Lincoln County Elementary School",
+  "status": "confirmed",
+  "method": "openstreetmap_polygon_match",
+  "bbox_wgs84": [
+    -82.4932778,
+    33.79477207,
+    -82.49091088,
+    33.79787636
+  ],
+  "geometry": [
+    [
+      33.79582225,
+      -82.4932778
+    ],
+    [
+      33.79477207,
+      -82.49212543
+    ],
+    [
+      33.79650015,
+      -82.49091324
+    ],
+    [
+      33.79667852,
+      -82.49107836
+    ],
+    [
+      33.79679704,
+      -82.4909724
+    ],
+    [
+      33.79710934,
+      -82.49124786
+    ],
+    [
+      33.7976094,
+      -82.49091088
+    ],
+    [
+      33.79787636,
+      -82.49120715
+    ],
+    [
+      33.79773002,
+      -82.49212276
+    ],
+    [
+      33.79659255,
+      -82.49296714
+    ],
+    [
+      33.79582225,
+      -82.4932778
+    ]
+  ],
+  "matched_name": "Lincoln County Elementary School",
+  "source_element": "https://www.openstreetmap.org/node/358723199",
+  "name_similarity": 1.0,
+  "distance_from_ccd_m": 28.62630296003071,
+  "candidate_margin": 0.8961831596053292,
+  "recommended_detail_extent_m": 650,
+  "unclamped_detail_extent_m": 650,
+  "detail_extent_clipped_at_maximum": false,
+  "requires_human_review": false,
+  "reason": "Matched 'Lincoln County Elementary School' from OSM node/358723199; name similarity 1.000, CCD-to-center distance 28.6 m, candidate margin 0.896. Match did not meet the automatic polygon/name/distance thresholds. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+  "candidates_considered": 1,
+  "schema_version": "1.0",
+  "resolved_center": {
+    "latitude": 33.796324215,
+    "longitude": -82.49209434
+  },
+  "requested_ccd_coordinate": {
+    "latitude": 33.796652,
+    "longitude": -82.49178
+  },
+  "boundary_notes": "Matched 'Lincoln County Elementary School' from OSM node/358723199; name similarity 1.000, CCD-to-center distance 28.6 m, candidate margin 0.896. Match did not meet the automatic polygon/name/distance thresholds. Gemini boundary proposal is used only to center and size a generously buffered crop; it is not an authoritative campus boundary or measurement mask. The facility model must inspect the entire detail image and flag ownership or perimeter ambiguity.",
+  "confirmation_method": "automated_gemini_soft_scope",
+  "automatic_resolution_status_before_soft_scope": "unresolved",
+  "scope_mode": "soft_boundary",
+  "scope_boundary_authority": "soft_guidance",
+  "measurement_search_scope": "entire_detail_image",
+  "boundary_status": "approximate_non_authoritative",
+  "original_resolver_geometry": [
+    [
+      33.7965141,
+      -82.4915184
+    ]
+  ],
+  "original_resolver_bbox_wgs84": null,
+  "soft_boundary_geometry": [
+    [
+      33.79582225,
+      -82.4932778
+    ],
+    [
+      33.79477207,
+      -82.49212543
+    ],
+    [
+      33.79650015,
+      -82.49091324
+    ],
+    [
+      33.79667852,
+      -82.49107836
+    ],
+    [
+      33.79679704,
+      -82.4909724
+    ],
+    [
+      33.79710934,
+      -82.49124786
+    ],
+    [
+      33.7976094,
+      -82.49091088
+    ],
+    [
+      33.79787636,
+      -82.49120715
+    ],
+    [
+      33.79773002,
+      -82.49212276
+    ],
+    [
+      33.79659255,
+      -82.49296714
+    ],
+    [
+      33.79582225,
+      -82.4932778
+    ]
+  ],
+  "soft_boundary_bbox_wgs84": [
+    -82.4932778,
+    33.79477207,
+    -82.49091088,
+    33.79787636
+  ],
+  "soft_scope_safety_buffer_each_side_m": 150,
+  "soft_boundary_proposal": {
+    "path": "data/campus_boundary_proposals/v1.0/130333001308.json",
+    "sha256": "eea9b897869ca36c6634b9b6766ef56324e9eb99446c9ea5cf2348d781891aa4",
+    "configuration_id": "school-facilities-boundary-resolver-v1.0",
+    "model": "gemini-3.5-flash-lite",
+    "request_fingerprint_sha256": "8f5f0d8f32791e919819f1325e536c0bef57857da4d7b2309a82d1bef431506f",
+    "candidate_quality_gate_passed": false
+  },
+  "input_pair_frozen": true,
+  "input_pair_freeze_method": "soft-boundary centering plus safety buffer, provenance, and hash checks",
+  "approved_gemini_inputs": [
+    "data/imagery/130333001308/context.jpg",
+    "data/imagery/130333001308/detail.jpg"
+  ],
+  "approved_gemini_input_sha256": {
+    "context.jpg": "a40d9583ca59f86429a63a9b2b61dcb4d58cd8a5262caed83e27c24c477ee37c",
+    "detail.jpg": "d46f966bbb313e7737a586493a2a562d0bd97b22aebfcaf1984ad409d1502a55"
+  },
+  "approved_supporting_artifact_sha256": {
+    "detail.tif": "2efaf3c195fa70e2b697ca520278cdf7db1ee104b1e28d5f4a2eb0c05457f265"
+  },
+  "public_source_and_non_sensitive_confirmed": true
+}
